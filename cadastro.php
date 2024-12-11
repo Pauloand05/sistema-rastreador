@@ -19,7 +19,7 @@
 
         <div class="caixa">
 
-            <img src="" alt="">
+            <img src="img/logo-af.jpeg" alt="">
 
             <h1>CADASTRO</h1>
 
