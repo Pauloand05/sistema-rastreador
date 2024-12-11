@@ -27,6 +27,22 @@ input {
     transition: opacity 300ms ease-in-out;
 }
 
+.senha {
+    position: relative; /* Permite que o ícone de olho seja posicionado dentro do campo */
+    width: 300px; /* Mantém o campo de senha com a mesma largura */
+}
+
+
+.icone {
+    position: absolute;
+    left: 250px; /* Coloca o ícone no lado direito do campo */
+    top: 40%; /* Centraliza verticalmente */
+    transform: translateY(-50%); /* Ajuste fino para centralizar o ícone */
+    cursor: pointer;
+    font-size: 18px; /* Ajuste o tamanho do ícone */
+    color: #000;
+}
+
 input:focus {
     opacity: 1;
     outline: none;

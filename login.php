@@ -12,6 +12,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <title>Login</title>
 </head>
 <body>
@@ -28,7 +29,8 @@
             </div>
 
             <div class="senha">
-                <input type="password" placeholder="Senha">
+                <input type="password" id="senha" placeholder="Senha">
+                <i id="eye" class="fas fa-eye icone" onclick="togglePassword()"></i>
             </div>
 
             <div class="area-entrar">
@@ -38,5 +40,21 @@
 
         </div>
     </div>
+    <script>
+    function togglePassword() {
+        var senha = document.getElementById('senha');
+        var eyeIcon = document.getElementById('eye');
+
+        if (senha.type === "password") {
+            senha.type = "text";  // Mostra a senha
+            eyeIcon.classList.remove('fa-eye');  // Troca o ícone
+            eyeIcon.classList.add('fa-eye-slash');  // Ícone de olho fechado
+        } else {
+            senha.type = "password";  // Esconde a senha
+            eyeIcon.classList.remove('fa-eye-slash');  // Troca o ícone
+            eyeIcon.classList.add('fa-eye');  // Ícone de olho aberto
+        }
+    }
+    </script>
 </body>
 </html>
