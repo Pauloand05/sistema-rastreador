@@ -19,7 +19,7 @@
 
         <div class="caixa">
 
-            <img src="img/logo-af.jpeg" alt="">
+            <img src="img/logo-af.png" alt="">
 
             <h1>CADASTRO</h1>
 
@@ -43,9 +43,9 @@
                 <input type="password" placeholder="Confirme sua senha">
             </div>
 
-            <div class="entrar">
+            <div class="area-entrar">
                 <p>Já tem uma conta? <a href="login.php">Entre Aqui!</a></p>
-                <input type="submit" value="Entrar">
+                <input class="btn-entrar" type="submit" value="Entrar">
             </div>
 
         </div>
