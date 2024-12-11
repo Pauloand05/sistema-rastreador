@@ -61,7 +61,7 @@ git pull origin main
 ```
 - Puxa as alterações mais recentes do repositório remoto para a branch `main`.
 
----
+<br>
 
 ## **7. Fazendo o merge da branch criada no computador na principal**
 
@@ -76,18 +76,28 @@ git merge nome-da-branch
 ```
 - Combina as alterações da branch `nome-da-branch` direto na `main`.
 
----
+<br>
 
-## **8. Excluindo a branch no computador-local (opcional)**
+## **8. Enviando ao merge para o repositório remoto**
+
+```bash
+git push origin main
+```
+- Envia para o github o cógido já mesclado (merge)
+### Após isso, se quiser excluir as branchs, siga os passos abaixo
+
+<br>
+
+## **9. Excluindo a branch no computador-local (opcional)**
 
 ```bash
 git branch -d nome-da-branch
 ```
 - Remove a branch local após o merge (use apenas se ela não for mais necessária).
 
----
+<br>
 
-## **9. Excluindo a branch remota-github (opcional)**
+## **10. Excluindo a branch remota-github (opcional)**
 
 ```bash
 git push origin --delete nome-da-branch
