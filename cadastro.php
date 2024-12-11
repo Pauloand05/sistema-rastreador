@@ -44,7 +44,7 @@
             </div>
 
             <div class="area-entrar">
-                <p>Já tem uma conta? <a href="login.php">Entre Aqui!</a></p>
+                <p>Já tem uma conta? <a href="login.php">Faça login!</a></p>
                 <input class="btn-entrar" type="submit" value="Entrar">
             </div>
 
