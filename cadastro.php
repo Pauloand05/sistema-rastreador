@@ -12,6 +12,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <!-- Carregando jQuery primeiro -->
+    <script src="js/jquery.min.js"></script>
+    <!-- JQuery (caso esteja usando JQuery Mask) -->
+    <script src="js/jquery.mask.min.js"></script>
     <title>Cadastro</title>
 </head>
 <body>
@@ -28,7 +32,7 @@
             </div>
 
             <div class="telefone">
-                <input type="text" placeholder="Telefone">
+                <input type="text" class="form-control" id="telefone" placeholder="Telefone">
             </div>
             
             <div class="email">
@@ -47,8 +51,13 @@
                 <p>Já tem uma conta? <a href="login.php">Entre Aqui!</a></p>
                 <input class="btn-entrar" type="submit" value="Entrar">
             </div>
-
         </div>
     </div>
+    <script>
+        $(document).ready(function() {
+            // Máscara para o telefone
+            $('#telefone').mask('(00) 00000-0000');
+        });
+    </script>
 </body>
 </html>
