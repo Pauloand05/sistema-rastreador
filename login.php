@@ -32,7 +32,7 @@
             </div>
 
             <div class="area-entrar">
-                <p>Ainda não tem uma conta? <a href="cadastro.php">Clique Aqui!</a></p>
+                <p>Ainda não tem uma conta? <a href="cadastro.php">Crie uma!</a></p>
                 <input class="btn-entrar" type="submit" value="Entrar">
             </div>
 
