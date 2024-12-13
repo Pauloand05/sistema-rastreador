@@ -7,9 +7,14 @@
     /* background-color: #2e6a47; */
 }
 
-#navbarSupportedContent a{
+#navbarNav a{
     color: white;
     margin-right: 15px;  /* Adiciona um espaçamento de 15px entre os itens */
+    transition: color 0.3s;      /* Adiciona transição suave para a cor */
+}
+
+#navbarNav a:hover {
+    color: #f8f8f8;              /* Cor do texto quando o mouse passar sobre os itens */
 }
 
 .navbar-nav {
@@ -27,3 +32,30 @@
 }
 
 .logo-nav {width: 60px; height: 60px;}
+
+/* Estilo do ícone hamburger */
+.navbar-toggler-icon {
+    background-color: transparent;  /* Remove qualquer fundo do botão */
+    border: none;                   /* Remove a borda do botão */
+}
+
+/* Mudando as linhas do ícone hamburger para branco */
+.navbar-toggler-icon span {
+    color: chartreuse       /* Torna as 3 linhas do ícone brancas */
+}
+
+/* Estilos do botão hamburger */
+.navbar-toggler {
+    border: none;                   /* Remove a borda do botão */
+}
+
+@media (max-width: 992px) {
+    .navbar-nav {
+        display: block;              /* Modifica a navegação para bloco em telas pequenas */
+        text-align: center;          /* Centraliza os itens no menu */
+    }
+
+    .nav-item {
+        margin-bottom: 10px;         /* Adiciona espaçamento inferior entre os itens no mobile */
+    }
+}
