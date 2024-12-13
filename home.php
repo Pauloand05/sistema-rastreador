@@ -10,8 +10,7 @@
 <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary" >
     <div class="container-fluid">
-        <img src="img/logo-nav.png" alt="Logo-AF">
-        </button>
+        <img src="img/logo-af.png" alt="Logo-AF" class="logo-nav">
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-auto">
             <li class="nav-item me-3">
