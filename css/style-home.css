@@ -1,0 +1,27 @@
+.container-fluid{
+    /* background-color: #343a40; */
+    /* background-color: #e1e1e1; */
+    background-color: #212529;
+    /* background-color: #f1f1f1; */
+    /* background-color: #f8f8f8; */
+    /* background-color: #2e6a47; */
+}
+
+#navbarSupportedContent a{
+    color: white;
+    margin-right: 15px;  /* Adiciona um espaçamento de 15px entre os itens */
+}
+
+.navbar-nav {
+    display: flex;               /* Usando Flexbox */
+    justify-content: space-evenly; /* Espaçamento igual entre os itens */
+    width: 100%;                  /* Garantir que ocupe toda a largura */
+}
+
+.nav-item {
+    margin: 0 10px;              /* Opcional: para adicionar um pequeno espaçamento lateral entre os itens */
+}
+
+.dropdown-menu{
+    background-color: #212529;
+}
