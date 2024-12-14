@@ -1,0 +1,163 @@
+/* Estilos gerais */
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #4A90E2, #1D6E99);
+    /* Gradiente azul mais forte */
+    margin: 0;
+    padding: 0;
+    color: #FFFFFF;
+    /* Cor de texto padrão para contraste */
+}
+
+/* Estilo do título e parágrafos */
+h2,
+h4 {
+    font-weight: bold;
+    color: #f4f4f9;
+    /* Cor do título em tom claro */
+}
+
+p,
+ul {
+    color: black;
+    /* Cor dos textos mais suave para contraste */
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Card customizado */
+.custom-card {
+    background-color: #ffffff;
+    /* Fundo branco */
+    border-radius: 12px;
+    /* Bordas arredondadas */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    /* Sombra suave */
+    padding: 20px;
+    margin-bottom: 30px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.custom-card:hover {
+    transform: translateY(-5px);
+    /* Efeito hover */
+    box-shadow: 0 6px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Listas */
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+/* Estilização dos botões */
+.btn {
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.btn-primary {
+    background-color: #4E4DED;
+    border-color: #4E4DED;
+    color: #ffffff;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #3750A1;
+}
+
+.btn-outline-primary {
+    background-color: #4E4DED;
+    border-color: #4E4DED;
+    color: #ffffff;
+    transition: background-color 0.3s ease;
+}
+
+
+.btn-outline-primary:hover {
+    background-color: #3750A1;
+}
+
+/* Estilo para a seção de depoimentos */
+.carousel-item p {
+    font-size: 18px;
+    font-style: italic;
+    color: #333;
+}
+
+.carousel-item strong {
+    font-weight: bold;
+    color: #3750A1;
+}
+
+/* Campos de entrada de texto (formulários) */
+input,
+select,
+textarea {
+    background-color: #f4f4f9;
+    border: 1px solid #ddd;
+    color: #333;
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 8px;
+    width: 100%;
+    margin-bottom: 15px;
+    transition: border-color 0.3s ease;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: #4E4DED;
+    outline: none;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+    h4 {
+        font-size: 22px;
+    }
+
+    .custom-card {
+        padding: 15px;
+    }
+
+    .carousel-item p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .custom-card {
+        padding: 10px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    h4 {
+        font-size: 20px;
+    }
+
+    .carousel-item p {
+        font-size: 14px;
+    }
+}
