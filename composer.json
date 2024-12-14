@@ -1,0 +1,16 @@
+{
+    "name": "ruan/sistema-restreador",
+    "description": "sistema para rastreamento",
+    "autoload": {
+        "psr-4": {
+            "Ruan\\SistemaRestreador\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "ruan"
+            
+        }
+    ],
+    "require": {}
+}
