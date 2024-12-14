@@ -33,6 +33,17 @@
 
 .logo-nav {width: 60px; height: 60px;}
 
+/* Estilo para o botão hamburger com imagem personalizada */
+.navbar-toggler-icon {
+    background: transparent; /* Remove o fundo padrão */
+    border: none; /* Remove a borda padrão */
+}
+
+.navbar-toggler-icon img {
+    width: 25px;  /* Ajuste o tamanho da imagem */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
 /* Estilo do ícone hamburger */
 .navbar-toggler-icon {
     background-color: transparent;  /* Remove qualquer fundo do botão */
