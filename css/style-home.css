@@ -7,7 +7,6 @@
     /* background-color: #2e6a47; */
 }
 
-<<<<<<< HEAD
 #navbarNav a{
     color: white;
     margin-right: 15px;  /* Adiciona um espaçamento de 15px entre os itens */
@@ -16,11 +15,6 @@
 
 #navbarNav a:hover {
     color: #f8f8f8;              /* Cor do texto quando o mouse passar sobre os itens */
-=======
-#navbarSupportedContent a{
-    color: white;
-    margin-right: 15px;  /* Adiciona um espaçamento de 15px entre os itens */
->>>>>>> 7fd9cadb9dd68753cbdbda680cbbc8cf0d092252
 }
 
 .navbar-nav {
@@ -35,7 +29,6 @@
 
 .dropdown-menu{
     background-color: #212529;
-<<<<<<< HEAD
 }
 
 .logo-nav {width: 60px; height: 60px;}
@@ -65,6 +58,4 @@
     .nav-item {
         margin-bottom: 10px;         /* Adiciona espaçamento inferior entre os itens no mobile */
     }
-=======
->>>>>>> 7fd9cadb9dd68753cbdbda680cbbc8cf0d092252
 }
