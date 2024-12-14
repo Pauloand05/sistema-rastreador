@@ -1,5 +1,5 @@
 body {
-    font-family: 'Roboto',sans-serif;
+    font-family: 'Roboto', sans-serif;
     background: rgba(54, 54, 213, 0.96);
     height: 100vh;
     /* background: linear-gradient(135deg, #4E4DEDff 0%, #5A5AEAff 0%, #5150ECff 100%); */
@@ -29,18 +29,24 @@ input {
 }
 
 .senha {
-    position: relative; /* Permite que o ícone de olho seja posicionado dentro do campo */
-    width: 300px; /* Mantém o campo de senha com a mesma largura */
+    position: relative;
+    /* Permite que o ícone de olho seja posicionado dentro do campo */
+    width: 300px;
+    /* Mantém o campo de senha com a mesma largura */
 }
 
 
 .icone {
     position: absolute;
-    left: 250px; /* Coloca o ícone no lado direito do campo */
-    top: 40%; /* Centraliza verticalmente */
-    transform: translateY(-50%); /* Ajuste fino para centralizar o ícone */
+    left: 250px;
+    /* Coloca o ícone no lado direito do campo */
+    top: 40%;
+    /* Centraliza verticalmente */
+    transform: translateY(-50%);
+    /* Ajuste fino para centralizar o ícone */
     cursor: pointer;
-    font-size: 18px; /* Ajuste o tamanho do ícone */
+    font-size: 18px;
+    /* Ajuste o tamanho do ícone */
     color: #000;
 }
 
@@ -48,6 +54,7 @@ input:focus {
     opacity: 1;
     outline: none;
 }
+
 input::placeholder {
     color: rgb(148, 148, 235);
 }
@@ -61,15 +68,34 @@ input::placeholder {
 }
 
 .caixa {
+    /* estilização da página dúvidas */
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 400px; /* Largura do formulário de login */
+    width: 400px;
+    /* Largura do formulário de login */
     padding: 30px 50px;
-    border-radius: 50px; /* Bordas arredondadas */
-    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.3); /* Sombra suave para dar destaque */
+    border-radius: 50px;
+    /* Bordas mais arredondadas */
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.3);
     background: #4E4DEDff;
-    border: 4px solid #4E4DEDff; /* Aumentando a largura e colocando uma cor mais vibrante */
+    border: 4px solid #4E4DEDff;
+    margin-top: 200px;
+}
+
+h1 {
+    margin-bottom: 5px; /* espaçamentos entre as perguntas  */
+    min-height: 10px;
+}
+
+.pergunta {
+    margin-bottom: 5px;
+    /* Espaçamento entre as perguntas */
+}
+
+.pergunta h3 {
+    margin-bottom: 5px;
+    /* Distância entre o título da pergunta e a resposta */
 }
 
 .btn-entrar {
