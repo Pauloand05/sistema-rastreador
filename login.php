@@ -17,44 +17,46 @@
 </head>
 <body>
     <div id="login">
-
         <div class="caixa">
-
-            <img src="img/logo-af.png" alt="">
+            <img src="img/logo-af.png" alt="Logo">
 
             <h1>LOGIN</h1>
             
+            <!-- Campo E-mail -->
             <div class="email">
-                <input type="email" placeholder="E-mail">
+                <input type="email" placeholder="E-mail" required>
             </div>
 
+            <!-- Campo Senha -->
             <div class="senha">
-                <input type="password" id="senha" placeholder="Senha">
+                <input type="password" id="senha" placeholder="Senha" required>
                 <i id="eye" class="fas fa-eye icone" onclick="togglePassword()"></i>
             </div>
 
+            <!-- Área para entrar -->
             <div class="area-entrar">
                 <p>Ainda não tem uma conta? <a href="cadastro.php">Crie uma!</a></p>
                 <input class="btn-entrar" type="submit" value="Entrar">
             </div>
-
         </div>
     </div>
-    <script>
-    function togglePassword() {
-        var senha = document.getElementById('senha');
-        var eyeIcon = document.getElementById('eye');
 
-        if (senha.type === "password") {
-            senha.type = "text";  // Mostra a senha
-            eyeIcon.classList.remove('fa-eye');  // Troca o ícone
-            eyeIcon.classList.add('fa-eye-slash');  // Ícone de olho fechado
-        } else {
-            senha.type = "password";  // Esconde a senha
-            eyeIcon.classList.remove('fa-eye-slash');  // Troca o ícone
-            eyeIcon.classList.add('fa-eye');  // Ícone de olho aberto
+    <!-- Script para a função de alternar senha visível/oculta -->
+    <script>
+        function togglePassword() {
+            var senha = document.getElementById('senha');
+            var eyeIcon = document.getElementById('eye');
+
+            if (senha.type === "password") {
+                senha.type = "text";  // Mostra a senha
+                eyeIcon.classList.remove('fa-eye');  
+                eyeIcon.classList.add('fa-eye-slash');  
+            } else {
+                senha.type = "password";  // Esconde a senha
+                eyeIcon.classList.remove('fa-eye-slash');  
+                eyeIcon.classList.add('fa-eye');  
+            }
         }
-    }
     </script>
 </body>
 </html>

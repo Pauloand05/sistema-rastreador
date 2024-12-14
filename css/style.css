@@ -84,7 +84,8 @@ input::placeholder {
 }
 
 h1 {
-    margin-bottom: 5px; /* espaçamentos entre as perguntas  */
+    margin-bottom: 5px;
+    /* espaçamentos entre as perguntas  */
     min-height: 10px;
 }
 
@@ -113,4 +114,104 @@ h1 {
 
 .caixa img {
     width: 120px;
+}
+
+/* Áreas das responsividades */
+@media (max-width: 768px) {
+
+    /* Ajustes para tablets e celulares */
+    body {
+        flex-direction: column;
+
+        padding: 20px;
+    }
+
+    .caixa {
+        width: 90%;
+        /* Reduz a largura da caixa para ocupar mais a tela */
+        padding: 20px;
+        /* Reduz o espaçamento interno */
+        margin-top: 50px;
+        /* Reduz o espaçamento superior */
+    }
+
+    input {
+        width: 100%;
+        /* Faz os inputs ocuparem toda a largura */
+    }
+
+    .icone {
+        left: auto;
+        right: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    /* Ajustes específicos para celulares com telas pequenas */
+    h1 {
+        font-size: 24px;
+        /* Redução do tamanho do título */
+    }
+
+    .caixa {
+        border-radius: 20px;
+        /* Redução das bordas arredondadas */
+        margin-top: 30px;
+    }
+
+    input {
+        height: 35px;
+        /* Redução da altura dos inputs */
+    }
+
+    .btn-entrar {
+        width: 100%;
+        /* Botão ocupa toda a largura */
+    }
+
+    .icone {
+        font-size: 16px;
+        /* Redução do tamanho do ícone */
+    }
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    .caixa {
+        width: 90%;
+        /* Reduz a largura da caixa */
+        padding: 20px;
+        /* Ajusta o espaçamento */
+        margin-top: 50px;
+        /* Reduz o espaçamento superior */
+    }
+
+    input {
+        width: 100%;
+        /* Ocupa a largura total */
+    }
+
+    .icone {
+        left: calc(100% - 30px);
+        /* Ajusta a posição do ícone */
+        top: 45%;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5rem;
+        /* Reduz o tamanho do título */
+    }
+
+    .btn-entrar {
+        width: 100%;
+        /* Botão ocupa a largura total */
+    }
+
+    .caixa img {
+        width: 80px;
+        /* Reduz o tamanho do logo */
+    }
 }

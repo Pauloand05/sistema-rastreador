@@ -10,75 +10,93 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-    <!-- Carregando jQuery primeiro -->
+    <!-- Carregando jQuery -->
     <script src="js/jquery.min.js"></script>
-    <!-- JQuery (caso esteja usando JQuery Mask) -->
     <script src="js/jquery.mask.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <title>Cadastro</title>
 </head>
 <body>
     <div id="login">
-
         <div class="caixa">
-
-            <img src="img/logo-af.png" alt="">
-
+            <img src="img/logo-af.png" alt="Logo">
             <h1>CADASTRO</h1>
 
-            <div class="nome">
-                <input type="text" placeholder="Nome">
-            </div>
+            <form id="formCadastro" onsubmit="return validarFormulario();">
+                <div class="nome">
+                    <input type="text" id="nome" placeholder="Nome" required>
+                </div>
 
-            <div class="telefone">
-                <input type="text" class="form-control" id="telefone" placeholder="Telefone">
-            </div>
-            
-            <div class="email">
-                <input type="email" placeholder="E-mail">
-            </div>
+                <div class="telefone">
+                    <input type="text" class="form-control" id="telefone" placeholder="Telefone" required>
+                </div>
+                
+                <div class="email">
+                    <input type="email" id="email" placeholder="E-mail" required>
+                </div>
 
-            <div class="senha">
-                <input type="password" id="senha" placeholder="Senha">
-                <i id="eye" class="fas fa-eye icone" onclick="togglePassword()"></i>
-            </div>
+                <!-- Campo de senha -->
+                <div class="senha">
+                    <input type="password" id="senha1" placeholder="Senha" required>
+                    <i id="eye1" class="fas fa-eye icone" onclick="togglePassword('senha1', 'eye1')"></i>
+                </div>
 
-            <div class="senha">
-                <input type="password" id="senha" placeholder="Senha">
-                <i id="eye" class="fas fa-eye icone" onclick="togglePassword()"></i>
-            </div>
+                <!-- Confirmação de senha -->
+                <div class="senha">
+                    <input type="password" id="senha2" placeholder="Confirmar Senha" required>
+                    <i id="eye2" class="fas fa-eye icone" onclick="togglePassword('senha2', 'eye2')"></i>
+                </div>
 
-            <div class="area-entrar">
-                <p>Já tem uma conta? <a href="login.php">Entre Aqui!</a></p>
-                <input class="btn-entrar" type="submit" value="Entrar">
-            </div>
+                <div class="area-entrar">
+                    <p>Já tem uma conta? <a href="login.php">Entre Aqui!</a></p>
+                    <input class="btn-entrar" type="submit" value="Cadastrar">
+                </div>
+            </form>
         </div>
     </div>
-        <!-- Script de Telefone -->
+
+    <!-- Script de Telefone -->
     <script>
         $(document).ready(function() {
             // Máscara para o telefone
             $('#telefone').mask('(00) 00000-0000');
         });
-    </script>
-        <!-- script do icone -->
-    <script>
-    function togglePassword() {
-        var senha = document.getElementById('senha');
-        var eyeIcon = document.getElementById('eye');
 
-        if (senha.type === "password") {
-            senha.type = "text";  // Mostra a senha
-            eyeIcon.classList.remove('fa-eye');  // Troca o ícone
-            eyeIcon.classList.add('fa-eye-slash');  // Ícone de olho fechado
-        } else {
-            senha.type = "password";  // Esconde a senha
-            eyeIcon.classList.remove('fa-eye-slash');  // Troca o ícone
-            eyeIcon.classList.add('fa-eye');  // Ícone de olho aberto
+        // Função para alternar a visibilidade da senha
+        function togglePassword(inputId, iconId) {
+            var input = document.getElementById(inputId);
+            var icon = document.getElementById(iconId);
+
+            if (input.type === "password") {
+                input.type = "text"; // Mostrar senha
+                icon.classList.remove('fa-eye');
+                icon.classList.add('fa-eye-slash');
+            } else {
+                input.type = "password"; // Ocultar senha
+                icon.classList.remove('fa-eye-slash');
+                icon.classList.add('fa-eye');
+            }
         }
-    }
+
+        // Validação do formulário
+        function validarFormulario() {
+            var senha1 = document.getElementById("senha1").value;
+            var senha2 = document.getElementById("senha2").value;
+
+            if (senha1.length < 8) {
+                alert("A senha deve ter no mínimo 8 caracteres.");
+                return false;
+            }
+
+            if (senha1 !== senha2) {
+                alert("As senhas não coincidem!");
+                return false;
+            }
+
+            return true;
+        }
     </script>
 </body>
 </html>
