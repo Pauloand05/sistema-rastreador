@@ -6,6 +6,8 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style-home.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
     <title>AF RASTREADORES</title>
 </head>
 <body>
@@ -13,13 +15,12 @@
         <div class="container-fluid">
             <!-- Logo -->
             <img src="img/logo-af.png" alt="Logo-AF" class="logo-nav">
-            
+            <!--icone para resposividade-->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon">
                     <img src="icons/icone-hamburguer.png" alt="Ícone de Menu">
                 </span>
             </button>
-            
             <!-- Links da Navbar -->
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto"> <!-- Alinha os itens à direita -->
@@ -52,7 +53,12 @@
                 </ul>
             </div>
         </div>
+       
     </nav>
+    <div class="container-Inicio">
+    <img src="img/log-AF.jpg" alt="Logo AF">
+</div>
+   <p>A solução ideal para você</p>
 
     <script src="js/bootstrap.bundle.min.js"></script>
 </body>
