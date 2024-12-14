@@ -51,7 +51,7 @@
                     <h4 class="text-center">Precisa de ajuda?</h4>
                     <p class="text-center">Se você tiver dúvidas ou precisar de ajuda, não hesite em entrar em contato com nossa equipe de suporte:</p>
                     <ul class="list-unstyled text-center">
-                        <li><strong>Email:</strong> suporte@afrastreadores.com</li>
+                        <li><strong>Email:</strong> exemplo@afrastreadores.com</li>
                         <li><strong>Telefone:</strong> (99) 9999-9999</li>
                     </ul>
                 </section>
