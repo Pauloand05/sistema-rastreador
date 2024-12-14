@@ -8,7 +8,8 @@
     <title>AF RASTREADORES</title>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
+
         <div class="container-fluid">
             <!-- Logo -->
             <img src="img/logo-af.png" alt="Logo-AF" class="logo-nav">
