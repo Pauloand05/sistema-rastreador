@@ -8,6 +8,7 @@
     <title>AF RASTREADORES</title>
 </head>
 <body>
+<<<<<<< HEAD
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
             <!-- Logo -->
@@ -49,6 +50,41 @@
                     </li>
                 </ul>
             </div>
+=======
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" >
+    <div class="container-fluid">
+        <img src="img/logo-nav.png" alt="Logo-AF">
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-auto">
+            <li class="nav-item me-3">
+                <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+            </li>
+            <li class="nav-item me-3">
+                <a class="nav-link" href="#">Planos</a>
+            </li>
+            <li class="nav-item dropdown me-3">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Categoria
+                </a>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Moto</a></li>
+                <li><a class="dropdown-item" href="#">Carro</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Caminhão</a></li>
+            </ul>
+            </li>
+            <li class="nav-item me-3">
+                <a class="nav-link" href="#">Dúvidas</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Contato</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Sobre Nós</a>
+            </li>
+        </ul>
+>>>>>>> 7fd9cadb9dd68753cbdbda680cbbc8cf0d092252
         </div>
     </nav>
 
