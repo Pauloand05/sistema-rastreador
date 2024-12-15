@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,13 +11,15 @@
 
     <title>AF RASTREADORES</title>
 </head>
+
 <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
             <!-- Logo -->
             <img src="img/logo-af.png" alt="Logo-AF" class="logo-nav">
             <!--icone para resposividade-->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon">
                     <img src="icons/icone-hamburguer.png" alt="Ícone de Menu">
                 </span>
@@ -31,13 +34,16 @@
                         <a class="nav-link" href="#">Planos</a>
                     </li>
                     <li class="nav-item dropdown me-3">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
                             Categoria
                         </a>
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="#">Moto</a></li>
                             <li><a class="dropdown-item" href="#">Carro</a></li>
-                            <li><hr class="dropdown-divider"></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
                             <li><a class="dropdown-item" href="#">Caminhão</a></li>
                         </ul>
                     </li>
@@ -53,13 +59,39 @@
                 </ul>
             </div>
         </div>
-       
+
     </nav>
-    <div class="container-Inicio">
-    <img src="img/log-AF.jpg" alt="Logo AF">
-</div>
-   <p>A solução ideal para você</p>
+
+    <section class="container-inicio">
+        <div class="img-titulo">
+            <img src="img/log-AF.jpg" alt="Logo AF">
+            <h1 class="titulo">Tranquilidade para você, sua família ou seu negócio!</h1>
+        </div>
+
+        <div class="btn">
+            <button class="btn-plano">
+                Conheça nossos planos >
+            </button>
+        </div>
+    </section>
+
+    <section class="container-meio">
+        <p class="p1">A solução ideal para você</p>
+    </section>
+
+    <h1 class="paragrafo-seguranca"> Segurança para seu <span class="cores-H1"> veículo</span> e sua <span class="cores-H1">empresa</span></h1>
+    <span class="separador"></span>
+    <section class="container-pos-meio">
+        <div class="img-tranquilidade">
+            <img src="img/image-section-pos-meio.jpg" alt="">
+        </div>
+        <div class="img-tranquilidade">
+            <img src="img/image-tranquilidade.jpg" alt="">
+        </div>
+    </section>
+
 
     <script src="js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>

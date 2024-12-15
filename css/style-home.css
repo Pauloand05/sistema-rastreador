@@ -4,7 +4,7 @@ body {
   margin: 0;
   padding: 0;
   /* background-color: #0d0fa1 ; */
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 .container-fluid {
   /* background-color: #343a40; */
@@ -20,7 +20,7 @@ body {
 #navbarNav a {
   color: white;
   display: block;
- padding: 10px 35px;
+  padding: 10px 35px;
   transition: color 0.3s; /* Adiciona transição suave para a cor */
 }
 
@@ -29,8 +29,8 @@ body {
 }
 
 .navbar-nav {
-    display: flex;
-    justify-content: flex-end;
+  display: flex;
+  justify-content: flex-end;
   width: 100%; /* Garantir que ocupe toda a largura */
 }
 
@@ -73,26 +73,125 @@ body {
 .navbar-toggler {
   border: none; /* Remove a borda do botão */
 }
-.container-Inicio{
-    width: 100%;
-    background-color: #4E4EEA;
-   padding-top:70px;
-}
-.container-Inicio img {
-    width: 40vw;
-    height: auto;
-    justify-content: flex-start;
-    left: 50px;
-    transition: transform 0.10s ease;
+
+.container-inicio {
+  background-color: #4e4eea;
+  display: flex;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
-.container-Inicio img:hover {
-    /* transform: scale(1.2); Aumenta o zoom da imagem em 20% */
+.container-inicio .img-titulo {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
 }
-p{
+
+.container-inicio .img-titulo h1 {
+  color: #fff;
+  font-size: 40px;
+}
+
+.container-inicio .img-titulo img {
+  width: 400px;
+  height: 400px;
+}
+
+.container-inicio .btn {
+  display: flex;
+  width: 100%;
+  justify-content: end;
+}
+.container-inicio .btn .btn-plano {
+  padding: 5px 80px;
+  border: none;
+  border-radius: 10px;
+  font-size: 20px;
+}
+.container-inicio .btn .btn-plano:hover {
+  transform: scale(1.4);
+}
+
+.text2 {
+  margin-right: 275px;
+  font-size: 70px;
+}
+.text3 {
+  margin-right: 200px;
+  font-size: 70px;
+}
+
+.container-meio{
+  height: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.paragrafo-seguranca{
+  text-align: center;
+  font-size: 50px;
+}
+.cores-H1{
+  color: #FFB500;
+  
+}
+.container-pos-meio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0; /* Espaçamento entre as imagens */
+  margin: 0 auto; /* Centraliza horizontalmente */
+  padding: 0; /* Espaçamento interno opcional */
+}
+.img-tranquilidade {
+  margin: 0; /* Remove a margem das divs */
+}
+
+.img-tranquilidade img {
+  width: 100px; /* Largura média */
+  height: 650px; /* Mantém a proporção da imagem */
+  object-fit: cover; /* Ajusta a imagem para preencher caso necessário */
+ border: none;
+}
+.separador {
+  display: block; /* Torna o separador um elemento de bloco */
+  width: 2px; /* Largura da linha */
+  height: 100px; /* Altura da linha */
+  background-color: #FFB500; /* Cor da linha */
+  margin: 20px auto; /* Espaço acima e abaixo da linha */
+  visibility: visible; /* Garante que o separador seja visível */
+}
+
+
+@media (max-width: 768px) {
+  .container-inicio .img-titulo {
+    flex-direction: column;
+  }
+
+  .container-inicio .img-titulo h1 {
+    font-size: 5vw;
+  }
+
+  .container-inicio .img-titulo img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .container-inicio .btn .btn-plano {
+    padding: 5px 10px;
     font-size: 20px;
-    text-align: center;
+  }
+
+  .container-inicio .btn .btn-plano{
+    font-size: 10px;
+  }
+  
 }
+
 @media (max-width: 992px) {
   .navbar-nav {
     display: block; /* Modifica a navegação para bloco em telas pequenas */
