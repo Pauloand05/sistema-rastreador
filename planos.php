@@ -37,7 +37,8 @@
                             <li>Relatório semanal</li>
                         </ul>
                         <a href="#" class="btn btn-primary">Contratar</a>
-                        <a href="#" class="btn btn-secondary btn-contratar">Fale Conosco!</a>
+                        <a href="https://wa.me/5598991258772?text=Oi, gostaria de saber mais sobre o produto!
+                        " class="btn btn-secondary btn-contratar">Fale Conosco!</a>
                     </div>
                 </div>
             </div>
@@ -56,7 +57,8 @@
                             <li>Histórico de rotas</li>
                         </ul>
                         <a href="#" class="btn btn-primary">Contratar</a>
-                        <a href="#" class="btn btn-secondary btn-contratar">Fale Conosco!</a>
+                        <a href="https://wa.me/5598991258772?text=Oi, gostaria de saber mais sobre o produto!
+                        "class="btn btn-secondary btn-contratar">Fale Conosco!</a>
                     </div>
                 </div>
             </div>
@@ -76,7 +78,8 @@
                             <li>Monitoramento 24/7</li>
                         </ul>
                         <a href="#" class="btn btn-primary" >Contratar</a>
-                        <a href="#" class="btn btn-secondary btn-contratar">Fale Conosco!</a>
+                        <a href="https://wa.me/5598991258772?text=Oi, gostaria de saber mais sobre o produto!
+                        " class="btn btn-secondary btn-contratar">Fale Conosco!</a>
                     </div>
                 </div>
             </div>
@@ -104,11 +107,11 @@
             <div class="col-md-3">
                 <h5>Links úteis</h5>
                 <ul class="list-unstyled">
-                    <li><a href="#">Inicio</a></li>
-                    <li><a href="#">Dúvidas</a></li>
-                    <li><a href="#">Sobre nós</a></li>
-                    <li><a href="#">Planos</a></li>
-                    <li><a href="#">Área do cliente</a></li>
+                    <li><a href="home.php">Inicio</a></li>
+                    <li><a href="duvidas.php">Dúvidas</a></li>
+                    <li><a href="sobre-nos.php">Sobre nós</a></li>
+                    <li><a href="planos.php">Planos</a></li>
+                    <li><a href="area-do-cliente.php">Área do cliente</a></li>
                 </ul>
             </div>
 
@@ -116,8 +119,8 @@
             <div class="col-md-3">
                 <h5>Redes sociais</h5>
                 <a href="#" class="social-icon"><i class="fab fa-facebook"></i> Facebook</a><br>
-                <a href="#" class="social-icon"><i class="fab fa-twitter"></i> Twitter</a><br>
-                <a href="#" class="social-icon"><i class="fab fa-instagram"></i> Instagram</a><br>
+                <a href="https://www.instagram.com/af.rastreadores?igsh=anl0bHVrNnR5dW1t" class="social-icon"><i class="fab fa-instagram"></i> Instagram</a><br>
+                <a href="https://wa.me/5598991258772?" class="social-icon"><i class="fab fa-whatsapp"></i> whatsapp</a><br>
             </div>
         </div>
     </div>
