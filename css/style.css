@@ -1,90 +1,123 @@
+/* Estilos para a página */
 body {
-    font-family: 'Roboto',sans-serif;
-    background: rgba(54, 54, 213, 0.96);
-    height: 100vh;
-    /* background: linear-gradient(135deg, #4E4DEDff 0%, #5A5AEAff 0%, #5150ECff 100%); */
-    color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    font-family: "Roboto", sans-serif;
+    background-color: #f4f4f4;
 }
 
-
-a {
-    text-decoration: none;
-    color: aquamarine;
+/* Cabeçalho */
+header {
+    background-color: #0d0fa1;
+    color: white;
 }
 
-input {
-    border-radius: 15px;
+/* Título e preço dos planos */
+.card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.card-price {
+    font-size: 2rem;
+    color: #28a745;
+    margin: 10px 0;
+}
+
+/* Botão de contratação */
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+/* Cards com os planos */
+.card {
     border: none;
-    width: 250px;
-    height: 40px;
-    padding-left: 15px;
-    background-color: #ffffff;
-    color: #333333;
-    margin-bottom: 15px;
-    opacity: 0.8;
-    transition: opacity 300ms ease-in-out;
-}
-
-.senha {
-    position: relative; /* Permite que o ícone de olho seja posicionado dentro do campo */
-    width: 300px; /* Mantém o campo de senha com a mesma largura */
-}
-
-
-.icone {
-    position: absolute;
-    left: 250px; /* Coloca o ícone no lado direito do campo */
-    top: 40%; /* Centraliza verticalmente */
-    transform: translateY(-50%); /* Ajuste fino para centralizar o ícone */
-    cursor: pointer;
-    font-size: 18px; /* Ajuste o tamanho do ícone */
-    color: #000;
-}
-
-input:focus {
-    opacity: 1;
-    outline: none;
-}
-input::placeholder {
-    color: rgb(148, 148, 235);
-}
-
-#login {
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    flex-direction: row;
-}
-
-.caixa {
+    border-radius: 8px;
+    background-color: #0d0fa1;
+    color: white;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    width: 400px; /* Largura do formulário de login */
-    padding: 30px 50px;
-    border-radius: 50px; /* Bordas arredondadas */
-    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.3); /* Sombra suave para dar destaque */
-    background: #4E4DEDff;
-    border: 4px solid #4E4DEDff; /* Aumentando a largura e colocando uma cor mais vibrante */
+    height: 100%; /* Faz os cards se estenderem para a mesma altura */
 }
 
-.btn-entrar {
-    padding: 0;
-    cursor: pointer;
-    width: 120px;
-    height: 40px;
-    border-radius: 20px;
-    border: none;
-    opacity: 1;
-    background-color: #007BFF;
-    color: #ffffff;
-    margin-bottom: 17px;
+.card-body {
+    padding: 20px;
+    flex-grow: 1; /* Faz com que o conteúdo cresça e ocupe o espaço restante */
 }
 
-.caixa img {
-    width: 120px;
+/* Garantir que o card e o botão tenham altura consistente */
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Espaça o conteúdo do card */
 }
+
+.btn-primary{
+    height: 40px; /* Defina a altura desejada para o botão */
+    display: flex; /* Torna o botão um container flex */
+    align-items: center; /* Alinha o texto no centro verticalmente */
+    justify-content: center; /* Alinha o texto no centro horizontalmente */
+    margin-bottom: 10px; /* Espaço entre os botões */
+}
+
+.btn-secondary{
+    background: #28a745;
+}
+
+/* Estilos para a lista de características dos planos */
+ul.list-unstyled {
+    padding-left: 0;
+    text-align: left;
+}
+
+/* Estilos gerais para o rodapé */
+.footer {
+    background-color: #343a40; /* Cor de fundo */
+    color: white;
+    padding: 40px 0;
+    font-size: 14px;
+    margin-top: 40px;
+}
+
+.footer h5 {
+    font-size: 18px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.footer p {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+/* Links das redes sociais */
+.social-icon {
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.social-icon:hover {
+    color: #007bff;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .footer .row {
+        text-align: center;
+    }
+    .footer .col-md-3 {
+        margin-bottom: 20px;
+    }
+}
+
