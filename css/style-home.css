@@ -1,72 +1,204 @@
-.container-fluid{
-    /* background-color: #343a40; */
-    /* background-color: #e1e1e1; */
-    background-color: #212529;
-    /* background-color: #f1f1f1; */
-    /* background-color: #f8f8f8; */
-    /* background-color: #2e6a47; */
+body {
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  /* background-color: #0d0fa1 ; */
+  font-family: "Roboto", sans-serif;
+}
+.container-fluid {
+  /* background-color: #343a40; */
+  /* background-color: #e1e1e1; */
+  background-color: #0d0fa1;
+  /* background-color: #f1f1f1; */
+  /* background-color: #f8f8f8; */
+  /* background-color: #2e6a47; */
+  position: absolute;
+  top: 0;
 }
 
-#navbarNav a{
-    color: white;
-    margin-right: 15px;  /* Adiciona um espaçamento de 15px entre os itens */
-    transition: color 0.3s;      /* Adiciona transição suave para a cor */
+#navbarNav a {
+  color: white;
+  display: block;
+  padding: 10px 35px;
+  transition: color 0.3s; /* Adiciona transição suave para a cor */
 }
 
 #navbarNav a:hover {
-    color: #f8f8f8;              /* Cor do texto quando o mouse passar sobre os itens */
+  color: #f8f8f8; /* Cor do texto quando o mouse passar sobre os itens */
 }
 
 .navbar-nav {
-    display: flex;               /* Usando Flexbox */
-    justify-content: space-evenly; /* Espaçamento igual entre os itens */
-    width: 100%;                  /* Garantir que ocupe toda a largura */
+  display: flex;
+  justify-content: flex-end;
+  width: 100%; /* Garantir que ocupe toda a largura */
 }
 
 .nav-item {
-    margin: 0 10px;              /* Opcional: para adicionar um pequeno espaçamento lateral entre os itens */
+  margin: 0 10px; /* Opcional: para adicionar um pequeno espaçamento lateral entre os itens */
 }
 
-.dropdown-menu{
-    background-color: #212529;
+.dropdown-menu {
+  background-color: #212529;
 }
 
-.logo-nav {width: 60px; height: 60px;}
+.logo-nav {
+  width: 75px;
+  height: 75px;
+}
 
 /* Estilo para o botão hamburger com imagem personalizada */
 .navbar-toggler-icon {
-    background: transparent; /* Remove o fundo padrão */
-    border: none; /* Remove a borda padrão */
+  background: transparent; /* Remove o fundo padrão */
+  border: none; /* Remove a borda padrão */
 }
 
 .navbar-toggler-icon img {
-    width: 25px;  /* Ajuste o tamanho da imagem */
-    height: auto; /* Mantém a proporção da imagem */
+  width: 25px; /* Ajuste o tamanho da imagem */
+  height: auto; /* Mantém a proporção da imagem */
 }
 
 /* Estilo do ícone hamburger */
 .navbar-toggler-icon {
-    background-color: transparent;  /* Remove qualquer fundo do botão */
-    border: none;                   /* Remove a borda do botão */
+  background-color: transparent; /* Remove qualquer fundo do botão */
+  border: none; /* Remove a borda do botão */
 }
 
 /* Mudando as linhas do ícone hamburger para branco */
 .navbar-toggler-icon span {
-    color: chartreuse       /* Torna as 3 linhas do ícone brancas */
+  color: chartreuse; /* Torna as 3 linhas do ícone brancas */
 }
 
 /* Estilos do botão hamburger */
 .navbar-toggler {
-    border: none;                   /* Remove a borda do botão */
+  border: none; /* Remove a borda do botão */
+}
+
+.container-inicio {
+  background-color: #4e4eea;
+  display: flex;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container-inicio .img-titulo {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-inicio .img-titulo h1 {
+  color: #fff;
+  font-size: 40px;
+}
+
+.container-inicio .img-titulo img {
+  width: 400px;
+  height: 400px;
+}
+
+.container-inicio .btn {
+  display: flex;
+  width: 100%;
+  justify-content: end;
+}
+.container-inicio .btn .btn-plano {
+  padding: 5px 80px;
+  border: none;
+  border-radius: 10px;
+  font-size: 20px;
+}
+.container-inicio .btn .btn-plano:hover {
+  transform: scale(1.4);
+}
+
+.text2 {
+  margin-right: 275px;
+  font-size: 70px;
+}
+.text3 {
+  margin-right: 200px;
+  font-size: 70px;
+}
+
+.container-meio{
+  height: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.paragrafo-seguranca{
+  text-align: center;
+  font-size: 50px;
+}
+.cores-H1{
+  color: #FFB500;
+  
+}
+.container-pos-meio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0; /* Espaçamento entre as imagens */
+  margin: 0 auto; /* Centraliza horizontalmente */
+  padding: 0; /* Espaçamento interno opcional */
+}
+.img-tranquilidade {
+  margin: 0; /* Remove a margem das divs */
+}
+
+.img-tranquilidade img {
+  width: 100px; /* Largura média */
+  height: 650px; /* Mantém a proporção da imagem */
+  object-fit: cover; /* Ajusta a imagem para preencher caso necessário */
+ border: none;
+}
+.separador {
+  display: block; /* Torna o separador um elemento de bloco */
+  width: 2px; /* Largura da linha */
+  height: 100px; /* Altura da linha */
+  background-color: #FFB500; /* Cor da linha */
+  margin: 20px auto; /* Espaço acima e abaixo da linha */
+  visibility: visible; /* Garante que o separador seja visível */
+}
+
+
+@media (max-width: 768px) {
+  .container-inicio .img-titulo {
+    flex-direction: column;
+  }
+
+  .container-inicio .img-titulo h1 {
+    font-size: 5vw;
+  }
+
+  .container-inicio .img-titulo img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .container-inicio .btn .btn-plano {
+    padding: 5px 10px;
+    font-size: 20px;
+  }
+
+  .container-inicio .btn .btn-plano{
+    font-size: 10px;
+  }
+  
 }
 
 @media (max-width: 992px) {
-    .navbar-nav {
-        display: block;              /* Modifica a navegação para bloco em telas pequenas */
-        text-align: center;          /* Centraliza os itens no menu */
-    }
+  .navbar-nav {
+    display: block; /* Modifica a navegação para bloco em telas pequenas */
+    text-align: center; /* Centraliza os itens no menu */
+  }
 
-    .nav-item {
-        margin-bottom: 10px;         /* Adiciona espaçamento inferior entre os itens no mobile */
-    }
+  .nav-item {
+    margin-bottom: 10px; /* Adiciona espaçamento inferior entre os itens no mobile */
+  }
 }
