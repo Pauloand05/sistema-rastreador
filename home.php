@@ -51,7 +51,7 @@
                         <a class="nav-link" href="#">Dúvidas</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contato</a>
+                        <a class="nav-link" href="contato.php">Contato</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Sobre Nós</a>
