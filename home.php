@@ -80,16 +80,22 @@
     </section>
 
     <h1 class="paragrafo-seguranca"> Segurança para seu <span class="cores-H1"> veículo</span> e sua <span class="cores-H1">empresa</span></h1>
-    <span class="separador"></span>
-    <section class="container-pos-meio">
-        <div class="img-tranquilidade">
-            <img src="img/image-section-pos-meio.jpg" alt="">
+    <h1 class="separador"></h1>
+    <section class="conteiner-pos-meio">
+        <div class="imageTranquilidade">
+            <img src="img/image-section-pos-meio.jpg" alt="" class="transparent-image">
+            <h1 class="texto-imagem">Tranquilidade para você,<br><span class="textoDaTranquilidade">sua família ou seu negócio</span></h1>
+        <p class="texto-imagem">Oferecemos soluções 100% em nuvem proporcionando flexibilidade e redução de custos para empresas.</p>
+        <p class="texto-imagem-p">Oferecemos soluções 100% em nuvem proporcionando flexibilidade e redução de custos para empresas.
+        <button class="botao">Conheça nossas soluções</button>
         </div>
-        <div class="img-tranquilidade">
+        <div class="imageTranquilidade">
             <img src="img/image-tranquilidade.jpg" alt="">
         </div>
     </section>
-
+     <section>
+        
+     </section>
 
     <script src="js/bootstrap.bundle.min.js"></script>
 </body>
