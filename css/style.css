@@ -1,12 +1,12 @@
 /* Estilos para a página */
 body {
     font-family: "Roboto", sans-serif;
-    background-color: #f4f4f4;
+    background-color: #white;
 }
 
 /* Cabeçalho */
 header {
-    background-color: #0d0fa1;
+    background-color: #16162d;
     color: white;
 }
 
@@ -32,7 +32,7 @@ header {
 .card {
     border: none;
     border-radius: 8px;
-    background-color: #0d0fa1;
+    background-color: #16162d;
     color: white;
     display: flex;
     flex-direction: column;
