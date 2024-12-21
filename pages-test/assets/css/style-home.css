@@ -1,0 +1,106 @@
+/* Hero Section */
+.background-image {
+    background-image: url(../image/img-bg1.svg);
+    background-size: cover;
+    background-position: center center;
+}
+
+.hero-section {
+    display: grid;
+    grid-template-columns: 1fr 1.4fr;
+    align-items: center;
+    gap: 2rem;
+    height: 90vh;
+    padding: 2rem;
+    background: transparent;
+}
+
+.hero-content {
+    text-align: left;
+    padding: 2rem
+}
+
+.hero-content h1 {
+    font-size: clamp(1.6rem, 4.3vw, 5.3rem);
+    margin-bottom: 1.5rem;
+    color: var(--text-color);
+}
+.name {color: var(--secondary-color);}
+
+.hero-content p {
+    color: var(--text-color);
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 1rem 2rem;
+    font-size: 1.6rem;
+    color: var(--text-color);
+    background-color: var(--secondary-color);
+    border-radius: 0.5rem;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.cta-button:hover {
+    background-color: #c97208;
+}
+
+.hero-image-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-image-area img {
+    width: 100%;
+    border-radius: 2rem;
+}
+
+.section{
+    height: 90vh;
+    background-color: var(--background-light);
+}
+
+/* Responsividade */
+@media (max-width: 900px) {
+    .hero-section {
+        grid-template-columns: 1fr;
+        gap: 0;
+        padding-top: 8.5rem;
+    }
+
+    .hero-content {
+        text-align: center;
+        display: flex; 
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hero-content h1 {
+        font-size: 3rem;
+    }
+
+    .hero-content p {
+        font-size: 1.6rem;
+    }
+
+    .hero-image-area img {
+        max-width: 60rem;
+    }
+    .cta-button {
+        font-size: 1.3rem;
+        color: var(--text-color);
+        background-color: var(--secondary-color);
+        border-radius: 0.5rem;
+        transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+    
+    .cta-button:hover {
+        background-color: #c97208;
+    }
+}

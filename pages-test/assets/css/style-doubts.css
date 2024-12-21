@@ -1,0 +1,161 @@
+html {
+    height: auto;
+}
+body {
+    background: var(--background-light);
+}
+
+.main-section {
+    background: linear-gradient(to bottom, var(--background-dark) 40rem, var(--background-light) 40rem);
+    display: flex;
+    justify-content: center;
+    align-items: top;
+}
+.main-container {
+    width: 100%; /* Ajuste conforme necessário */
+    margin: 20rem 0rem;
+    max-width: 110rem;
+    background-color: var(--background-light);
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    border-radius: 1rem;
+    position: absolute;
+}
+
+.background-image {
+    background-image: url(../image/img-bg1.svg);
+    background-size: cover;
+    background-position: center center;
+    height: 40rem;
+    width: 100%;
+}
+
+.contact-form, .faq-section {
+    border-radius: 1rem;
+    padding: 4rem;
+}
+
+.contact-form {
+    background-color: var(--light-gray);
+    margin-bottom: auto;
+}
+
+.faq-section {
+    background-color: var(--background-light);
+    border-radius: 1rem;
+    padding: 4rem;
+    text-align: left;
+}
+
+.main-container h2{
+    font-size:3.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.contact-form p {
+    margin-bottom: 2rem;
+    font-size: 1.6rem;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    border: 1px solid #ccc;
+    font-size: 1.4rem;
+    border-radius: 4px;
+    outline: none;
+    font-family: 'Roboto', Arial, sans-serif;
+    resize: none; /* Impede a alteração de tamanho do textarea */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Animação suave para foco */
+}
+
+/* Estilo do outline ao focar */
+form input:focus, form textarea:focus {
+    border-color: var(--text-dark); /* Destaque com a cor principal */
+}
+
+form button {
+    background-color: var(--secondary-color);
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1.4rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #c97208;
+}
+
+.faq-section h2 {
+    width: 100%;
+    text-align: center;
+    font-size: 3.5rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+
+.faq-item {
+    margin-bottom: 2rem;
+    cursor: pointer;
+}
+
+.faq-item h3 {
+    font-size: 1.6rem;
+    margin-bottom: 0.5rem;
+    color: var(--text-dark);
+    transition: color 0.3s ease;
+}
+
+.faq-item h3:hover {
+    color: var(--primary-color);
+}
+
+.faq-answer {
+    font-size: 1.4rem;
+    color: var(--text-dark);
+    max-height: 0; /* Define a altura inicial como 0 */
+    overflow: hidden; /* Esconde o conteúdo excedente */
+    margin-top: 0.5rem;
+    padding-left: 1rem;
+    border-left: 4px solid var(--primary-color);
+    transition: max-height 0.4s ease, padding 0.4s ease; /* Transição suave para a altura e o preenchimento */
+}
+.faq-item.open .faq-answer {
+    max-height: 200px; /* Define a altura máxima da resposta (ajuste conforme necessário) */
+    padding-left: 1rem; /* Mostra o preenchimento da borda */
+}
+
+.faq-icon {
+    font-size: 2rem; /* Tamanho do símbolo */
+    font-weight: bold;
+    margin-right: 1rem; /* Espaçamento entre o ícone e o texto */
+    transition: transform 0.3s ease; /* Suaviza a rotação */
+}
+
+.faq-item.open .faq-icon {
+    transform: rotate(45deg); /* Roda o símbolo "+" em 45 graus para parecer um "-" */
+}
+
+
+.spacing {
+    height: 30rem;
+    width: 100%;
+    background-color: var(--background-light);
+}
+
+@media (max-width: 768px) {
+    .main-container {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-form, .faq-section {
+        padding: 1.5rem;
+    }
+}
