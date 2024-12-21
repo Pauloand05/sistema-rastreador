@@ -21,6 +21,46 @@
         <p>Escolha o plano que melhor se adapta às suas necessidades de segurança.</p>
     </header>
 
+        <div id="carouselExampleCaptions" class="carousel slide">
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+        <img src="img/imagem-af.jpeg" class="d-block w-100" alt="imagem-1">
+        <div class="carousel-caption d-none d-md-block">
+            <h5>Mantenha seu veículo seguro</h5>
+            <p>Temos a melhor rede de rastreamento do estado do maranhão.</p>
+        </div>
+        </div>
+        <div class="carousel-item">
+        <img src="img/imagen-1.jpg" class="d-block w-100" alt="imagem-2">
+        <div class="carousel-caption d-none d-md-block">
+            <h5>Comodiade e tranquilidade</h5>
+            <p>O se veículo é rastreado 24h em tempo real.</p>
+        </div>
+        </div>
+        <div class="carousel-item">
+        <img src="img/imagem-3.jpg" class="d-block w-100" alt="imagem-3">
+        <div class="carousel-caption d-none d-md-block">
+            <h5>Assistência e segurança</h5>
+            <p>Sinta-se protegido a cada kilometro.</p>
+        </div>
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+    </div>
+
+
     <!-- Seção de Planos -->
     <section class="container py-5">
         <div class="row text-center">
@@ -37,7 +77,8 @@
                             <li>Relatório semanal</li>
                         </ul>
                         <a href="#" class="btn btn-primary">Contratar</a>
-                        <a href="#" class="btn btn-secondary btn-contratar">Fale Conosco!</a>
+                        <a href="https://wa.me/5598991258772?text=Oi, gostaria de saber mais sobre o produto!
+                        " class="btn btn-secondary btn-contratar">Fale Conosco!</a>
                     </div>
                 </div>
             </div>
@@ -56,7 +97,8 @@
                             <li>Histórico de rotas</li>
                         </ul>
                         <a href="#" class="btn btn-primary">Contratar</a>
-                        <a href="#" class="btn btn-secondary btn-contratar">Fale Conosco!</a>
+                        <a href="https://wa.me/5598991258772?text=Oi, gostaria de saber mais sobre o produto!
+                        "class="btn btn-secondary btn-contratar">Fale Conosco!</a>
                     </div>
                 </div>
             </div>
@@ -76,11 +118,42 @@
                             <li>Monitoramento 24/7</li>
                         </ul>
                         <a href="#" class="btn btn-primary" >Contratar</a>
-                        <a href="#" class="btn btn-secondary btn-contratar">Fale Conosco!</a>
+                        <a href="https://wa.me/5598991258772?text=Oi, gostaria de saber mais sobre o produto!
+                        " class="btn btn-secondary btn-contratar">Fale Conosco!</a>
                     </div>
                 </div>
             </div>
         </div>
+    </section>
+
+    <section class="container py-5">
+    <h2 class="text-center mb-4">O que nossos clientes dizem</h2>
+    <div class="row">
+        <div class="col-md-4 mb-4 d-flex">
+            <div class="card w-100">
+                <div class="card-body">
+                    <p class="card-text">"O serviço de rastreamento foi excelente, ajudou a garantir a segurança do meu veículo!"</p>
+                    <footer class="blockquote-footer">João Silva, Cliente</footer>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4 d-flex">
+            <div class="card w-100">
+                <div class="card-body">
+                    <p class="card-text">"A equipe de suporte é muito atenciosa e a plataforma é fácil de usar."</p>
+                    <footer class="blockquote-footer">Maria Oliveira, Cliente</footer>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4 d-flex">
+            <div class="card w-100">
+                <div class="card-body">
+                    <p class="card-text">"Recomendo para todos que buscam rastreamento confiável e seguro!"</p>
+                    <footer class="blockquote-footer">Carlos Souza, Cliente</footer>
+                </div>
+            </div>
+        </div>
+    </div>
     </section>
 
     <!-- Rodapé -->
@@ -104,11 +177,11 @@
             <div class="col-md-3">
                 <h5>Links úteis</h5>
                 <ul class="list-unstyled">
-                    <li><a href="#">Inicio</a></li>
-                    <li><a href="#">Dúvidas</a></li>
-                    <li><a href="#">Sobre nós</a></li>
-                    <li><a href="#">Planos</a></li>
-                    <li><a href="#">Área do cliente</a></li>
+                    <li><a href="home.php">Inicio</a></li>
+                    <li><a href="duvidas.php">Dúvidas</a></li>
+                    <li><a href="sobre-nos.php">Sobre nós</a></li>
+                    <li><a href="planos.php">Planos</a></li>
+                    <li><a href="area-do-cliente.php">Área do cliente</a></li>
                 </ul>
             </div>
 
@@ -116,12 +189,45 @@
             <div class="col-md-3">
                 <h5>Redes sociais</h5>
                 <a href="#" class="social-icon"><i class="fab fa-facebook"></i> Facebook</a><br>
-                <a href="#" class="social-icon"><i class="fab fa-twitter"></i> Twitter</a><br>
-                <a href="#" class="social-icon"><i class="fab fa-instagram"></i> Instagram</a><br>
+                <a href="https://www.instagram.com/af.rastreadores?igsh=anl0bHVrNnR5dW1t" class="social-icon"><i class="fab fa-instagram"></i> Instagram</a><br>
+                <a href="https://wa.me/5598991258772?" class="social-icon"><i class="fab fa-whatsapp"></i> whatsapp</a><br>
             </div>
         </div>
     </div>
-</footer>
+
+        <!-- Ícone abaixo da localização -->
+
+        <!-- Ícones abaixo da localização -->
+        <div class="icon mt-5">
+            <div class="row justify-content-center">
+                <div class="col-4 col-sm-2 mb-3">
+                    <!-- Ícone-1 -->
+                    <img src="icons/icon-1.svg" alt="icon-1" class="img-fluid">
+                </div>
+
+                <div class="col-4 col-sm-2 mb-3">
+                    <!-- Ícone-2 -->
+                    <img src="icons/icon-4.svg" alt="icon-2" class="img-fluid">
+                </div>
+
+                <div class="col-4 col-sm-2 mb-3">
+                    <!-- Ícone-3 -->
+                    <img src="icons/icon-5.svg" alt="icon-3" class="img-fluid">
+                </div>
+
+                <div class="col-4 col-sm-2 mb-3">
+                    <!-- Ícone-4 -->
+                    <img src="icons/icon-3.svg" alt="icon-4" class="img-fluid">
+                </div>
+
+                <div class="col-4 col-sm-2 mb-3">
+                    <!-- Ícone-5 -->
+                    <img src="icons/icon-6.svg" alt="icon-5" class="img-fluid">
+                </div>
+            </div>
+        </div>
+
+    </footer>
 
     <!-- Arquivo JS do Bootstrap (local) -->
     <script src="js/jquery.min.js"></script>
