@@ -6,7 +6,7 @@ body {
 
 /* Cabeçalho */
 header {
-    background-color: #16162d;
+    background-color: rgba(54, 54, 213, 0.96);
     color: white;
 }
 
@@ -41,7 +41,7 @@ header {
 .card {
     border: none;
     border-radius: 8px;
-    background-color: #16162d;
+    background-color: rgba(54, 54, 213, 0.96);
     color: white;
     display: flex;
     flex-direction: column;
@@ -139,3 +139,42 @@ header {
         margin-bottom: 10px;
     }
 }
+
+/* Efeito de escala para ícones e botões */
+.icon img:hover, .btn:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Animação suave para o hover nos cards */
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+
+.carousel-item img {
+    width: 100%;   /* A largura será 100% do contêiner */
+    height: auto;  /* Altura será ajustada automaticamente para manter a proporção */
+    object-fit: cover; /* Faz a imagem cobrir a área do carrossel */
+}
+
+.icon img {
+    width: 100%;  /* Garante que a largura da imagem será 100% da coluna */
+    max-width: 90px; /* Limita o tamanho máximo para o ícone */
+    height: auto;  /* Mantém a proporção da imagem */
+}
+
+.blockquote-footer{
+    color: #00ff3c;
+}
+
+@media (max-width: 768px) {
+    .card {
+        margin: 10px; /* Adiciona margem ao redor de cada card */
+    }
+    .row {
+        justify-content: center; /* Alinha os cards no centro */
+    }
+}
+
