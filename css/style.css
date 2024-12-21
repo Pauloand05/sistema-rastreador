@@ -1,13 +1,8 @@
 /* Estilos para a página */
 body {
-    font-family: 'Roboto', sans-serif;
-    background: rgba(54, 54, 213, 0.96);
-    height: 100vh;
-    /* background: linear-gradient(135deg, #4E4DEDff 0%, #5A5AEAff 0%, #5150ECff 100%); */
-    color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    font-family: "Roboto", sans-serif;
+    background-color: #f4f4f4;
+    height: 150vh;
 }
 
 /* Cabeçalho */
