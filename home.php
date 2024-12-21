@@ -191,8 +191,6 @@
     </div>
   </section>
 </section>
-
-
 <section>
   <h1 class="rodape"><strong>RODAPE</strong></h1>
 </section>
