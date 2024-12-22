@@ -162,42 +162,35 @@
         </div>
 
     </section>
-    <section class="container-conheca" style="position: relative; height: 700px; background: #f0f0f0; margin-top: 100px;">
-  <section>
-    <button class="b">Conheça nossas soluções</button>
-    <section class="texto-conheca ">
-      <p class="paragrafoConheca">Conheça um pouco</p>
-      <h1 class="paragrafoConheca">Sobre a AF</h1>
+    <section class="container-conheca">
+        <section>
+            <button class="b">Conheça nossas soluções</button>
+            <section class="texto-conheca ">
+                <p class="paragrafoConheca">Conheça um pouco</p>
+                <h1 class="paragrafoConheca">Sobre a AF</h1>
+            </section>
+
+            <div class="quadro-com-imagem">
+                <div class="quadro">
+                    <p>
+                        Atuando na área de segurança veicular desde 2012, a Rastrek é a maior empresa de rastreamento do Brasil.
+                        Evoluindo junto com as tecnologias disponibilizadas no seu segmento, expandiu seus conhecimentos com a
+                        participação direta de seus profissionais em projetos de sistemas de rastreamento e bloqueio veicular.
+                        <br><br>
+                        Com o pensamento totalmente direcionado à satisfação de seus clientes no quesito logística, manutenção de frota
+                        e segurança, disponibilizando informações em tempo real sobre os veículos de nossos clientes, permitindo um controle
+                        de frota e logística ágil, na tomada de decisões, reduzindo significativamente os custos no transporte e fiscalizando
+                        o uso da frota no cumprimento de suas atribuições.
+                    </p>
+                </div>
+
+                <div class="imagem">
+                    <!-- Você pode adicionar sua imagem escolhida aqui -->
+                    <img src="img/amizade.avif" alt="Descrição da imagem">
+                </div>
+            </div>
+        </section>
     </section>
-
-    <div class="quadro-com-imagem">
-      <div class="quadro">
-        <p>
-          Atuando na área de segurança veicular desde 2012, a Rastrek é a maior empresa de rastreamento do Brasil. 
-          Evoluindo junto com as tecnologias disponibilizadas no seu segmento, expandiu seus conhecimentos com a 
-          participação direta de seus profissionais em projetos de sistemas de rastreamento e bloqueio veicular.
-          <br><br>
-          Com o pensamento totalmente direcionado à satisfação de seus clientes no quesito logística, manutenção de frota 
-          e segurança, disponibilizando informações em tempo real sobre os veículos de nossos clientes, permitindo um controle 
-          de frota e logística ágil, na tomada de decisões, reduzindo significativamente os custos no transporte e fiscalizando 
-          o uso da frota no cumprimento de suas atribuições.
-        </p>
-      </div>
-    
-      <div class="imagem">
-        <!-- Você pode adicionar sua imagem escolhida aqui -->
-        <img src="img/amizade.avif" alt="Descrição da imagem">
-      </div>
-    </div>
-  </section>
-</section>
-<section>
-  <h1 class="rodape"><strong>RODAPE</strong></h1>
-</section>
-
-
-
-
     <script src="js/bootstrap.bundle.min.js"></script>
     <script>
         // Função para animar os contadores

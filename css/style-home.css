@@ -143,7 +143,7 @@ body {
   position: relative;
     display: block; /* Torna o separador um elemento de bloco */
   width: 2px; /* Largura da linha */
-  height: 150px; /* Altura da linha */
+  height: 100px; /* Altura da linha */
   background-color: #FFB500; /* Cor da linha */
   margin: 20px auto; /* Espaço acima e abaixo da linha */
   visibility: visible; /* Garante que o separador seja visível */
@@ -423,7 +423,8 @@ h1 {
 .conteiner-conheca {
   position: relative;
   background: #f0f0f0;
-  margin-top: 100px;
+  height:800px;
+  margin-top: 150px;
   padding-top: 50px; /* Ajuste para não empurrar o conteúdo tanto para baixo */
   overflow: visible;
   display: flex;
@@ -468,7 +469,7 @@ h1.paragrafoConheca {
   cursor: pointer;
   z-index: 10;
   transition: transform 0.6s ease;
-  margin-top: 20px; /* Evita que o botão fique em cima do conteúdo */
+  margin-top: 70px; /* Evita que o botão fique em cima do conteúdo */
   margin-left: 385px;
 }
 
@@ -519,17 +520,7 @@ width:50% ;
   display: block; /* Garante que a imagem se ajuste corretamente */
 }
 
-/* Rodapé */
-.rodape {
-  margin-top: 100px;
-  font-size: 18px;
-  text-align: center;
-  color: #333;
-  font-weight: bold;
-}
-
-
-
+/*fim do style desktop*/
 @media (max-width: 763px) {
   .container-inicio .img-titulo {
     flex-direction: column;
@@ -579,8 +570,7 @@ width:50% ;
   .container-meio h1 {
     margin-top: 20px; /* Ajuste adicional para o título */
   }
-  
- 
+   
   .Contadores {
     display: flex; /* Coloca os itens na horizontal */
     justify-content: space-around; /* Espaça uniformemente os itens */
@@ -589,7 +579,13 @@ width:50% ;
     text-align: center;
     margin-top: 50px;
   }
-  
+  .FeitoParaVoce {
+    padding: 10px 0; /* Ajuste de padding para telas menores */
+  }
+
+  .containerParaVoce {
+    padding: 0 15px; /* Ajusta o padding lateral para telas menores */
+  }
   .contador {
     font-family: Arial, sans-serif;
   }
@@ -701,7 +697,7 @@ width:50% ;
     transform: scale(1.2); /* Reduz a escala da seção */
     transform-origin: center; /* Centraliza a transformação */
     height: 200px; /* Ajusta a altura da seção */
-    margin-top: -100px; /* Remove o espaçamento superior */
+    margin-top: 100px; /* Remove o espaçamento superior */
     display: flex; /* Garante que a imagem e o texto sejam alinhados na mesma linha */
     flex-direction: column; /* Coloca a imagem e o texto em coluna, em vez de linha */
     justify-content: center; /* Centraliza o conteúdo */
@@ -732,6 +728,58 @@ width:50% ;
   h1 {
     font-size: 1.5rem; /* Ajusta o tamanho do texto "um texto qualquer" */
     margin-top: 10px; /* Ajusta a margem do texto para não ficar muito colado */
+  }
+  /*responsividade sobre nos*/
+  .conteiner-conheca {
+    padding-top: 50px; /* Menos padding para se ajustar em telas pequenas */
+    margin-top: 100px;  /* Ajuste na margem para garantir que o conteúdo não fique muito afastado */
+   
+  }
+  /* Ajuste do texto para evitar que saia da tela */
+  .texto-conheca {
+    margin-left: -800px;  /* Remove a margem esquerda excessiva */
+    text-align: center;  /* Centraliza o texto para telas pequenas */
+  }
+
+  /* Ajuste do botão */
+  .b {
+    margin-left: 30px;  /* Remove a margem esquerda excessiva */
+    width: 50%;  /* Faz o botão ocupar toda a largura */
+    padding: 10px;  /* Ajusta o padding para caber em telas pequenas */
+    font-size: 14px;  /* Diminui o tamanho da fonte */
+    transform: scale(0.9);
+    margin-top: 200px;
+  }
+
+  /* Ajustes no layout da imagem */
+  .quadro-com-imagem {
+    flex-direction: column; /* Coloca os elementos um abaixo do outro */
+    width: 100%;  /* Ajusta a largura do container */
+    margin-left: 0;  /* Remove a margem esquerda excessiva */
+  }
+
+  .quadro {
+    width: 100%;  /* Ajusta o quadro para ocupar toda a largura */
+    padding: 10px;  /* Diminui o padding */
+  }
+
+  .imagem {
+    width: 100%;  /* Faz a imagem ocupar toda a largura */
+    margin-left: 0;  /* Remove a margem esquerda */
+  }
+
+  .imagem img {
+    width: 100%;  /* Garante que a imagem ocupe 100% da largura disponível */
+    height: auto;
+  }
+}
+@media (max-width: 1440px){
+  .botao {
+    margin-top: -50px;
+  }
+  .separador{
+    margin-top: -100px;
+    height: 10px ;
   }
 }
 @media (max-width: 768px){
@@ -840,7 +888,50 @@ width:50% ;
     font-weight: bold;
     color: #e68a00; /* Cor personalizada para as palavras destacadas */
   }
-  
+  /*responsividade sobre nos*/
+  .conteiner-conheca {
+    padding-top: 50px; /* Menos padding para se ajustar em telas pequenas */
+    margin-top: 100px;  /* Ajuste na margem para garantir que o conteúdo não fique muito afastado */
+   
+  }
+
+  /* Ajuste do texto para evitar que saia da tela */
+  .texto-conheca {
+    margin-left: -500px;  /* Remove a margem esquerda excessiva */
+    text-align: center;  /* Centraliza o texto para telas pequenas */
+  }
+
+  /* Ajuste do botão */
+  .b {
+    margin-left: 0;  /* Remove a margem esquerda excessiva */
+    width: 50%;  /* Faz o botão ocupar toda a largura */
+    padding: 10px;  /* Ajusta o padding para caber em telas pequenas */
+    font-size: 14px;  /* Diminui o tamanho da fonte */
+    transform: scale(0.9);
+    margin-top: 300px;
+  }
+
+  /* Ajustes no layout da imagem */
+  .quadro-com-imagem {
+    flex-direction: column; /* Coloca os elementos um abaixo do outro */
+    width: 100%;  /* Ajusta a largura do container */
+    margin-left: 40px;  /* Remove a margem esquerda excessiva */
+  }
+
+  .quadro {
+    width: 100%;  /* Ajusta o quadro para ocupar toda a largura */
+    padding: 10px;  /* Diminui o padding */
+  }
+
+  .imagem {
+    width: 100%;  /* Faz a imagem ocupar toda a largura */
+    margin-left: 0;  /* Remove a margem esquerda */
+  }
+
+  .imagem img {
+    width: 100%;  /* Garante que a imagem ocupe 100% da largura disponível */
+    height: auto;
+  }
 }
 @media (max-width: 425px){
   .separador {
@@ -962,6 +1053,51 @@ width:50% ;
     width: 50px; /* Diminui o tamanho do ícone */
     height: 50px;
     margin-bottom: 15px;
+  }
+  /*responsividade sobre nos*/
+  .conteiner-conheca {
+    padding-top: 20px; /* Menos padding para se ajustar em telas pequenas */
+    margin-top: 20px;  /* Ajuste na margem para garantir que o conteúdo não fique muito afastado */
+    transform: scale(0.1); /* Diminui a escala para 90% */
+    transform-origin: top;
+  }
+
+  /* Ajuste do texto para evitar que saia da tela */
+  .texto-conheca {
+    margin-left: 0;  /* Remove a margem esquerda excessiva */
+    text-align: center;  /* Centraliza o texto para telas pequenas */
+  }
+
+  /* Ajuste do botão */
+  .b {
+    margin-left: 0;  /* Remove a margem esquerda excessiva */
+    width: 100%;  /* Faz o botão ocupar toda a largura */
+    padding: 10px;  /* Ajusta o padding para caber em telas pequenas */
+    font-size: 14px;  /* Diminui o tamanho da fonte */
+    transform: scale(0.8);
+    margin-top: -10px;
+  }
+
+  /* Ajustes no layout da imagem */
+  .quadro-com-imagem {
+    flex-direction: column; /* Coloca os elementos um abaixo do outro */
+    width: 100%;  /* Ajusta a largura do container */
+    margin-left: 0;  /* Remove a margem esquerda excessiva */
+  }
+
+  .quadro {
+    width: 100%;  /* Ajusta o quadro para ocupar toda a largura */
+    padding: 10px;  /* Diminui o padding */
+  }
+
+  .imagem {
+    width: 100%;  /* Faz a imagem ocupar toda a largura */
+    margin-left: 0;  /* Remove a margem esquerda */
+  }
+
+  .imagem img {
+    width: 100%;  /* Garante que a imagem ocupe 100% da largura disponível */
+    height: auto;
   }
 }
 @media (max-width: 375px){
@@ -1085,6 +1221,52 @@ width:50% ;
     height: 50px;
     margin-bottom: 15px;
   }
+  /*responsividade sobre nos*/
+  .conteiner-conheca {
+    padding-top: 10px; /* Menos padding para se ajustar em telas pequenas */
+    margin-top: 10px;  /* Ajuste na margem para garantir que o conteúdo não fique muito afastado */
+    transform: scale(0.1); /* Diminui a escala para 90% */
+    transform-origin: top;
+  }
+
+  /* Ajuste do texto para evitar que saia da tela */
+  .texto-conheca {
+    margin-left: 0;  /* Remove a margem esquerda excessiva */
+    text-align: center;  /* Centraliza o texto para telas pequenas */
+  }
+
+  /* Ajuste do botão */
+  .b {
+    margin-left: 0;  /* Remove a margem esquerda excessiva */
+    width: 100%;  /* Faz o botão ocupar toda a largura */
+    padding: 10px;  /* Ajusta o padding para caber em telas pequenas */
+    font-size: 14px;  /* Diminui o tamanho da fonte */
+    transform: scale(0.9);
+    margin-top: -200px;
+  }
+
+  /* Ajustes no layout da imagem */
+  .quadro-com-imagem {
+    flex-direction: column; /* Coloca os elementos um abaixo do outro */
+    width: 100%;  /* Ajusta a largura do container */
+    margin-left: 0;  /* Remove a margem esquerda excessiva */
+  }
+
+  .quadro {
+    width: 100%;  /* Ajusta o quadro para ocupar toda a largura */
+    padding: 10px;  /* Diminui o padding */
+  }
+
+  .imagem {
+    width: 100%;  /* Faz a imagem ocupar toda a largura */
+    margin-left: 0;  /* Remove a margem esquerda */
+  }
+
+  .imagem img {
+    width: 100%;  /* Garante que a imagem ocupe 100% da largura disponível */
+    height: auto;
+  }
+  
 }
 @media (max-width: 320px){
   .conteiner-pos-meio {
@@ -1209,6 +1391,51 @@ width:50% ;
     width: 50px; /* Diminui o tamanho do ícone */
     height: 50px;
     margin-bottom: 15px;
+  }
+  /*responsividade sobre nos*/
+  .conteiner-conheca {
+    padding-top: 20px; /* Menos padding para se ajustar em telas pequenas */
+    margin-top: 20px;  /* Ajuste na margem para garantir que o conteúdo não fique muito afastado */
+    transform: scale(0.1); /* Diminui a escala para 90% */
+    transform-origin: top;
+  }
+
+  /* Ajuste do texto para evitar que saia da tela */
+  .texto-conheca {
+    margin-left: 0;  /* Remove a margem esquerda excessiva */
+    text-align: center;  /* Centraliza o texto para telas pequenas */
+  }
+
+  /* Ajuste do botão */
+  .b {
+    margin-left: 0;  /* Remove a margem esquerda excessiva */
+    width: 100%;  /* Faz o botão ocupar toda a largura */
+    padding: 10px;  /* Ajusta o padding para caber em telas pequenas */
+    font-size: 14px;  /* Diminui o tamanho da fonte */
+    transform: scale(0.9);
+    margin-top: -10px;
+  }
+
+  /* Ajustes no layout da imagem */
+  .quadro-com-imagem {
+    flex-direction: column; /* Coloca os elementos um abaixo do outro */
+    width: 100%;  /* Ajusta a largura do container */
+    margin-left: 0;  /* Remove a margem esquerda excessiva */
+  }
+
+  .quadro {
+    width: 100%;  /* Ajusta o quadro para ocupar toda a largura */
+    padding: 10px;  /* Diminui o padding */
+  }
+
+  .imagem {
+    width: 100%;  /* Faz a imagem ocupar toda a largura */
+    margin-left: 0;  /* Remove a margem esquerda */
+  }
+
+  .imagem img {
+    width: 100%;  /* Garante que a imagem ocupe 100% da largura disponível */
+    height: auto;
   }
 }
 
