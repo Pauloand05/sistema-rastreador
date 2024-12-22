@@ -13,6 +13,7 @@
 </head>
 
 <body>
+    <!-- navbar -->
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
             <!-- Logo -->
@@ -61,7 +62,7 @@
         </div>
 
     </nav>
-
+  <!--  Seção: conteiner do inicio: Tranquilidade para sua familia  -->
     <section class="container-inicio">
         <div class="img-titulo">
             <img src="img/log-AF.jpg" alt="Logo AF">
@@ -75,10 +76,10 @@
         </div>
     </section>
 
+   <!-- Seção 2: mensagem de segurança tranquilidade -->
     <section class="container-meio">
         <p class="p1">A solução ideal para você</p>
     </section>
-
     <h1 class="paragrafo-seguranca"> Segurança para seu <span class="cores-H1"> veículo</span> e sua <span class="cores-H1">empresa</span></h1>
     <h1 class="separador"></h1>
     <section class="conteiner-pos-meio">
@@ -94,6 +95,7 @@
         </div>
     </section>
 
+   <!-- Seção 3: Franquia de todos os paises  -->
     <section class="franquia">
         <div class="franquia-image">
             <img src="img/imageFranquia2.jpeg" alt="">
@@ -101,12 +103,13 @@
         </div>
     </section>
 
+    <!-- Seção 4: Mensagem de resultado para clientes  -->
     <div class="separador-2"></div>
     <section class="container-meio">
         <p class="p11">entregamos</p>
         <h1><strong>Resultados para todos nossos clientes</strong></h1>
     </section>
-
+   <!-- Seção 5: contadores -->
     <section class="Contadores">
         <div class="contador">
             <span class="numero" data-target="7">0</span>
@@ -127,6 +130,8 @@
             <h1>Feito para você!</h1>
         </div>
     </section>
+
+    <!-- Seção 6: Features de cada serviço -->
     <section class="features">
         <div class="container">
             <div class="feature-item">
@@ -160,8 +165,9 @@
                 <p>Nossos serviços são disponibilizados 100% em nuvem e podem ser acessados de qualquer lugar.</p>
             </div>
         </div>
-
     </section>
+<!-- 
+    Seção 6: Conheça o trabalho -->
     <section class="container-conheca">
         <section>
             <button class="b">Conheça nossas soluções</button>
@@ -169,7 +175,6 @@
                 <p class="paragrafoConheca">Conheça um pouco</p>
                 <h1 class="paragrafoConheca">Sobre a AF</h1>
             </section>
-
             <div class="quadro-com-imagem">
                 <div class="quadro">
                     <p>
@@ -185,26 +190,23 @@
                 </div>
 
                 <div class="imagem">
-                    <!-- Você pode adicionar sua imagem escolhida aqui -->
                     <img src="img/amizade.avif" alt="Descrição da imagem">
                 </div>
             </div>
         </section>
     </section>
     <script src="js/bootstrap.bundle.min.js"></script>
+
+    <!-- script do contador  -->
     <script>
-        // Função para animar os contadores
         const animateCounters = () => {
             const counters = document.querySelectorAll('.numero');
-
             counters.forEach(counter => {
                 const target = +counter.getAttribute('data-target'); // Valor final
                 const speed = target / 200; // Velocidade da contagem
-
                 const updateCount = () => {
                     const current = +counter.innerText; // Valor atual
                     const increment = Math.ceil(speed); // Incremento
-
                     if (current < target) {
                         counter.innerText = current + increment; // Atualiza o valor
                         setTimeout(updateCount, 30); // Rechama a função
@@ -216,8 +218,6 @@
                 updateCount();
             });
         };
-
-        // Executa a animação quando a página carregar
         document.addEventListener('DOMContentLoaded', animateCounters);
     </script>
 </body>
