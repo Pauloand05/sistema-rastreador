@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     
     <!-- Arquivo CSS do seu próprio estilo -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style-planos.css">
      <!-- Outras tags -->
      <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
