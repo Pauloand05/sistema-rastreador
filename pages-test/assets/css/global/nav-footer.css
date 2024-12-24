@@ -13,6 +13,7 @@
     --background-light: #eee;
     --text-dark: #333; /* Cinza Escuro */
     --light-gray: #f8f8f8;
+    --background-black: #202020;
 }
 
 html {
@@ -96,7 +97,7 @@ h1, h2, h3, a {
 }
 
 .social-icon {
-    color: #fff;
+    color: var(--text-color);
     text-decoration: none;
     font-size: 1.25rem;
     margin-right: 10px;
@@ -121,9 +122,8 @@ h1, h2, h3, a {
 }
 
 .footer {
-    background-color: #202020;
+    background-color: var(--background-black);
     color: var(--text-color);
-    box-shadow: 0 -0.2px 1px white;
 }
 
 .footer-container {

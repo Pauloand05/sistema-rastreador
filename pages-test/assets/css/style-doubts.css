@@ -5,6 +5,17 @@ body {
     background: var(--background-light);
 }
 
+:root {
+    --primary-color: #007bff; /* Azul */
+    --secondary-color: #f0a500; /* Laranja */
+    --text-color: #ffffff; /* Branco */
+    --background-dark: #16162d; /* Azul Escuro */
+    --background-light: #eee;
+    --text-dark: #333; /* Cinza Escuro */
+    --light-gray: #f8f8f8;
+    --background-black: #202020;
+}
+
 .main-section {
     /* background: linear-gradient(to bottom, var(--background-dark) 40rem, var(--background-light) 40rem); */
     background-image: url(../image/img-bg2.svg);
@@ -81,7 +92,7 @@ form input:focus, form textarea:focus {
 
 form button {
     background-color: var(--secondary-color);
-    color: white;
+    color: #fff;
     border: none;
     padding: 1rem 2rem;
     font-size: 1.4rem;

@@ -1,10 +1,32 @@
 /* Hero Section */
+
+/* VARIÁVEIS DE COR */
+:root {
+    --primary-color: #007bff; 
+    --secondary-color: #f0a500; 
+    --background-dark: #16162d;
+    --text-color: #ffffff; 
+    --light-gray: #f8f8f8;
+    --background-light: #eee;
+    --background-black: #202020;
+    --text-dark: #333;
+}
+
+/* Configuração padrão de seções */
+.section{
+    min-height: 90vh;
+    background-color: var(--background-light);
+}
+/* Fundo svg principal */
 .background-image {
     background-image: url(../image/img-bg1.svg);
     background-size: cover;
     background-position: center center;
 }
 
+
+
+/* Seção 1: Carro e Texto */
 .hero-section {
     display: grid;
     grid-template-columns: 1fr 1.4fr;
@@ -15,26 +37,26 @@
     background: transparent;
 }
 
-.hero-content {
+.hero-content {  /* Conteúdo Texto */
     text-align: left;
     padding: 2rem
 }
 
-.hero-content h1 {
+.hero-content h1 {  /* Texto principal */
     font-size: clamp(1.6rem, 4.3vw, 5.3rem);
     margin-bottom: 1.5rem;
     color: var(--text-color);
 }
 .name {color: var(--secondary-color);}
 
-.hero-content p {
+.hero-content p {  /* Parágrafo */
     color: var(--text-color);
     font-size: 1.8rem;
     margin-bottom: 2rem;
     line-height: 1.6;
 }
 
-.cta-button {
+.cta-button {  /* Botão de Planos */
     display: inline-block;
     padding: 1rem 2rem;
     font-size: 1.6rem;
@@ -48,23 +70,18 @@
     background-color: #c97208;
 }
 
-.hero-image-area {
+.hero-image-area {  /* Conteúdo Imagem*/
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.hero-image-area img {
+.hero-image-area img { /* Imagem do Carro */
     width: 100%;
     border-radius: 2rem;
 }
 
-.section{
-    height: 90vh;
-    background-color: var(--background-light);
-}
-
-/* Responsividade */
+/* Responsividade da Seção 1 */
 @media (max-width: 900px) {
     .hero-section {
         grid-template-columns: 1fr;
@@ -105,3 +122,210 @@
     }
 }
 
+
+
+
+
+/* Seção 2: Tranquilidade para família */
+.security-promo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8rem 1rem;
+    background-color: var(--background-light); /* Fundo claro para contraste */
+}
+  
+.promo-container {
+    display: grid;
+    grid-template-columns: 1.3fr 1fr;
+    max-width: 130rem; /* Largura máxima */
+    width: 100%;
+    align-items: center;
+    gap: 4rem;
+    min-height: 60vh;
+}
+  
+.promo-image {
+    flex: 1;
+    min-width: 20rem;
+}
+  
+.promo-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+}
+  
+.promo-content {
+    flex: 1;
+    text-align: left;
+}
+  
+.promo-content h1 {
+    font-size: clamp(3rem, 4.3vw, 4rem);
+    margin-bottom: 1rem;
+    color: var(--text-dark);
+}
+  
+.promo-content p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    color: var(--text-dark);
+    line-height: 1.6;
+}
+
+
+/* Responsividade da Seção 2 */
+@media (max-width: 850px) {
+    .promo-container {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    .promo-image {
+        max-width: 70rem;
+        margin: 0 auto;
+    }
+    .promo-content {
+        padding: 1rem;
+    }
+}
+
+
+
+
+
+/* Seção 3: Call to Action */
+.cta {
+    position: relative;
+    background: url('../image/cta-bg.jpeg'); /* Caminho para a imagem de fundo será adicionado aqui */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 6rem 1rem;
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+  
+.cta::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3); /* Escurece a imagem de fundo */
+    z-index: 1;
+}
+  
+.cta-content {
+    position: relative;
+    z-index: 2; /* Garante que o conteúdo fique acima do escurecimento */
+}
+  
+.cta h1 {
+    font-size: clamp(3rem, 4.3vw, 4rem);
+    margin-bottom: 1rem;
+}
+  
+.cta p {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+} 
+
+/* Responsividade da Seção 3 */
+@media (max-width: 900px) {
+
+}
+
+
+
+
+
+/* Seção 4: Cards e Aplicações */
+.section-cards {
+    background-color: var(--background-light);
+    color: #fff;
+    text-align: center;
+    padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.section-h1 {
+    font-size: clamp(3rem, 4.3vw, 4rem);
+    margin: 2.6rem 0;
+    color: var(--text-dark);
+}
+
+.separator {
+    margin: 1rem 0;
+    position: relative;
+    display: block; /* Torna o separador um elemento de bloco */
+    width: 2.5px; /* Largura da linha */
+    height: 9rem; /* Altura da linha */
+    background-color: var(--secondary-color);
+    visibility: visible; /* Garante que o separador seja visível */
+}
+
+.cards-container {
+    max-width: 120rem;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0;
+}
+
+.cards-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1.5rem
+}
+
+.card {
+    background-color: #fff;
+    color: var(--text-dark);
+    border-radius: 1rem;
+    padding: 2.3rem;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 25rem;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 11px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+    width: 5rem; /* Ajuste conforme necessário */
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+.card h3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.1rem;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.card p {
+    font-size: 1.5rem;
+    line-height: 1.5;
+}
+
+/* Responsividade da Seção 4 */
+@media (max-width: 1000px) {
+    .cards-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media (max-width: 650px) {
+    .cards-grid {
+        grid-template-columns: 1fr;
+    }
+}
