@@ -7,8 +7,9 @@
     <title>Empresa de Rastreamento</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@400;500&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/global/nav-main.css">
+    <link rel="stylesheet" href="assets/css/global/nav-footer.css">
     <link rel="stylesheet" href="assets/css/style-home.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
 </head>
 
 <body>
@@ -18,15 +19,21 @@
             <div class="logo">
                 <img src="assets/image/logo-af.png" alt="Logo da Empresa">
             </div>
-            <nav class="nav-links">
+            <button class="menu-toggle" aria-label="Abrir menu">
+                ☰
+            </button>
+            <nav class="nav-links active">
+                <button class="menu-close" aria-label="Fechar menu">✕</button>
                 <a href="/pages-test/home.html">Início</a>
                 <a href="#about">Sobre Nós</a>
                 <a href="#services">Planos</a>
                 <a href="/pages-test/doubts.html">Dúvidas</a>
-                <a href="#contact">Contato</a>
+                <a href="#footer">Contato</a>
             </nav>
         </div>
     </header>
+
+    <script src="assets/js/navbar.js"></script>
 
     <!-- Seção principal com imagem e texto -->
     <section class="background-image">
@@ -46,6 +53,50 @@
     <section class="section">
 
     </section>
+
+    <!-- Rodapé -->
+    <footer class="footer" id="footer">
+        <div class="footer-container container">
+            <div class="column">
+                <h2>Localização</h2>
+                <p>Estrada de Ribamar, Loja 04, Vila Kiola<br>São José de Ribamar, MA, 65110-000</p>
+            </div>
+
+            <div class="column">
+                <h2>Contato</h2>
+                <p>Email: contato@empresa.com.br</p>
+                <p>Telefone: (11) 1234-5678</p>
+            </div>
+
+            <div class="column">
+                <h2>Links de Navegação</h2>
+                <ul class="list-unstyled">
+                    <li><a class="social-icon" href="home.php">Inicio</a></li>
+                    <li><a class="social-icon" href="duvidas.php">Dúvidas</a></li>
+                    <li><a class="social-icon" href="sobre-nos.php">Sobre nós</a></li>
+                    <li><a class="social-icon" href="planos.php">Planos</a></li>
+                    <li><a class="social-icon" href="area-do-cliente.php">Área do cliente</a></li>
+                </ul>
+            </div>
+
+            <!-- Redes sociais -->
+            <div class="column">
+                <h2>Redes sociais</h2>
+                <a href="#" class="social-icon">
+                    <i class="fab fa-facebook"></i>
+                    <span>Facebook</span>
+                </a>
+                <a href="https://www.instagram.com/af.rastreadores?igsh=anl0bHVrNnR5dW1t" class="social-icon">
+                    <i class="fab fa-instagram"></i>
+                    <span>Instagram</span>
+                </a>
+                <a href="https://wa.me/5598991258772?" class="social-icon">
+                    <i class="fab fa-whatsapp"></i>
+                    <span>Whatsapp</span>
+                </a>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>

@@ -6,22 +6,24 @@ body {
 }
 
 .main-section {
-    background: linear-gradient(to bottom, var(--background-dark) 40rem, var(--background-light) 40rem);
+    /* background: linear-gradient(to bottom, var(--background-dark) 40rem, var(--background-light) 40rem); */
+    background-image: url(../image/img-bg2.svg);
+    background-size: cover;
+    background-position: center center;
     display: flex;
     justify-content: center;
     align-items: top;
 }
 .main-container {
     width: 100%; /* Ajuste conforme necessário */
-    margin: 20rem 0rem;
-    max-width: 110rem;
+    margin: 20rem 2rem;
+    max-width: 130rem;
     background-color: var(--background-light);
     text-align: center;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
     border-radius: 1rem;
-    position: absolute;
 }
 
 .background-image {
@@ -39,7 +41,6 @@ body {
 
 .contact-form {
     background-color: var(--light-gray);
-    margin-bottom: auto;
 }
 
 .faq-section {
@@ -124,6 +125,7 @@ form button:hover {
     overflow: hidden; /* Esconde o conteúdo excedente */
     margin-top: 0.5rem;
     padding-left: 1rem;
+    background: var(--light-gray);
     border-left: 4px solid var(--primary-color);
     transition: max-height 0.4s ease, padding 0.4s ease; /* Transição suave para a altura e o preenchimento */
 }
