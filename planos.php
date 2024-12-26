@@ -15,11 +15,31 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 </head>
 <body>
-    <!-- Cabeçalho da Página -->
-    <header class="text-center py-5 ">
-        <h1>Planos de Rastreamento</h1>
-        <p>Escolha o plano que melhor se adapta às suas necessidades de segurança.</p>
+
+ <!-- Navegação -->
+ <header class="navbar">
+        <div class="container nav-container">
+            <div class="logo">
+                <img src="img/logo-af.png" alt="Logo da Empresa">
+            </div>
+            <button class="menu-toggle" aria-label="Abrir menu">
+                ☰
+            </button>
+            <nav class="nav-links active">
+                <button class="menu-close" aria-label="Fechar menu">✕</button>
+                <a href="/pages-test/home.html">Início</a>
+                <a href="#about">Sobre Nós</a>
+                <a href="#services">Planos</a>
+                <a href="/pages-test/doubts.html">Dúvidas</a>
+                <a href="#footer">Contato</a>
+            </nav>
+        </div>
+        <div class="cabecalho py-5 ">
+            <h1>Planos de Rastreamento</h1>
+            <p>Escolha o plano que melhor se adapta às suas necessidades de segurança.</p>
+        </div>
     </header>
+
 
         <div id="carouselExampleCaptions" class="carousel slide">
     <div class="carousel-indicators">
@@ -76,9 +96,11 @@
                             <li>Alertas via SMS</li>
                             <li>Relatório semanal</li>
                         </ul>
-                        <a href="#" class="btn btn-primary">Contratar</a>
-                        <a href="https://wa.me/5598991258772?text=Oi, gostaria de saber mais sobre o produto!
-                        " class="btn btn-secondary btn-contratar">Fale Conosco!</a>
+                        <div>
+                            <a href="#" class="btn btn-primary">Contratar</a>
+                            <a href="https://wa.me/5598991258772?text=Oi, gostaria de saber mais sobre o produto!
+                            " class="btn btn-secondary btn-contratar">Fale Conosco!</a>
+                        </div> 
                     </div>
                 </div>
             </div>
@@ -96,9 +118,11 @@
                             <li>Relatório diário</li>
                             <li>Histórico de rotas</li>
                         </ul>
-                        <a href="#" class="btn btn-primary">Contratar</a>
-                        <a href="https://wa.me/5598991258772?text=Oi, gostaria de saber mais sobre o produto!
-                        "class="btn btn-secondary btn-contratar">Fale Conosco!</a>
+                        <div>
+                            <a href="#" class="btn btn-primary">Contratar</a>
+                            <a href="https://wa.me/5598991258772?text=Oi, gostaria de saber mais sobre o produto!
+                            "class="btn btn-secondary btn-contratar">Fale Conosco!</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -117,9 +141,11 @@
                             <li>Histórico completo de rotas</li>
                             <li>Monitoramento 24/7</li>
                         </ul>
-                        <a href="#" class="btn btn-primary" >Contratar</a>
-                        <a href="https://wa.me/5598991258772?text=Oi, gostaria de saber mais sobre o produto!
-                        " class="btn btn-secondary btn-contratar">Fale Conosco!</a>
+                        <div>
+                            <a href="#" class="btn btn-primary" >Contratar</a>
+                            <a href="https://wa.me/5598991258772?text=Oi, gostaria de saber mais sobre o produto!
+                            " class="btn btn-secondary btn-contratar">Fale Conosco!</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -233,5 +259,6 @@
     <!-- Arquivo JS do Bootstrap (local) -->
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/navbar.js"></script>
 </body>
 </html>
