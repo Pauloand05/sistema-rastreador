@@ -1,1441 +1,458 @@
-.container-fluid{
-    /* background-color: #343a40; */
-    /* background-color: #e1e1e1; */
-    background-color: #212529;
-    /* background-color: #f1f1f1; */
-    /* background-color: #f8f8f8; */
-    /* background-color: #2e6a47; */
-    background-color: #0d0fa1;
+
+/* Estilos Gerais */
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 2rem 0;
+}
+
+.footer h5 {
+    margin-bottom: 1.5rem;
+    font-size: 2.25rem;
+    font-weight: bold;
+}
+
+.footer ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+.footer ul li {
+    margin: 0.5rem 0;
+}
+
+.footer ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 2rem;
+    transition: color 0.3s;
+}
+
+.footer ul li a:hover {
+    color: #ff7f50;
+}
+
+.social-icon {
+    color: #fff;
+    text-decoration: none;
+    font-size: 2.25rem;
+    margin-right: 1rem;
+}
+
+.social-icon:hover {
+    color: #ff7f50;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .footer .row {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer .col-md-3 {
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+
+    .footer .col-md-3 h5 {
+        font-size: 2.5rem;
+    }
+
+    .footer ul {
+        padding-left: 0;
+    }
+
+    .footer ul li {
+        margin-bottom: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer .col-md-3 {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .footer .social-icon {
+        display: block;
+        margin-bottom: 1rem;
+    }
+}
+
+/* Efeito de escala para ícones e botões */
+.icon img:hover, .btn:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Animação suave para o hover nos cards */
+.card:hover {
+    transform: translateY(-1rem);
+    box-shadow: 0 1rem 2rem linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0));
+    transition: all 0.3s ease;
+}
+
+.carousel-item img {
+    width: 100%;   /* A largura será 100% do contêiner */
+    height: auto;  /* Altura será ajustada automaticamente para manter a proporção */
+    object-fit: cover; /* Faz a imagem cobrir a área do carrossel */
+}
+
+.icon img {
+    width: 100%;  /* Garante que a largura da imagem será 100% da coluna */
+    max-width: 9rem; /* Limita o tamanho máximo para o ícone */
+    height: auto;  /* Mantém a proporção da imagem */
+}
+
+.blockquote-footer{
+    color: #00ff3c;
+}
+
+@media (max-width: 768px) {
+    .card {
+        margin: 1rem; /* Adiciona margem ao redor de cada card */
+    }
+    .row {
+        justify-content: center; /* Alinha os cards no centro */
+    }
+}
+
+/* Reset Básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Configuração padrão de seções */
+.section{
+    min-height: 90vh;
+    background-color: var(--background-light);
+}
+/* Fundo svg principal */
+.background-image {
+    background-image: url(../icons/img-bg1.svg);
+    background-size: cover;
+    background-position: center center;
+}
+
+
+
+/* Seção 1: Carro e Texto */
+.hero-section {
+    display: grid;
+    grid-template-columns: 1fr 1.4fr;
+    align-items: center;
+    gap: 2rem;
+    height: 90vh;
+    padding: 2rem;
+    background: transparent;
+}
+
+.hero-content {  /* Conteúdo Texto */
+    text-align: left;
+    padding: 2rem
+}
+
+.hero-content h1 {  /* Texto principal */
+    font-size: clamp(1.6rem, 4.3vw, 5.3rem);
+    margin-bottom: 1.5rem;
+    color: var(--text-color);
+}
+
+.hero-content p {  /* Parágrafo */
+    color: var(--text-color);
+    font-size: 1.7rem;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+}
+
+.cta-button {  /* Botão de Planos */
+    display: inline-block;
+    font-family: 'Roboto', sans-serif;
+    padding: 1rem 2rem;
+    font-size: 1.7rem;
+    color: var(--text-color);
+    background-color: var(--secondary-color);
+    border-radius: 0.5rem;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.cta-button:hover {
+    background-color: var(--button-hover);
+}
+
+.hero-image-area {  /* Conteúdo Imagem*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-image-area img { /* Imagem do Carro */
+    width: 100%;
+    border-radius: 2rem;
+}
+
+/* Responsividade da Seção 1 */
+@media (max-width: 900px) {
+    .hero-section {
+        grid-template-columns: 1fr;
+        gap: 0;
+        padding-top: 8.5rem;
+    }
+
+    .hero-content {
+        text-align: center;
+        display: flex; 
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hero-content h1 {
+        font-size: 3rem;
+    }
+
+    .hero-content p {
+        font-size: 1.7rem;
+    }
+
+    .hero-image-area img {
+        max-width: 60rem;
+    }
+    .cta-button {
+        font-family: 'Roboto', sans-serif;
+        font-size: 1.7rem;
+        color: var(--text-color);
+        background-color: var(--secondary-color);
+        border-radius: 0.5rem;
+        transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+    
+    .cta-button:hover {
+        background-color: var(--button-hover);
+    }
+}
+
+
+
+
+
+/* Seção 2: Tranquilidade para família */
+.security-promo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8rem 1rem;
+    background-image: url(../icons/img-bg4.svg); /* Fundo claro para contraste */
+    background-size: cover;
+    background-position: center center;
+}
+  
+.promo-container {
+    display: grid;
+    grid-template-columns: 1.3fr 1fr;
+    max-width: 130rem; /* Largura máxima */
+    width: 100%;
+    align-items: center;
+    gap: 4rem;
+    min-height: 60vh;
+}
+  
+.promo-image {
+    flex: 1;
+    min-width: 20rem;
+}
+  
+.promo-image img {
+    width: 100%;
+    height: auto;
+}
+  
+.promo-content {
+    flex: 1;
+    text-align: left;
+}
+  
+.promo-content h1 {
+    font-size: clamp(3rem, 4.3vw, 4rem);
+    margin-bottom: 1rem;
+    color: var(--text-dark);
+}
+  
+.promo-content p {
+    font-size: 1.7rem;
+    margin-bottom: 2rem;
+    color: var(--text-dark);
+    line-height: 1.6;
+}
+
+
+/* Responsividade da Seção 2 */
+@media (max-width: 850px) {
+    .promo-container {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    .promo-image {
+        max-width: 70rem;
+        margin: 0 auto;
+    }
+    .promo-content {
+        padding: 1rem;
+        text-align: center;
+    }
+}
+
+
+
+
+
+/* Seção 3: Call to Action */
+.cta {
+    position: relative;
+    background-image: url('../img/cta-bg.jpeg'); /* Caminho para a imagem de fundo será adicionado aqui */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 6rem 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+}
+  
+.cta::before {
+    content: '';
     position: absolute;
     top: 0;
-  }
-body {
-  height: 100vh;
-  width: 100vw;
-  margin: 0;
-  padding: 0;
-  font-family: "Roboto", sans-serif;
-}
-
-#navbarNav a {
-  color: white;
-  display: block;
-  padding: 10px 35px;
-  transition: color 0.3s; 
-}
-
-#navbarNav a:hover {
-  color: #f8f8f8; 
-}
-
-.navbar-nav {
-  display: flex;
-  justify-content: flex-end;
-  width: 100%; 
-}
-
-.nav-item {
-  margin: 0 10px; 
-}
-
-.dropdown-menu {
-  background-color: #212529;
-}
-
-.logo-nav {
-  width: 75px;
-  height: 75px;
-}
-
-/* Estilo para o botão hamburger com imagem personalizada */
-.navbar-toggler-icon {
-  background: transparent; /* Remove o fundo padrão */
-  border: none; /* Remove a borda padrão */
-}
-
-.navbar-toggler-icon img {
-  width: 25px; /* Ajuste o tamanho da imagem */
-  height: auto; /* Mantém a proporção da imagem */
-}
-
-/* Estilo do ícone hamburger */
-.navbar-toggler-icon {
-  background-color: transparent; /* Remove qualquer fundo do botão */
-  border: none; /* Remove a borda do botão */
-}
-
-/* Mudando as linhas do ícone hamburger para branco */
-.navbar-toggler-icon span {
-  color: chartreuse; /* Torna as 3 linhas do ícone brancas */
-}
-
-/* Estilos do botão hamburger */
-.navbar-toggler {
-  border: none; /* Remove a borda do botão */
-}
-
-.container-inicio {
-  background-color: #4e4eea;
-  display: flex;
-  padding: 20px;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
-.container-inicio .img-titulo {
-  display: flex;
-  height: 100%;
-  align-items: center;
-  justify-content: center;
-}
-
-.container-inicio .img-titulo h1 {
-  color: #fff;
-  font-size: 40px;
-}
-
-.container-inicio .img-titulo img {
-  width: 400px;
-  height: 400px;
-}
-
-.container-inicio .btn {
-  display: flex;
-  width: 100%;
-  justify-content: end;
-}
-.container-inicio .btn .btn-plano {
-  padding: 5px 80px;
-  border: none;
-  border-radius: 10px;
-  font-size: 20px;
-  transition: transform 0.6s ease; /* Para um efeito suave */
-}
-.container-inicio .btn .btn-plano:hover {
-  transform: scale(1.4);
-}
-
-.text2 {
-  margin-right: 275px;
-  font-size: 70px;
-}
-.text3 {
-  margin-right: 200px;
-  font-size: 70px;
-}
-
-.container-meio{
-  height: 100px;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.paragrafo-seguranca{
-  text-align: center;
-  font-size: 50px;
-}
-.cores-H1{
-  color: #FFB500;  
-}
-.separador {
-  position: relative;
-    display: block; /* Torna o separador um elemento de bloco */
-  width: 2px; /* Largura da linha */
-  height: 100px; /* Altura da linha */
-  background-color: #FFB500; /* Cor da linha */
-  margin: 20px auto; /* Espaço acima e abaixo da linha */
-  visibility: visible; /* Garante que o separador seja visível */
-  margin-top: 15px;
-}
-.conteiner-pos-meio {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh; /* Opcional, para garantir que o conteúdo ocupe toda a altura da tela */
-  margin-top: -230px;
-
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3); /* Escurece a imagem de fundo */
+    z-index: 1;
 }
   
-.imageTranquilidade img {
-  width: 500px;
-  height: 500px;
+.cta-content {
+    position: relative;
+    z-index: 2; /* Garante que o conteúdo fique acima do escurecimento */
 }
-.imageTranquilidade{
-  position: relative;
+  
+.cta h1 {
+    font-size: clamp(3rem, 4.3vw, 4rem);
+    margin-bottom: 1rem;
 }
-.transparent-image {
-  opacity: 0.4; /* Altere esse valor de 0.0 (totalmente transparente) a 1.0 (totalmente opaco) */
-}
-.texto-imagem {
-  position: absolute;
-  top: 80px; /* Ajusta a posição vertical do texto */
-  left: 20px; /* Coloca o texto na margem esquerda */
-  transform: translateY(-50%); /* Centraliza verticalmente em relação ao topo */
-  color: black; /* Cor do texto */
-  font-size: 2rem; /* Ajuste o tamanho do texto conforme necessário */
-  padding-left: 20px; /* Ajuste para espaçar o texto da margem esquerda */
-  z-index: 1; /* Garante que o texto fique sobre a imagem */
-}
-
-.textoDaTranquilidade {
-  display: block;
-  font-size: 2.5rem; /* Ajuste o tamanho da fonte para aumentar a largura do texto */
-  word-wrap: break-word; /* Permite que o texto quebre em várias linhas, se necessário */
-  color: #FFB500;
-}
-
-.texto-imagem + p {
-  position: absolute;
-  top: 200px; /* Ajuste a posição para que o texto fique abaixo do <h1> */
-  left: 20px;
-  font-size: 1.2rem; /* Ajuste o tamanho do texto conforme necessário */
-  color: black; /* Cor do texto */
-  width: calc(100% - 40px); /* Ajuste para garantir que o texto não ultrapasse a largura da imagem */
-  margin-top: 10px;
-  z-index: 1; /* Garante que o texto fique sobre a imagem */
-}
-
-.texto-imagem + p + p {
-  position: absolute;
-  top: 250px; /* Ajuste para o segundo parágrafo, para não sobrepor o primeiro */
-  left: 20px;
-  font-size: 1.2rem; /* Ajuste o tamanho do texto conforme necessário */
-  color: black;
-  width: calc(100% - 40px);
-  margin-left: 20px;
-  z-index: 1; /* Garante que o texto fique sobre a imagem */
-}
-.botao {
-  position: absolute;
-  top: 150px; /* Ajuste a posição para garantir que o botão fique abaixo do texto */
-  left: 5px;
-  background-color: #FFB500;
-  color: white;
-  font-size: 16px;
-  padding: 15px 30px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  z-index: 1;
-  transition: transform 0.6s ease; /* Para um efeito suave */
-}
-
-.botao:hover {
-  background-color: #e68a00;
-  transform: scale(1.3);
-}
-.Franquia {
-  display: flex; /* Opcional: ajusta layout */
-  justify-content: center; /* Opcional: alinha ao centro */
-  align-items: center; /* Opcional: alinha verticalmente */
-  padding-top: 100px;
-}
-.franquia {
-  display: flex;            /* Define um modelo flexível */
-  justify-content: center;  /* Centraliza horizontalmente */
-  align-items: center;      /* Centraliza verticalmente */
-  height: 100vh;            /* Define a altura da seção para 100% da altura da tela */
-  margin-top: -500px;
-  overflow: hidden;
-}
-.franquia-image {
-  position: relative;
-  padding: 10px 0;          /* Adiciona espaço ao redor da imagem */
-  background-color: white; /* Cor de fundo branca para o contêiner */
-  border-radius: 10px;    /* Se quiser bordas arredondadas, opcional */
-  overflow: hidden;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Opcional: sombra suave para destaque */
-}
-.franquia-image img {
-  height: 300px;   /* Defina a altura desejada */
-  width: 200vh;     /* Mantém a proporção da imagem */
-  object-fit: cover;
-  border-radius: 10px;
-}
-.textoFranquia {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color:#f8f8f8;
-  font-size: 4rem; /* Ajuste conforme necessário */
-  white-space: nowrap;
-  font-weight: bold;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
-  line-height: 1.5; 
-}
-
-.separador-2 {
-  position: relative;
-  display: block;
-  width: 2px;
-  height: 150px;
-  background-color: #FFB500;
-  margin: 20px auto;
-  visibility: visible;
-  margin-top: -300px;
-}
-.container-meio {
-  display: flex;
-  flex-direction: column; /* Alinha os itens na vertical */
-  align-items: center; /* Centraliza horizontalmente */
-  justify-content: center; /* Centraliza verticalmente se necessário */
-  text-align: center; /* Centraliza o texto dentro de cada elemento */
-  height: 10vh; /* Exemplo: para ocupar a altura da tela */
-}
-
-.container-meio .p11 {
-  font-size: 1rem; /* Tamanho do texto */
-  color: #777; /* Cor do texto */
-  margin: 0; /* Remove margens extras */
-}
-
-.container-meio h1 {
-  font-size: 3rem; /* Tamanho do texto */
-  color: #333; /* Cor do texto */
-  margin: 10px 0 0 0; /* Espaço entre o <p> e o <h1> */
-}
-.Contadores {
-  display: flex; /* Coloca os itens na horizontal */
-  justify-content: space-around; /* Espaça uniformemente os itens */
-  align-items: center; /* Centraliza os itens verticalmente */
-  margin: 20px 0;
-  text-align: center;
-  margin-top: 50px;
-}
-
-.contador {
-  font-family: Arial, sans-serif;
-}
-
-.numero {
-  font-size: 2rem; /* Tamanho maior para destaque */
-  font-weight: bold;
-  color: #e68a00; /* Cor personalizada para os números */
-}
-
-.contador p {
-  font-size: 1rem;
-  color: #777;
-}
-
-.contador p .destaque {
-  font-weight: bold;
-  color: #e68a00; /* Cor personalizada para as palavras destacadas */
-}
-.FeitoParaVoce {
-  background-color: black;
-  display: flex;
-  justify-content: center;
-  align-items: flex;
-  height: 70vh;
-  text-align: center;
-  color: white;
-  flex-direction: column;
-  padding-top: 20px; /* Ajuste esse valor para mover os textos para cima */
-}
-
-.containerParaVoce {
-  padding: 20px;
-}
-
-.p11 {
-  font-size: 1.5rem; /* Ajuste o tamanho da fonte conforme necessário */
-  margin-bottom: 10px; /* Distância entre o parágrafo e o h1 */
-  margin-top: -250px;
-}
-
-h1 {
-  margin-top: 0; /* Ajuste a margem superior do h1 */
-  margin-bottom: 0; /* Ajuste a margem inferior do h1 */
-  margin-top: -10px;
-}
-
-/* Caso queira mover o texto mais para cima ou para baixo */
-.FeitoParaVoce {
-  padding-top: 0px;  /* Ajuste a posição para cima ou para baixo */
-  padding-bottom: 0px; /* Ajuste a posição para cima ou para baixo */
-}
-.features {
-  background-color: #f9f9f9;
-  padding: 60px 20px;
-}
-
-.container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.features {
-  background-color: #f9f9f9; /* Cor de fundo geral */
-  padding: 60px 20px;
-}
-
-.container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
-  max-width: 1200px;
-  margin: -500px auto;
-  background: #fff; /* Fundo branco do contêiner */
-  border-radius: 15px; /* Bordas arredondadas */
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Sombra leve */
-  padding: 40px; /* Espaço interno */
-}
-
-.feature-item {
-  background: #f9f9f9; /* Fundo do item individual */
-  padding: 20px;
-  border-radius: 10px;
-  text-align: center;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.feature-item:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-}
-
-.feature-item .icon {
-  width: 60px;
-  height: 60px;
-  margin-bottom: 20px;
-}
-
-.feature-item h3 {
-  font-size: 1.25rem;
-  margin-bottom: 15px;
-  color: #333;
-}
-
-.feature-item p {
-  font-size: 1rem;
-  color: #666;
-  line-height: 1.5;
+  
+.cta p {
+    font-size: 1.7rem;
+    margin-bottom: 2rem;
 } 
-/* Container principal */
-.conteiner-conheca {
-  position: relative;
-  background: #f0f0f0;
-  height:800px;
-  margin-top: 150px;
-  padding-top: 50px; /* Ajuste para não empurrar o conteúdo tanto para baixo */
-  overflow: visible;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
+
+/* Responsividade da Seção 3 */
+@media (max-width: 900px) {
+
 }
 
-/* Estilo do Texto */
-.texto-conheca {
-  position: relative; /* Mudado para relative para manter o fluxo normal do layout */
-  margin-top: 20px;  /* Ajuste o valor conforme necessário */
-  text-align: left; /* Alinha o texto à esquerda */
-  margin-left: 385px;
-}
 
-/* Parágrafo */
-.paragrafoConheca {
-  margin: 0;
-  padding: 10px 20px;
-  font-size: 18px;
-  color: #333;
-  margin-top: 0;  /* Remover o margim-top excessivo */
-}
 
-/* Título */
-h1.paragrafoConheca {
-  margin-top: 0; /* Remover o margim-top excessivo */
-  font-size: 32px;
-  font-weight: bold;
-  color: #FFB500;
-}
 
-/* Botão */
-.b {
-  background-color: #FFB500;
-  color: white;
-  font-size: 16px;
-  padding: 15px 30px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  z-index: 10;
-  transition: transform 0.6s ease;
-  margin-top: 70px; /* Evita que o botão fique em cima do conteúdo */
-  margin-left: 385px;
-}
 
-.b:hover {
-  background-color: #E6A400;
-  transform: scale(1.05);
-}
-
-/* Estilo para a Imagem */
-.imagem img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 5px;
-}
-
-.quadro-com-imagem {
-  display: flex;
-  justify-content: space-between;
-  width: 50%;
-  margin-top: 5px;
-  padding: 0;
-  margin-left: 400px;
-}
-
-.quadro {
-width:50% ;
-  background-color: white;
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: left;
-  margin-right: 0; /* Remove qualquer margem à direita */
-}
-
-.imagem {
-  width: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-left: 0; /* Remove qualquer margem à esquerda */
-}
-
-.imagem img {
-  max-width: 100%;
-  height: auto;
-  object-fit: cover;
-  display: block; /* Garante que a imagem se ajuste corretamente */
-}
-
-/*fim do style desktop*/
-@media (max-width: 763px) {
-  .container-inicio .img-titulo {
+/* Seção 4: Cards e Aplicações */
+.section-cards {
+    background-image: url(../icons/img-bg4.svg); /* Fundo claro para contraste */
+    background-size: cover;
+    background-position: center center;
+    color: #fff;
+    text-align: center;
+    padding: 2rem 1rem;
+    display: flex;
     flex-direction: column;
-  }
-
-  .container-inicio .img-titulo h1 {
-    font-size: 5vw;
-  }
-
-  .container-inicio .img-titulo img {
-    width: 200px;
-    height: 200px;
-  }
-
-  .container-inicio .btn .btn-plano {
-    padding: 5px 10px;
-    font-size: 20px;
-  }
-
-  .container-inicio .btn .btn-plano{
-    font-size: 10px;
-  }
-  .conteiner-pos-meio {
-    transform: scale(0.7);
-    transform-origin: center;
-    height: 600px;
-    margin-top: 0; /* Remove ou ajusta o espaçamento superior */
-  }
-  .separador-2 {
-    position: relative;
-    display: block;
-    width: 2px;
-    height: 50px;
-    background-color: #FFB500;
-    margin: 20px auto;
-    visibility: visible;
-    margin-top: 30px;
-  }
-  .container-meio {
-    margin-top: 80px; /* Aumenta a margem superior para afastar o conteúdo */
-  }
-
-  .container-meio .p11 {
-    margin-top: 40px; /* Se quiser ajustar a distância entre o <p> e o <h1> */
-  }
-
-  .container-meio h1 {
-    margin-top: 20px; /* Ajuste adicional para o título */
-  }
-   
-  .Contadores {
-    display: flex; /* Coloca os itens na horizontal */
-    justify-content: space-around; /* Espaça uniformemente os itens */
-    align-items: center; /* Centraliza os itens verticalmente */
-    margin: 20px 0;
-    text-align: center;
-    margin-top: 50px;
-  }
-  .FeitoParaVoce {
-    padding: 10px 0; /* Ajuste de padding para telas menores */
-  }
-
-  .containerParaVoce {
-    padding: 0 15px; /* Ajusta o padding lateral para telas menores */
-  }
-  .contador {
-    font-family: Arial, sans-serif;
-  }
-  
-  .numero {
-    font-size: 2rem; /* Tamanho maior para destaque */
-    font-weight: bold;
-    color: #e68a00; /* Cor personalizada para os números */
-  }
-  
-  .contador p {
-    font-size: 1rem;
-    color: #777;
-  }
-  
-  .contador p .destaque {
-    font-weight: bold;
-    color: #e68a00; /* Cor personalizada para as palavras destacadas */
-  }
-  
-  
-  
-  
+    align-items: center;
+}
+.section-h1 {
+    font-size: clamp(3rem, 4.3vw, 4rem);
+    margin-bottom: 2.6rem;
+    color: var(--text-dark);
 }
 
-@media (max-width: 992px) {
-  .navbar-nav {
-    display: block; /* Modifica a navegação para bloco em telas pequenas */
-    text-align: center; /* Centraliza os itens no menu */
-  }
-
-  .nav-item {
-    margin-bottom: 10px; /* Adiciona espaçamento inferior entre os itens no mobile */
-  }
-  .separador {
+.separator {
     position: relative;
-    width: 1px; /* Diminui a largura da linha */
-    height: 100px; /* Reduz a altura da linha */
-    margin: 10px auto; /* Ajusta os espaçamentos */
-    margin-top: 50px; /* Reduz o espaço superior */
-    visibility: visible;
-  }
-  .paragrafo-seguranca{
-    text-align: center;
-    font-size: 40px;
-  }
-  .conteiner-pos-meio {
-    transform: scale(0.8);
-    transform-origin: center;
-    height: 600px;
-    margin-top: 0; /* Remove ou ajusta o espaçamento superior */
-  }
-
-  
+    transform: translateY(-50px);
+    display: block; /* Torna o separador um elemento de bloco */
+    width: 2.5px; /* Largura da linha */
+    height: 7em; /* Altura da linha */
+    background-color: var(--secondary-color);
+    visibility: visible; /* Garante que o separador seja visível */
 }
-@media (max-width: 1040px){
-  .paragrafo-seguranca{
-    text-align: center;
-    font-size: 30px;
-  }
-  .separador {
-    position: relative;
-    width: 1px; /* Diminui a largura da linha */
-    height: 100px; /* Reduz a altura da linha */
-    margin: 10px auto; /* Ajusta os espaçamentos */
-    margin-top: 10px; /* Reduz o espaço superior */
-    visibility: visible;
-  }
-  .conteiner-pos-meio {
-    transform: scale(0.8);
-    transform-origin: center;
-    height: 400px;
-    margin-top: 0; /* Remove ou ajusta o espaçamento superior */
-  }
-  .franquia {
-    transform: scale(1.2); /* Reduz a escala da seção */
-    transform-origin: center; /* Centraliza a transformação */
-    height: 150px; /* Ajusta a altura da seção */
-    margin-top: 0; /* Remove o espaçamento superior */
-    display: flex; /* Garante que a imagem e o texto sejam alinhados na mesma linha */
-    flex-direction: column; /* Coloca a imagem e o texto em coluna, em vez de linha */
-    justify-content: center; /* Centraliza o conteúdo */
-  }
 
-  .franquia-image {
-    padding: 10px 0; /* Ajusta o padding da imagem */
-    width: 200%; /* Garante que a imagem ocupe toda a largura disponível */
-    position: relative;
-  }
-
-  .franquia-image img {
-    height: 150px; /* Ajusta a altura da imagem */
-    width: 200%; /* Ajusta a largura da imagem para ocupar toda a tela */
-  }
-
-  .textoFranquia {
-    font-size: 1.3rem; /* Ajusta o tamanho da fonte */
-    line-height: 1.1; /* Ajusta o espaçamento da linha */
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7); /* Ajusta a sombra do texto */
-  }
-
-  .separador-2 {
-    height: 100px; /* Ajusta a altura do separador */
-    margin-top: 25px; /* Ajusta a posição do separador */
-  }
+.cards-container {
+    max-width: 120rem;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0;
 }
-@media (max-width: 1024px){
-  .franquia {
-    transform: scale(1.2); /* Reduz a escala da seção */
-    transform-origin: center; /* Centraliza a transformação */
-    height: 200px; /* Ajusta a altura da seção */
-    margin-top: 100px; /* Remove o espaçamento superior */
-    display: flex; /* Garante que a imagem e o texto sejam alinhados na mesma linha */
-    flex-direction: column; /* Coloca a imagem e o texto em coluna, em vez de linha */
-    justify-content: center; /* Centraliza o conteúdo */
-  }
 
-  .franquia-image {
-    padding: 10px 0; /* Ajusta o padding da imagem */
-    width: 200%; /* Garante que a imagem ocupe toda a largura disponível */
-    position: relative;
-  }
+.cards-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1.5rem
+}
 
-  .franquia-image img {
-    height: 200px; /* Ajusta a altura da imagem */
-    width: 100%; /* Ajusta a largura da imagem para ocupar toda a tela */
-  }
-
-  .textoFranquia {
-    font-size: 2rem; /* Ajusta o tamanho da fonte */
-    line-height: 1.1; /* Ajusta o espaçamento da linha */
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7); /* Ajusta a sombra do texto */
-  }
-
-  .separador-2 {
-    height: 100px; /* Ajusta a altura do separador */
-    margin-top: 25px; /* Ajusta a posição do separador */
-  }
-
-  h1 {
-    font-size: 1.5rem; /* Ajusta o tamanho do texto "um texto qualquer" */
-    margin-top: 10px; /* Ajusta a margem do texto para não ficar muito colado */
-  }
-  /*responsividade sobre nos*/
-  .conteiner-conheca {
-    padding-top: 50px; /* Menos padding para se ajustar em telas pequenas */
-    margin-top: 100px;  /* Ajuste na margem para garantir que o conteúdo não fique muito afastado */
-   
-  }
-  /* Ajuste do texto para evitar que saia da tela */
-  .texto-conheca {
-    margin-left: -800px;  /* Remove a margem esquerda excessiva */
-    text-align: center;  /* Centraliza o texto para telas pequenas */
-  }
-
-  /* Ajuste do botão */
-  .b {
-    margin-left: 30px;  /* Remove a margem esquerda excessiva */
-    width: 50%;  /* Faz o botão ocupar toda a largura */
-    padding: 10px;  /* Ajusta o padding para caber em telas pequenas */
-    font-size: 14px;  /* Diminui o tamanho da fonte */
-    transform: scale(0.9);
-    margin-top: 200px;
-  }
-
-  /* Ajustes no layout da imagem */
-  .quadro-com-imagem {
-    flex-direction: column; /* Coloca os elementos um abaixo do outro */
-    width: 100%;  /* Ajusta a largura do container */
-    margin-left: 0;  /* Remove a margem esquerda excessiva */
-  }
-
-  .quadro {
-    width: 100%;  /* Ajusta o quadro para ocupar toda a largura */
-    padding: 10px;  /* Diminui o padding */
-  }
-
-  .imagem {
-    width: 100%;  /* Faz a imagem ocupar toda a largura */
-    margin-left: 0;  /* Remove a margem esquerda */
-  }
-
-  .imagem img {
-    width: 100%;  /* Garante que a imagem ocupe 100% da largura disponível */
+.card {
+    background-color: #fff;
+    color: var(--text-dark);
+    border-radius: 1rem;
+    padding: 2.3rem;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
     height: auto;
-  }
+    min-height: 24rem;
 }
-@media (max-width: 1440px){
-  .botao {
-    margin-top: -50px;
-  }
-  .separador{
-    margin-top: -100px;
-    height: 10px ;
-  }
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 11px rgba(0, 0, 0, 0.2);
 }
-@media (max-width: 768px){
-  .paragrafo-seguranca{
-    text-align: center;
-    font-size: 30px;
-  }
-  .separador {
-    position: relative;
-    width: 1px; /* Diminui a largura da linha */
-    height: 100px; /* Reduz a altura da linha */
-    margin: 10px auto; /* Ajusta os espaçamentos */
-    margin-top: 10px; /* Reduz o espaço superior */
-    visibility: visible;
-  }
-  .conteiner-pos-meio {
-    transform: scale(0.8);
-    transform-origin: center;
-    height: 400px;
-    margin-top: 0; /* Remove ou ajusta o espaçamento superior */
-  }
-  .franquia {
-    transform: scale(1.2); /* Reduz a escala da seção */
-    transform-origin: center; /* Centraliza a transformação */
-    height: 150px; /* Ajusta a altura da seção */
-    margin-top: 0; /* Remove o espaçamento superior */
-    display: flex; /* Garante que a imagem e o texto sejam alinhados na mesma linha */
-    flex-direction: column; /* Coloca a imagem e o texto em coluna, em vez de linha */
-    justify-content: center; /* Centraliza o conteúdo */
-  }
 
-  .franquia-image {
-    padding: 10px 0; /* Ajusta o padding da imagem */
-    width: 200%; /* Garante que a imagem ocupe toda a largura disponível */
-    position: relative;
-  }
-
-  .franquia-image img {
-    height: 150px; /* Ajusta a altura da imagem */
-    width: 200%; /* Ajusta a largura da imagem para ocupar toda a tela */
-  }
-
-  .textoFranquia {
-    font-size: 1.3rem; /* Ajusta o tamanho da fonte */
-    line-height: 1.1; /* Ajusta o espaçamento da linha */
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7); /* Ajusta a sombra do texto */
-  }
-
-  .separador-2 {
-    height: 100px; /* Ajusta a altura do separador */
-    margin-top: 25px; /* Ajusta a posição do separador */
-  }
-
-  h1 {
-    font-size: 1.5rem; /* Ajusta o tamanho do texto "um texto qualquer" */
-    margin-top: 10px; /* Ajusta a margem do texto para não ficar muito colado */
-  }
-  .separador-2 {
-    position: relative;
-    display: block;
-    width: 2px;
-    height: 100px;
-    background-color: #FFB500;
-    margin: 20px auto;
-    visibility: visible;
-    margin-top: 20px;
-  }
-  .container-meio {
-    margin-top: 40px; /* Aumenta a margem superior para afastar o conteúdo */
-  }
-
-  .container-meio .p11 {
-    margin-top: 40px; /* Se quiser ajustar a distância entre o <p> e o <h1> */
-  }
-
-  .container-meio h1 {
-    margin-top: 20px; /* Ajuste adicional para o título */
-  }
- 
-  .Contadores {
-    transform: scale(1);
-    display: flex; /* Coloca os itens na horizontal */
-    justify-content: space-around; /* Espaça uniformemente os itens */
-    align-items: center; /* Centraliza os itens verticalmente */
-    margin: 20px 0;
-    text-align: center;
-    margin-top: 100px;
-  }
-  
-  .contador {
-    font-family: Arial, sans-serif;
-  }
-  
-  .numero {
-    font-size: 2rem; /* Tamanho maior para destaque */
-    font-weight: bold;
-    color: #e68a00; /* Cor personalizada para os números */
-  }
-  
-  .contador p {
-    font-size: 1rem;
-    color: #777;
-  }
-  
-  .contador p .destaque {
-    font-weight: bold;
-    color: #e68a00; /* Cor personalizada para as palavras destacadas */
-  }
-  /*responsividade sobre nos*/
-  .conteiner-conheca {
-    padding-top: 50px; /* Menos padding para se ajustar em telas pequenas */
-    margin-top: 100px;  /* Ajuste na margem para garantir que o conteúdo não fique muito afastado */
-   
-  }
-
-  /* Ajuste do texto para evitar que saia da tela */
-  .texto-conheca {
-    margin-left: -500px;  /* Remove a margem esquerda excessiva */
-    text-align: center;  /* Centraliza o texto para telas pequenas */
-  }
-
-  /* Ajuste do botão */
-  .b {
-    margin-left: 0;  /* Remove a margem esquerda excessiva */
-    width: 50%;  /* Faz o botão ocupar toda a largura */
-    padding: 10px;  /* Ajusta o padding para caber em telas pequenas */
-    font-size: 14px;  /* Diminui o tamanho da fonte */
-    transform: scale(0.9);
-    margin-top: 300px;
-  }
-
-  /* Ajustes no layout da imagem */
-  .quadro-com-imagem {
-    flex-direction: column; /* Coloca os elementos um abaixo do outro */
-    width: 100%;  /* Ajusta a largura do container */
-    margin-left: 40px;  /* Remove a margem esquerda excessiva */
-  }
-
-  .quadro {
-    width: 100%;  /* Ajusta o quadro para ocupar toda a largura */
-    padding: 10px;  /* Diminui o padding */
-  }
-
-  .imagem {
-    width: 100%;  /* Faz a imagem ocupar toda a largura */
-    margin-left: 0;  /* Remove a margem esquerda */
-  }
-
-  .imagem img {
-    width: 100%;  /* Garante que a imagem ocupe 100% da largura disponível */
+.card img {
+    width: 5rem; /* Ajuste conforme necessário */
     height: auto;
-  }
-}
-@media (max-width: 425px){
-  .separador {
-    position: relative;
-    width: 1px; /* Diminui a largura da linha */
-    height: 100px; /* Reduz a altura da linha */
-    margin: 10px auto; /* Ajusta os espaçamentos */
-    margin-top: 10px; /* Reduz o espaço superior */
-    visibility: visible;
-  }
-  .conteiner-pos-meio {
-    transform: scale(0.4);
-    transform-origin: center;
-    height: 200px;
-    margin-top: 0; /* Remove ou ajusta o espaçamento superior */
-  }
-  .paragrafo-seguranca{
-    transform: scale(0.8);
-  }
-  .franquia {
-    transform: scale(1); /* Reduz a escala da seção */
-    transform-origin: center; /* Centraliza a transformação */
-    height: 150px; /* Ajusta a altura da seção */
-    margin-top: 0; /* Remove o espaçamento superior */
-    display: flex; /* Garante que a imagem e o texto sejam alinhados na mesma linha */
-    flex-direction: column; /* Coloca a imagem e o texto em coluna, em vez de linha */
-    justify-content: center; /* Centraliza o conteúdo */
-  }
-
-  .franquia-image {
-    padding: 10px 0; /* Ajusta o padding da imagem */
-    width: 200%; /* Garante que a imagem ocupe toda a largura disponível */
-    position: relative;
-  }
-
-  .franquia-image img {
-    height: 150px; /* Ajusta a altura da imagem */
-    width: 200%; /* Ajusta a largura da imagem para ocupar toda a tela */
-  }
-
-  .textoFranquia {
-    font-size: 0.8rem; /* Ajusta o tamanho da fonte */
-    line-height: 1.1; /* Ajusta o espaçamento da linha */
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7); /* Ajusta a sombra do texto */
-  }
-
-  .separador-2 {
-    height: 100px; /* Ajusta a altura do separador */
-    margin-top: 10px; /* Ajusta a posição do separador */
-  }
-
-  h1 {
-    font-size: 1.5rem; /* Ajusta o tamanho do texto "um texto qualquer" */
-    margin-top: 10px; /* Ajusta a margem do texto para não ficar muito colado */
-  }
-  .container-meio {
-    transform: scale(0.9);
-    margin-top: 70px; /* Aumenta a margem superior para afastar o conteúdo */
-  }
-
-  .container-meio .p11 {
-    margin-top: 40px; /* Se quiser ajustar a distância entre o <p> e o <h1> */
-  }
-
-  .container-meio h1 {
-    margin-top: 20px; /* Ajuste adicional para o título */
-  }
-  .Contadores {
-    transform: scale(0.8);
-    display: flex; /* Coloca os itens na horizontal */
-    justify-content: space-around; /* Espaça uniformemente os itens */
-    align-items: center; /* Centraliza os itens verticalmente */
-    margin: 20px 0;
-    text-align: center;
-    margin-top: 100px;
-  }
-  
-  .contador {
-    font-family: Arial, sans-serif;
-  }
-  
-  .numero {
-    font-size: 2rem; /* Tamanho maior para destaque */
-    font-weight: bold;
-    color: #e68a00; /* Cor personalizada para os números */
-  }
-  
-  .contador p {
-    font-size: 1rem;
-    color: #777;
-  }
-  
-  .contador p .destaque {
-    font-weight: bold;
-    color: #e68a00; /* Cor personalizada para as palavras destacadas */
-  }
-  .container {
-    transform: scale(0.9); /* Reduz a escala do contêiner */
-    margin: -500px auto 0 auto; /* Mantém o contêiner centralizado */
-    width: 90%; /* Ajusta a largura do contêiner */
-    grid-template-columns: 1fr; /* Configura os cards em uma única coluna */
-    gap: 20px; /* Ajusta o espaçamento entre os itens */
-  }
-
-  .feature-item {
-    transform: scale(1); /* Mantém os cards no tamanho padrão ou ajuste conforme necessário */
-    padding: 15px; /* Ajusta o padding dos cards */
-  }
-
-  .feature-item h3 {
-    font-size: 1rem; /* Reduz o tamanho do título */
-  }
-
-  .feature-item p {
-    font-size: 0.875rem; /* Reduz o tamanho do texto */
-  }
-
-  .feature-item .icon {
-    width: 50px; /* Diminui o tamanho do ícone */
-    height: 50px;
-    margin-bottom: 15px;
-  }
-  /*responsividade sobre nos*/
-  .conteiner-conheca {
-    padding-top: 20px; /* Menos padding para se ajustar em telas pequenas */
-    margin-top: 20px;  /* Ajuste na margem para garantir que o conteúdo não fique muito afastado */
-    transform: scale(0.1); /* Diminui a escala para 90% */
-    transform-origin: top;
-  }
-
-  /* Ajuste do texto para evitar que saia da tela */
-  .texto-conheca {
-    margin-left: 0;  /* Remove a margem esquerda excessiva */
-    text-align: center;  /* Centraliza o texto para telas pequenas */
-  }
-
-  /* Ajuste do botão */
-  .b {
-    margin-left: 0;  /* Remove a margem esquerda excessiva */
-    width: 100%;  /* Faz o botão ocupar toda a largura */
-    padding: 10px;  /* Ajusta o padding para caber em telas pequenas */
-    font-size: 14px;  /* Diminui o tamanho da fonte */
-    transform: scale(0.8);
-    margin-top: -10px;
-  }
-
-  /* Ajustes no layout da imagem */
-  .quadro-com-imagem {
-    flex-direction: column; /* Coloca os elementos um abaixo do outro */
-    width: 100%;  /* Ajusta a largura do container */
-    margin-left: 0;  /* Remove a margem esquerda excessiva */
-  }
-
-  .quadro {
-    width: 100%;  /* Ajusta o quadro para ocupar toda a largura */
-    padding: 10px;  /* Diminui o padding */
-  }
-
-  .imagem {
-    width: 100%;  /* Faz a imagem ocupar toda a largura */
-    margin-left: 0;  /* Remove a margem esquerda */
-  }
-
-  .imagem img {
-    width: 100%;  /* Garante que a imagem ocupe 100% da largura disponível */
-    height: auto;
-  }
-}
-@media (max-width: 375px){
-  .conteiner-pos-meio {
-    transform: scale(0.3);
-    transform-origin: center;
-    height: 200px;
-    margin-top: 0; /* Remove ou ajusta o espaçamento superior */
-  }
-  .separador {
-    position: relative;
-    width: 1px; /* Diminui a largura da linha */
-    height: 100px; /* Reduz a altura da linha */
-    margin: 10px auto; /* Ajusta os espaçamentos */
-    margin-top: 10px; /* Reduz o espaço superior */
-    visibility: visible;
-  }
-  .franquia {
-    transform: scale(1); /* Reduz a escala da seção */
-    transform-origin: center; /* Centraliza a transformação */
-    height: 150px; /* Ajusta a altura da seção */
-    margin-top: 0; /* Remove o espaçamento superior */
-    display: flex; /* Garante que a imagem e o texto sejam alinhados na mesma linha */
-    flex-direction: column; /* Coloca a imagem e o texto em coluna, em vez de linha */
-    justify-content: center; /* Centraliza o conteúdo */
-  }
-
-  .franquia-image {
-    padding: 10px 0; /* Ajusta o padding da imagem */
-    width: 200%; /* Garante que a imagem ocupe toda a largura disponível */
-    position: relative;
-  }
-
-  .franquia-image img {
-    height: 150px; /* Ajusta a altura da imagem */
-    width: 200%; /* Ajusta a largura da imagem para ocupar toda a tela */
-  }
-  .paragrafo-seguranca{
-    transform: scale(0.7);
-  }
-
-  .textoFranquia {
-    font-size: 0.8rem; /* Ajusta o tamanho da fonte */
-    line-height: 1.1; /* Ajusta o espaçamento da linha */
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7); /* Ajusta a sombra do texto */
-  }
-
-  .separador-2 {
-    height: 100px; /* Ajusta a altura do separador */
-    margin-top: 10px; /* Ajusta a posição do separador */
-  }
-
-  h1 {
-    font-size: 1.5rem; /* Ajusta o tamanho do texto "um texto qualquer" */
-    margin-top: 10px; /* Ajusta a margem do texto para não ficar muito colado */
-  }
-  .container-meio {
-    transform: scale(0.8);
-    margin-top: 80px; /* Aumenta a margem superior para afastar o conteúdo */
-  }
-
-  .container-meio .p11 {
-    margin-top: 40px; /* Se quiser ajustar a distância entre o <p> e o <h1> */
-  }
-
-  .container-meio h1 {
-    margin-top: 20px; /* Ajuste adicional para o título */
-  }
-  .Contadores {
-    transform: scale(0.8);
-    display: flex; /* Coloca os itens na horizontal */
-    justify-content: space-around; /* Espaça uniformemente os itens */
-    align-items: center; /* Centraliza os itens verticalmente */
-    margin: 20px 0;
-    text-align: center;
-    margin-top: 100px;
-  }
-  
-  .contador {
-    font-family: Arial, sans-serif;
-  }
-  
-  .numero {
-    font-size: 2rem; /* Tamanho maior para destaque */
-    font-weight: bold;
-    color: #e68a00; /* Cor personalizada para os números */
-  }
-  
-  .contador p {
-    font-size: 1rem;
-    color: #777;
-  }
-  
-  .contador p .destaque {
-    font-weight: bold;
-    color: #e68a00; /* Cor personalizada para as palavras destacadas */
-  }
-  .container {
-    transform: scale(0.9); /* Reduz a escala do contêiner */
-    margin: -500px auto 0 auto; /* Mantém o contêiner centralizado */
-    width: 90%; /* Ajusta a largura do contêiner */
-    grid-template-columns: 1fr; /* Configura os cards em uma única coluna */
-    gap: 20px; /* Ajusta o espaçamento entre os itens */
-  }
-
-  .feature-item {
-    transform: scale(1); /* Mantém os cards no tamanho padrão ou ajuste conforme necessário */
-    padding: 15px; /* Ajusta o padding dos cards */
-  }
-
-  .feature-item h3 {
-    font-size: 1rem; /* Reduz o tamanho do título */
-  }
-
-  .feature-item p {
-    font-size: 0.875rem; /* Reduz o tamanho do texto */
-  }
-
-  .feature-item .icon {
-    width: 50px; /* Diminui o tamanho do ícone */
-    height: 50px;
-    margin-bottom: 15px;
-  }
-  /*responsividade sobre nos*/
-  .conteiner-conheca {
-    padding-top: 10px; /* Menos padding para se ajustar em telas pequenas */
-    margin-top: 10px;  /* Ajuste na margem para garantir que o conteúdo não fique muito afastado */
-    transform: scale(0.1); /* Diminui a escala para 90% */
-    transform-origin: top;
-  }
-
-  /* Ajuste do texto para evitar que saia da tela */
-  .texto-conheca {
-    margin-left: 0;  /* Remove a margem esquerda excessiva */
-    text-align: center;  /* Centraliza o texto para telas pequenas */
-  }
-
-  /* Ajuste do botão */
-  .b {
-    margin-left: 0;  /* Remove a margem esquerda excessiva */
-    width: 100%;  /* Faz o botão ocupar toda a largura */
-    padding: 10px;  /* Ajusta o padding para caber em telas pequenas */
-    font-size: 14px;  /* Diminui o tamanho da fonte */
-    transform: scale(0.9);
-    margin-top: -200px;
-  }
-
-  /* Ajustes no layout da imagem */
-  .quadro-com-imagem {
-    flex-direction: column; /* Coloca os elementos um abaixo do outro */
-    width: 100%;  /* Ajusta a largura do container */
-    margin-left: 0;  /* Remove a margem esquerda excessiva */
-  }
-
-  .quadro {
-    width: 100%;  /* Ajusta o quadro para ocupar toda a largura */
-    padding: 10px;  /* Diminui o padding */
-  }
-
-  .imagem {
-    width: 100%;  /* Faz a imagem ocupar toda a largura */
-    margin-left: 0;  /* Remove a margem esquerda */
-  }
-
-  .imagem img {
-    width: 100%;  /* Garante que a imagem ocupe 100% da largura disponível */
-    height: auto;
-  }
-  
-}
-@media (max-width: 320px){
-  .conteiner-pos-meio {
-    transform: scale(0.3);
-    transform-origin: center;
-    height: 200px;
-    margin-top: 0; /* Remove ou ajusta o espaçamento superior */
-  }
-  .franquia {
-    transform: scale(1); /* Reduz a escala da seção */
-    transform-origin: center; /* Centraliza a transformação */
-    height: 150px; /* Ajusta a altura da seção */
-    margin-top: 0; /* Remove o espaçamento superior */
-    display: flex; /* Garante que a imagem e o texto sejam alinhados na mesma linha */
-    flex-direction: column; /* Coloca a imagem e o texto em coluna, em vez de linha */
-    justify-content: center; /* Centraliza o conteúdo */
-  }
-
-  .franquia-image {
-    padding: 10px 0; /* Ajusta o padding da imagem */
-    width: 200%; /* Garante que a imagem ocupe toda a largura disponível */
-    position: relative;
-  }
-
-  .franquia-image img {
-    height: 150px; /* Ajusta a altura da imagem */
-    width: 200%; /* Ajusta a largura da imagem para ocupar toda a tela */
-  }
-
-  .textoFranquia {
-    font-size: 0.8rem; /* Ajusta o tamanho da fonte */
-    line-height: 1.1; /* Ajusta o espaçamento da linha */
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7); /* Ajusta a sombra do texto */
-  }
-
-  .separador-2 {
-    height: 100px; /* Ajusta a altura do separador */
-    margin-top: 10px; /* Ajusta a posição do separador */
-  }
-
-  h1 {
-    font-size: 1.5rem; /* Ajusta o tamanho do texto "um texto qualquer" */
-    margin-top: 10px; /* Ajusta a margem do texto para não ficar muito colado */
-  }
-  .paragrafo-seguranca{
-   transform: scale(0.9);
-   font-size: large ;
-  }
-  .separador-2 {
-    position: relative;
-    display: block;
-    width: 2px;
-    height: 50px;
-    background-color: #FFB500;
-    margin: 20px auto;
-    visibility: visible;
-    margin-top: 30px;
-  }
-  .container-meio {
-    transform: scale(0.9);
-    margin-top: 80px; /* Aumenta a margem superior para afastar o conteúdo */
-  }
-
-  .container-meio .p11 {
-    margin-top: 40px; /* Se quiser ajustar a distância entre o <p> e o <h1> */
-  }
-
-  .container-meio h1 {
-    margin-top: 20px; /* Ajuste adicional para o título */
-  }
-  .Contadores {
-    transform: scale(0.8);
-    display: flex; /* Coloca os itens na horizontal */
-    justify-content: space-around; /* Espaça uniformemente os itens */
-    align-items: center; /* Centraliza os itens verticalmente */
-    margin: 20px 0;
-    text-align: center;
-    margin-top: 100px;
-  }
-  
-  .contador {
-    font-family: Arial, sans-serif;
-  }
-  
-  .numero {
-    font-size: 2rem; /* Tamanho maior para destaque */
-    font-weight: bold;
-    color: #e68a00; /* Cor personalizada para os números */
-  }
-  
-  .contador p {
-    font-size: 1rem;
-    color: #777;
-  }
-  
-  .contador p .destaque {
-    font-weight: bold;
-    color: #e68a00; /* Cor personalizada para as palavras destacadas */
-  }
-  .container {
-    transform: scale(0.9); /* Reduz a escala do contêiner */
-    margin: -500px auto 0 auto; /* Mantém o contêiner centralizado */
-    width: 90%; /* Ajusta a largura do contêiner */
-    grid-template-columns: 1fr; /* Configura os cards em uma única coluna */
-    gap: 20px; /* Ajusta o espaçamento entre os itens */
-  }
-
-  .feature-item {
-    transform: scale(1); /* Mantém os cards no tamanho padrão ou ajuste conforme necessário */
-    padding: 15px; /* Ajusta o padding dos cards */
-  }
-
-  .feature-item h3 {
-    font-size: 1rem; /* Reduz o tamanho do título */
-  }
-
-  .feature-item p {
-    font-size: 0.875rem; /* Reduz o tamanho do texto */
-  }
-
-  .feature-item .icon {
-    width: 50px; /* Diminui o tamanho do ícone */
-    height: 50px;
-    margin-bottom: 15px;
-  }
-  /*responsividade sobre nos*/
-  .conteiner-conheca {
-    padding-top: 20px; /* Menos padding para se ajustar em telas pequenas */
-    margin-top: 20px;  /* Ajuste na margem para garantir que o conteúdo não fique muito afastado */
-    transform: scale(0.1); /* Diminui a escala para 90% */
-    transform-origin: top;
-  }
-
-  /* Ajuste do texto para evitar que saia da tela */
-  .texto-conheca {
-    margin-left: 0;  /* Remove a margem esquerda excessiva */
-    text-align: center;  /* Centraliza o texto para telas pequenas */
-  }
-
-  /* Ajuste do botão */
-  .b {
-    margin-left: 0;  /* Remove a margem esquerda excessiva */
-    width: 100%;  /* Faz o botão ocupar toda a largura */
-    padding: 10px;  /* Ajusta o padding para caber em telas pequenas */
-    font-size: 14px;  /* Diminui o tamanho da fonte */
-    transform: scale(0.9);
-    margin-top: -10px;
-  }
-
-  /* Ajustes no layout da imagem */
-  .quadro-com-imagem {
-    flex-direction: column; /* Coloca os elementos um abaixo do outro */
-    width: 100%;  /* Ajusta a largura do container */
-    margin-left: 0;  /* Remove a margem esquerda excessiva */
-  }
-
-  .quadro {
-    width: 100%;  /* Ajusta o quadro para ocupar toda a largura */
-    padding: 10px;  /* Diminui o padding */
-  }
-
-  .imagem {
-    width: 100%;  /* Faz a imagem ocupar toda a largura */
-    margin-left: 0;  /* Remove a margem esquerda */
-  }
-
-  .imagem img {
-    width: 100%;  /* Garante que a imagem ocupe 100% da largura disponível */
-    height: auto;
-  }
+    margin-bottom: 1rem;
 }
 
+.card h3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.1rem;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.card p {
+    font-size: 1.7rem;
+    line-height: 1.5;
+}
+
+/* Responsividade da Seção 4 */
+@media (max-width: 1000px) {
+    .cards-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media (max-width: 650px) {
+    .cards-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.card-body footer{
+    font-size: 1.4rem
+}

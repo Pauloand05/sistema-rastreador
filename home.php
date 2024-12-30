@@ -1,225 +1,207 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>Empresa de Rastreamento</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/nav-footer.css">
     <link rel="stylesheet" href="css/style-home.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-
-    <title>AF RASTREADORES</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
 </head>
 
 <body>
-    <!-- navbar -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-            <!-- Logo -->
-            <img src="img/logo-af.png" alt="Logo-AF" class="logo-nav">
-            <!--icone para resposividade-->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon">
-                    <img src="icons/icone-hamburguer.png" alt="Ícone de Menu">
-                </span>
+    <!-- Navegação -->
+    <header class="navbar">
+        <div class="container nav-container">
+            <div class="logo">
+                <img src="img/logo-af.png" alt="Logo da Empresa">
+            </div>
+            <button class="menu-toggle" aria-label="Abrir menu">
+                ☰
             </button>
-            <!-- Links da Navbar -->
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto"> <!-- Alinha os itens à direita -->
-                    <li class="nav-item me-3">
-                        <a class="nav-link active" aria-current="page" href="#">Início</a>
-                    </li>
-                    <li class="nav-item me-3">
-                        <a class="nav-link" href="#">Planos</a>
-                    </li>
-                    <li class="nav-item dropdown me-3">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            Categoria
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Moto</a></li>
-                            <li><a class="dropdown-item" href="#">Carro</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="#">Caminhão</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item me-3">
-                        <a class="nav-link" href="#">Dúvidas</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contato.php">Contato</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Sobre Nós</a>
-                    </li>
-                </ul>
+            <nav class="nav-links active">
+                <button class="menu-close" aria-label="Fechar menu">✕</button>
+                <a href="home.php">Início</a>
+                <a href="sobre-nos.php">Sobre Nós</a>
+                <a href="planos.php">Planos</a>
+                <a href="duvidas.php">Dúvidas</a>
+                <a href="#footer">Contato</a>
+            </nav>
+        </div>
+    </header>
+    <script src="js/navbar.js"></script>
+
+    <!-- Seção principal com imagem e texto -->
+    <section class="background-image">
+        <div class="hero-section container">
+            <div class="hero-content">
+                <h1>Segurança Em Movimento</h1>
+                <p>Com a <span class="name">AF Rastreadores</span>, você acompanha e protege o seu veículo de onde
+                    quiser. Oferecemos tecnologia de ponta para garantir a Segurança que você merece
+                </p>
+                <a href="planos.php" class="cta-button">Conheça Nossos Planos</a>
+            </div>
+            <div class="hero-image-area">
+                <img src="img/car.png" alt="Carro Branco" class="img-hero">
             </div>
         </div>
-
-    </nav>
-  <!--  Seção: conteiner do inicio: Tranquilidade para sua familia  -->
-    <section class="container-inicio">
-        <div class="img-titulo">
-            <img src="img/log-AF.jpg" alt="Logo AF">
-            <h1 class="titulo">Tranquilidade para você, sua família ou seu negócio!</h1>
-        </div>
-
-        <div class="btn">
-            <button class="btn-plano">
-                Conheça nossos planos >
-            </button>
-        </div>
     </section>
 
-   <!-- Seção 2: mensagem de segurança tranquilidade -->
-    <section class="container-meio">
-        <p class="p1">A solução ideal para você</p>
-    </section>
-    <h1 class="paragrafo-seguranca"> Segurança para seu <span class="cores-H1"> veículo</span> e sua <span class="cores-H1">empresa</span></h1>
-    <h1 class="separador"></h1>
-    <section class="conteiner-pos-meio">
-        <div class="imageTranquilidade">
-            <img src="img/image-section-pos-meio.jpg" alt="" class="transparent-image">
-            <h1 class="texto-imagem">Tranquilidade para você,<br><span class="textoDaTranquilidade">sua família ou seu negócio</span></h1>
-            <p class="texto-imagem">Oferecemos soluções 100% em nuvem proporcionando flexibilidade e redução de custos para empresas.</p>
-            <p class="texto-imagem-p">Oferecemos soluções 100% em nuvem proporcionando flexibilidade e redução de custos para empresas.
-                <button class="botao">Conheça nossas soluções</button>
-        </div>
-        <div class="imageTranquilidade">
-            <img src="img/image-tranquilidade.jpg" alt="">
+    <section class="security-promo">
+        <div class="promo-container">
+            <div class="promo-image">
+                <img src="img/family.jpg" alt="Segurança para sua família ou negócio" />
+            </div>
+            <div class="promo-content">
+                <h1>Proteção sob medida para sua família e negócio</h1>
+                <p>
+                    Monitore sua residência ou empresa em tempo real com nossas soluções de segurança.
+                    Garantimos a proteção dos seus bens e entes queridos 24 horas por dia, com total controle na palma
+                    da sua mão.
+                </p>
+                <a href="#contato" class="cta-button">Saiba Mais</a>
+            </div>
         </div>
     </section>
 
-   <!-- Seção 3: Franquia de todos os paises  -->
-    <section class="franquia">
-        <div class="franquia-image">
-            <img src="img/imageFranquia2.jpeg" alt="">
-            <h1 class="textoFranquia"><span class="TextFranquiaspan">Franquias por todo o País para a sua comodidade</span></h1>
+    <section class="cta">
+        <div class="cta-content">
+            <h1>Controle segurança a um clique!</h1>
+            <p>Garanta o rastreamento, monitoramento e proteção 24 horas por dia. Comece agora a transformar a gestão
+                dos seus veículos e bens.</p>
+            <a href="#contato" class="cta-button">Fale Conosco</a>
         </div>
     </section>
 
-    <!-- Seção 4: Mensagem de resultado para clientes  -->
-    <div class="separador-2"></div>
-    <section class="container-meio">
-        <p class="p11">entregamos</p>
-        <h1><strong>Resultados para todos nossos clientes</strong></h1>
-    </section>
-   <!-- Seção 5: contadores -->
-    <section class="Contadores">
-        <div class="contador">
-            <span class="numero" data-target="7">0</span>
-            <p><span class="destaque">países</span> de atuação</p>
-        </div>
-        <div class="contador">
-            <span class="numero" data-target="100000">0</span>
-            <p><span class="destaque">mil</span> clientes beneficiados</p>
-        </div>
-        <div class="contador">
-            <span class="numero" data-target="20">0</span>
-            <p><span class="destaque">equipamentos</span> homologados</p>
-        </div>
-    </section>
-    <section class="FeitoParaVoce">
-        <div class="containerParaVoce">
-            <p class="p11">Soluções ideais para você e seu negócio</p>
-            <h1>Feito para você!</h1>
+    <section class="section-cards section">
+        <h1 class="separator"></h1>
+        <h1 class="section-h1">Porque escolher a <span class="name">AF Rastreadores</span>?</h1>
+        <div class="cards-container">
+            <div class="cards-grid">
+                <div class="card">
+                    <img src="icons/map-icon.svg" alt="Ícone de Rastreamento e Monitoramento">
+                    <h3>Rastreamento e Monitoramento</h3>
+                    <p>Monitore e rastreie seu veículo 24 horas por dia através da plataforma web ou aplicativos Android
+                        e iOS.</p>
+                </div>
+
+                <!-- Segurança Eletrônica 24 horas -->
+                <div class="card">
+                    <img src="icons/clock-shield.svg" alt="Ícone de Segurança Eletrônica">
+                    <h3>Segurança Eletrônica 24 horas</h3>
+                    <p>Monitore seu imóvel 24 horas através de nossos aplicativos para Android e iOS.</p>
+                </div>
+
+                <!-- Telemetria Veicular -->
+                <div class="card">
+                    <img src="icons/speedometer.svg" alt="Ícone de Telemetria Veicular">
+                    <h3>Telemetria Veicular</h3>
+                    <p>Controle e gerencie o seu veículo com KMs percorridos, horímetro, despesas e manutenções do
+                        veículo.</p>
+                </div>
+
+                <!-- Informações em Tempo Real -->
+                <div class="card">
+                    <img src="icons/data-graph.svg" alt="Ícone de Informações em Tempo Real">
+                    <h3>Informações em Tempo Real</h3>
+                    <p>Veja as informações do seu veículo em tempo real como velocidade, ignição e muito mais.</p>
+                </div>
+
+                <!-- Rastreamento Agrícola -->
+                <div class="card">
+                    <img src="icons/tractor.svg" alt="Ícone de Rastreamento Agrícola">
+                    <h3>Rastreamento Agrícola</h3>
+                    <p>Importe e exporte talhões em KML/KMZ e tenha a gestão das suas máquinas em nossa plataforma.</p>
+                </div>
+
+                <!-- De qualquer lugar do mundo -->
+                <div class="card">
+                    <img src="icons/world-check.svg" alt="Ícone de Acesso de Qualquer Lugar">
+                    <h3>De qualquer lugar do mundo</h3>
+                    <p>Nossos serviços são disponibilizados 100% na nuvem e podem ser acessados de qualquer lugar.</p>
+                </div>
+            </div>
         </div>
     </section>
 
-    <!-- Seção 6: Features de cada serviço -->
-    <section class="features">
+     <!-- Rodapé -->
+     <footer class="footer">
         <div class="container">
-            <div class="feature-item">
-                <img src="img/imgRastreamento.jpg" alt="Ícone de Rastreamento e Monitoramento" class="icon">
-                <h3>Rastreamento e Monitoramento</h3>
-                <p>Monitore e rastreie seu veículo 24 horas por dia através da plataforma web ou aplicativos Android e iOS.</p>
-            </div>
-            <div class="feature-item">
-                <img src="img/imgSegurança.png" alt="Ícone de Segurança Eletrônica" class="icon">
-                <h3>Segurança Eletrônica 24 horas</h3>
-                <p>Monitore seu imóvel 24 horas através de nossos aplicativos para Android e iOS.</p>
-            </div>
-            <div class="feature-item">
-                <img src="img/imgTelemetria.jpg" alt="Ícone de Telemetria Veicular" class="icon">
-                <h3>Telemetria Veicular</h3>
-                <p>Controle e gerencie o seu veículo com KMs percorridos, horímetro, despesas e manutenções do veículo.</p>
-            </div>
-            <div class="feature-item">
-                <img src="img/imgTempo.jpg" alt="Ícone de Informações em Tempo Real" class="icon">
-                <h3>Informações em Tempo Real</h3>
-                <p>Veja as informações do seu veículo em tempo real como velocidade, ignição e muito mais.</p>
-            </div>
-            <div class="feature-item">
-                <img src="img/imgService.jpg" alt="Ícone de Rastreamento Agrícola" class="icon">
-                <h3>Rastreamento Agrícola</h3>
-                <p>Importe e exporte talhões em KML/KMZ e tenha a gestão das suas máquinas em nossa plataforma.</p>
-            </div>
-            <div class="feature-item">
-                <img src="img/imgMundo.jpg" alt="Ícone de Nuvem" class="icon">
-                <h3>De qualquer lugar do mundo</h3>
-                <p>Nossos serviços são disponibilizados 100% em nuvem e podem ser acessados de qualquer lugar.</p>
+            <div class="row">
+                <!-- Informações de localização -->
+                <div class="col-md-3">
+                    <h5>Localização</h5>
+                    <p>Estrada de Ribamar, Loja 04, Vila Kiola<br>São José de Ribamar, MA, 65110-000</p>
+                </div>
+    
+                <!-- Informações de contato -->
+                <div class="col-md-3">
+                    <h5>Contato</h5>
+                    <p>Email: contato@empresa.com.br</p>
+                    <p>Telefone: (11) 1234-5678</p>
+                </div>
+    
+                <!-- Links úteis -->
+                <div class="col-md-3">
+                    <h5>Links úteis</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="home.php">Inicio</a></li>
+                        <li><a href="duvidas.php">Dúvidas</a></li>
+                        <li><a href="sobre-nos.php">Sobre nós</a></li>
+                        <li><a href="planos.php">Planos</a></li>
+                        <li><a href="#">Área do cliente</a></li>
+                    </ul>
+                </div>
+    
+                <!-- Redes sociais -->
+                <div class="col-md-3">
+                    <h5>Redes sociais</h5>
+                    <a href="#" class="social-icon"><i class="fab fa-facebook"></i> Facebook</a><br>
+                    <a href="https://www.instagram.com/af.rastreadores?igsh=anl0bHVrNnR5dW1t" class="social-icon"><i class="fab fa-instagram"></i> Instagram</a><br>
+                    <a href="https://wa.me/5598991258772?" class="social-icon"><i class="fab fa-whatsapp"></i> whatsapp</a><br>
+                </div>
             </div>
         </div>
-    </section>
-<!-- 
-    Seção 6: Conheça o trabalho -->
-    <section class="container-conheca">
-        <section>
-            <button class="b">Conheça nossas soluções</button>
-            <section class="texto-conheca ">
-                <p class="paragrafoConheca">Conheça um pouco</p>
-                <h1 class="paragrafoConheca">Sobre a AF</h1>
-            </section>
-            <div class="quadro-com-imagem">
-                <div class="quadro">
-                    <p>
-                        Atuando na área de segurança veicular desde 2012, a Rastrek é a maior empresa de rastreamento do Brasil.
-                        Evoluindo junto com as tecnologias disponibilizadas no seu segmento, expandiu seus conhecimentos com a
-                        participação direta de seus profissionais em projetos de sistemas de rastreamento e bloqueio veicular.
-                        <br><br>
-                        Com o pensamento totalmente direcionado à satisfação de seus clientes no quesito logística, manutenção de frota
-                        e segurança, disponibilizando informações em tempo real sobre os veículos de nossos clientes, permitindo um controle
-                        de frota e logística ágil, na tomada de decisões, reduzindo significativamente os custos no transporte e fiscalizando
-                        o uso da frota no cumprimento de suas atribuições.
-                    </p>
-                </div>
-
-                <div class="imagem">
-                    <img src="img/amizade.avif" alt="Descrição da imagem">
+    
+            <!-- Ícone abaixo da localização -->
+    
+            <!-- Ícones abaixo da localização -->
+            <div class="icon mt-5">
+                <div class="row justify-content-center">
+                    <div class="col-4 col-sm-2 mb-3">
+                        <!-- Ícone-1 -->
+                        <img src="icons/icon-1.svg" alt="icon-1" class="img-fluid">
+                    </div>
+    
+                    <div class="col-4 col-sm-2 mb-3">
+                        <!-- Ícone-2 -->
+                        <img src="icons/icon-4.svg" alt="icon-2" class="img-fluid">
+                    </div>
+    
+                    <div class="col-4 col-sm-2 mb-3">
+                        <!-- Ícone-3 -->
+                        <img src="icons/icon-5.svg" alt="icon-3" class="img-fluid">
+                    </div>
+    
+                    <div class="col-4 col-sm-2 mb-3">
+                        <!-- Ícone-4 -->
+                        <img src="icons/icon-3.svg" alt="icon-4" class="img-fluid">
+                    </div>
+    
+                    <div class="col-4 col-sm-2 mb-3">
+                        <!-- Ícone-5 -->
+                        <img src="icons/icon-6.svg" alt="icon-5" class="img-fluid">
+                    </div>
                 </div>
             </div>
-        </section>
-    </section>
-    <script src="js/bootstrap.bundle.min.js"></script>
-
-    <!-- script do contador  -->
-    <script>
-        const animateCounters = () => {
-            const counters = document.querySelectorAll('.numero');
-            counters.forEach(counter => {
-                const target = +counter.getAttribute('data-target'); // Valor final
-                const speed = target / 200; // Velocidade da contagem
-                const updateCount = () => {
-                    const current = +counter.innerText; // Valor atual
-                    const increment = Math.ceil(speed); // Incremento
-                    if (current < target) {
-                        counter.innerText = current + increment; // Atualiza o valor
-                        setTimeout(updateCount, 30); // Rechama a função
-                    } else {
-                        counter.innerText = target; // Garante o valor final exato
-                    }
-                };
-
-                updateCount();
-            });
-        };
-        document.addEventListener('DOMContentLoaded', animateCounters);
-    </script>
+    
+        </footer>
 </body>
 
 </html>
