@@ -163,7 +163,7 @@ form button:hover {
     background-color: var(--background-light);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 780px) {
     .main-container {
         grid-template-columns: 1fr;
     }
