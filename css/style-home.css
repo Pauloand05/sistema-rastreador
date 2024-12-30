@@ -69,6 +69,12 @@
     .footer ul li {
         margin-bottom: 1rem;
     }
+    .card {
+        margin: 1rem; /* Adiciona margem ao redor de cada card */
+    }
+    .row {
+        justify-content: center; /* Alinha os cards no centro */
+    }
 }
 
 @media (max-width: 480px) {
@@ -112,14 +118,7 @@
     color: #00ff3c;
 }
 
-@media (max-width: 768px) {
-    .card {
-        margin: 1rem; /* Adiciona margem ao redor de cada card */
-    }
-    .row {
-        justify-content: center; /* Alinha os cards no centro */
-    }
-}
+
 
 /* Reset Básico */
 * {

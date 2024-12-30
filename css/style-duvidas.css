@@ -103,7 +103,7 @@ body {
 
 .main-section {
     /* background: linear-gradient(to bottom, var(--background-dark) 40rem, var(--background-light) 40rem); */
-    background-image: url(../image/img-bg2.svg);
+    background-image: url(../icons/img-bg2.svg);
     background-size: cover;
     background-position: center center;
     display: flex;
@@ -123,7 +123,7 @@ body {
 }
 
 .background-image {
-    background-image: url(../image/img-bg1.svg);
+    background-image: url(../icons/img-bg1.svg);
     background-size: cover;
     background-position: center center;
     height: 40rem;

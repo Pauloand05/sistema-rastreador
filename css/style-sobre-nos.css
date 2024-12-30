@@ -13,7 +13,7 @@
 
 /* Seção 1: Introdução. Parte inicial da Página */
 .sobre-nos {
-    background: url(../image/img-bg3.svg);
+    background: url(../icons/img-bg3.svg);
     background-size: cover;
     background-position: center center/cover;
     padding: 4rem 2rem;
@@ -87,7 +87,7 @@
 .principios-af {
     color: var(--text-dark);
     padding-bottom: 5rem;
-    background: url(../image/img-bg5.svg);
+    background: url(../icons/img-bg5.svg);
     background-size: cover;
     background-position: center center/cover;
 }

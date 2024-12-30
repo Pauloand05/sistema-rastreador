@@ -10,8 +10,8 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/global/nav-footer.css">
-    <link rel="stylesheet" href="assets/css/style-about-us.css">
+    <link rel="stylesheet" href="css/nav-footer.css">
+    <link rel="stylesheet" href="css/style-sobre-nos.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
 </head>
 
@@ -20,22 +20,22 @@
     <header class="navbar">
         <div class="container nav-container">
             <div class="logo">
-                <img src="assets/image/logo-af.png" alt="Logo da Empresa">
+                <img src="img/logo-af.png" alt="Logo da Empresa">
             </div>
             <button class="menu-toggle" aria-label="Abrir menu">
                 ☰
             </button>
             <nav class="nav-links active">
                 <button class="menu-close" aria-label="Fechar menu">✕</button>
-                <a href="/pages-test/home.html">Início</a>
-                <a href="/pages-test/about-us.html">Sobre Nós</a>
-                <a href="#services">Planos</a>
-                <a href="/pages-test/doubts.html">Dúvidas</a>
+                <a href="home.php">Início</a>
+                <a href="sobre-nos.php">Sobre Nós</a>
+                <a href="planos.php">Planos</a>
+                <a href="duvidas.php">Dúvidas</a>
                 <a href="#footer">Contato</a>
             </nav>
         </div>
     </header>
-    <script src="assets/js/navbar.js"></script>
+    <script src="js/navbar.js"></script>
     <section id="sobre-nos" class="sobre-nos">
         <div class="container">
             <div class="texto">
@@ -47,7 +47,7 @@
                 </p>
             </div>
             <div class="imagem">
-                <img src="/pages-test/assets/image/sobre-nos2.svg" alt="Imagem de rastreamento veicular">
+                <img src="icons/sobre-nos2.svg" alt="Imagem de rastreamento veicular">
             </div>
         </div>
     </section>
@@ -97,47 +97,4 @@
         </div>
     </section>
 
-
-    <footer class="footer" id="footer">
-        <div class="footer-container container">
-            <div class="column">
-                <h2>Localização</h2>
-                <p>Estrada de Ribamar, Loja 04, Vila Kiola<br>São José de Ribamar, MA, 65110-000</p>
-            </div>
-
-            <div class="column">
-                <h2>Contato</h2>
-                <p>Email: contato@empresa.com.br</p>
-                <p>Telefone: (11) 1234-5678</p>
-            </div>
-
-            <div class="column">
-                <h2>Links de Navegação</h2>
-                <ul class="list-unstyled">
-                    <li><a class="social-icon" href="/pages-test/home.html">Inicio</a></li>
-                    <li><a class="social-icon" href="/pages-test/doubts.html">Dúvidas</a></li>
-                    <li><a class="social-icon" href="/pages-test/about-us.html">Sobre nós</a></li>
-                    <li><a class="social-icon" href="planos.php">Planos</a></li>
-                    <li><a class="social-icon" href="area-do-cliente.php">Área do cliente</a></li>
-                </ul>
-            </div>
-
-            <!-- Redes sociais -->
-            <div class="column">
-                <h2>Redes sociais</h2>
-                <a href="#" class="social-icon">
-                    <i class="fab fa-facebook"></i>
-                    <span>Facebook</span>
-                </a>
-                <a href="https://www.instagram.com/af.rastreadores?igsh=anl0bHVrNnR5dW1t" class="social-icon">
-                    <i class="fab fa-instagram"></i>
-                    <span>Instagram</span>
-                </a>
-                <a href="https://wa.me/5598991258772?" class="social-icon">
-                    <i class="fab fa-whatsapp"></i>
-                    <span>Whatsapp</span>
-                </a>
-            </div>
-        </div>
-    </footer>
 </body>

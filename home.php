@@ -129,79 +129,7 @@
             </div>
         </div>
     </section>
-
-     <!-- Rodapé -->
-     <footer class="footer">
-        <div class="container">
-            <div class="row">
-                <!-- Informações de localização -->
-                <div class="col-md-3">
-                    <h5>Localização</h5>
-                    <p>Estrada de Ribamar, Loja 04, Vila Kiola<br>São José de Ribamar, MA, 65110-000</p>
-                </div>
     
-                <!-- Informações de contato -->
-                <div class="col-md-3">
-                    <h5>Contato</h5>
-                    <p>Email: contato@empresa.com.br</p>
-                    <p>Telefone: (11) 1234-5678</p>
-                </div>
-    
-                <!-- Links úteis -->
-                <div class="col-md-3">
-                    <h5>Links úteis</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="home.php">Inicio</a></li>
-                        <li><a href="duvidas.php">Dúvidas</a></li>
-                        <li><a href="sobre-nos.php">Sobre nós</a></li>
-                        <li><a href="planos.php">Planos</a></li>
-                        <li><a href="#">Área do cliente</a></li>
-                    </ul>
-                </div>
-    
-                <!-- Redes sociais -->
-                <div class="col-md-3">
-                    <h5>Redes sociais</h5>
-                    <a href="#" class="social-icon"><i class="fab fa-facebook"></i> Facebook</a><br>
-                    <a href="https://www.instagram.com/af.rastreadores?igsh=anl0bHVrNnR5dW1t" class="social-icon"><i class="fab fa-instagram"></i> Instagram</a><br>
-                    <a href="https://wa.me/5598991258772?" class="social-icon"><i class="fab fa-whatsapp"></i> whatsapp</a><br>
-                </div>
-            </div>
-        </div>
-    
-            <!-- Ícone abaixo da localização -->
-    
-            <!-- Ícones abaixo da localização -->
-            <div class="icon mt-5">
-                <div class="row justify-content-center">
-                    <div class="col-4 col-sm-2 mb-3">
-                        <!-- Ícone-1 -->
-                        <img src="icons/icon-1.svg" alt="icon-1" class="img-fluid">
-                    </div>
-    
-                    <div class="col-4 col-sm-2 mb-3">
-                        <!-- Ícone-2 -->
-                        <img src="icons/icon-4.svg" alt="icon-2" class="img-fluid">
-                    </div>
-    
-                    <div class="col-4 col-sm-2 mb-3">
-                        <!-- Ícone-3 -->
-                        <img src="icons/icon-5.svg" alt="icon-3" class="img-fluid">
-                    </div>
-    
-                    <div class="col-4 col-sm-2 mb-3">
-                        <!-- Ícone-4 -->
-                        <img src="icons/icon-3.svg" alt="icon-4" class="img-fluid">
-                    </div>
-    
-                    <div class="col-4 col-sm-2 mb-3">
-                        <!-- Ícone-5 -->
-                        <img src="icons/icon-6.svg" alt="icon-5" class="img-fluid">
-                    </div>
-                </div>
-            </div>
-    
-        </footer>
 </body>
 
 </html>
