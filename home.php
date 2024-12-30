@@ -80,7 +80,7 @@
     </section>
 
     <section class="section-cards section">
-        <h1 class="separator"></h1>
+        
         <h1 class="section-h1">Porque escolher a <span class="name">AF Rastreadores</span>?</h1>
         <div class="cards-container">
             <div class="cards-grid">

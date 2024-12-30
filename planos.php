@@ -27,10 +27,10 @@
             </button>
             <nav class="nav-links active">
                 <button class="menu-close" aria-label="Fechar menu">✕</button>
-                <a href="/pages-test/home.html">Início</a>
-                <a href="#about">Sobre Nós</a>
-                <a href="#services">Planos</a>
-                <a href="/pages-test/doubts.html">Dúvidas</a>
+                <a href="home.php">Início</a>
+                <a href="sobre-nos.php">Sobre Nós</a>
+                <a href="planos.php">Planos</a>
+                <a href="duvidas.php">Dúvidas</a>
                 <a href="#footer">Contato</a>
             </nav>
         </div>
