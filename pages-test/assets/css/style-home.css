@@ -1,12 +1,7 @@
 
-/* Configuração padrão de seções */
-.section{
-    min-height: 90vh;
-    background-color: var(--background-light);
-}
 /* Fundo svg principal */
 .background-image {
-    background-image: url(../image/img-bg1.svg);
+    background-image: url(../image/bg-home1.svg);
     background-size: cover;
     background-position: center center;
 }
@@ -37,7 +32,7 @@
 
 .hero-content p {  /* Parágrafo */
     color: var(--text-color);
-    font-size: 1.7rem;
+    font-size: 1.8rem;
     margin-bottom: 2rem;
     line-height: 1.6;
 }
@@ -46,7 +41,7 @@
     display: inline-block;
     font-family: 'Roboto', sans-serif;
     padding: 1rem 2rem;
-    font-size: 1.7rem;
+    font-size: 1.8rem;
     color: var(--text-color);
     background-color: var(--secondary-color);
     border-radius: 0.5rem;
@@ -90,7 +85,7 @@
     }
 
     .hero-content p {
-        font-size: 1.7rem;
+        font-size: 1.8rem;
     }
 
     .hero-image-area img {
@@ -98,7 +93,7 @@
     }
     .cta-button {
         font-family: 'Roboto', sans-serif;
-        font-size: 1.7rem;
+        font-size: 1.8rem;
         color: var(--text-color);
         background-color: var(--secondary-color);
         border-radius: 0.5rem;
@@ -120,7 +115,7 @@
     justify-content: center;
     align-items: center;
     padding: 8rem 1rem;
-    background-image: url(../image/img-bg4.svg); /* Fundo claro para contraste */
+    background-image: url(../image/bg-home2.svg); /* Fundo claro para contraste */
     background-size: cover;
     background-position: center center;
 }
@@ -150,14 +145,14 @@
     text-align: left;
 }
   
-.promo-content h1 {
+.promo-content h2 {
     font-size: clamp(3rem, 4.3vw, 4rem);
     margin-bottom: 1rem;
     color: var(--text-dark);
 }
   
 .promo-content p {
-    font-size: 1.7rem;
+    font-size: 1.8rem;
     margin-bottom: 2rem;
     color: var(--text-dark);
     line-height: 1.6;
@@ -214,13 +209,13 @@
     z-index: 2; /* Garante que o conteúdo fique acima do escurecimento */
 }
   
-.cta h1 {
+.cta h2 {
     font-size: clamp(3rem, 4.3vw, 4rem);
     margin-bottom: 1rem;
 }
   
 .cta p {
-    font-size: 1.7rem;
+    font-size: 1.8rem;
     margin-bottom: 2rem;
 } 
 
@@ -233,9 +228,10 @@
 
 
 
+
 /* Seção 4: Cards e Aplicações */
 .section-cards {
-    background-image: url(../image/img-bg4.svg); /* Fundo claro para contraste */
+    background-image: url(../image/bg-home2.svg); /* Fundo claro para contraste */
     background-size: cover;
     background-position: center center;
     color: #fff;
@@ -244,8 +240,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    min-height: 90vh;
 }
-.section-h1 {
+.section-h2 {
     font-size: clamp(3rem, 4.3vw, 4rem);
     margin-bottom: 2.6rem;
     color: var(--text-dark);
@@ -308,7 +305,7 @@
 }
 
 .card p {
-    font-size: 1.7rem;
+    font-size: 1.8rem;
     line-height: 1.5;
 }
 
