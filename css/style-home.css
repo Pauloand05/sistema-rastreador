@@ -1,4 +1,5 @@
 
+<<<<<<< HEAD
 /* Estilos Gerais */
 .footer {
     background-color: #333;
@@ -123,6 +124,11 @@
 /* Fundo svg principal */
 .background-image {
     background-image: url(../icons/img-bg1.svg);
+=======
+/* Fundo svg principal */
+.background-image {
+    background-image: url(../image/bg-home1.svg);
+>>>>>>> d369e1ba03a10067467d233d0f8c8f6a40763165
     background-size: cover;
     background-position: center center;
 }
@@ -153,7 +159,11 @@
 
 .hero-content p {  /* Parágrafo */
     color: var(--text-color);
+<<<<<<< HEAD
     font-size: 1.7rem;
+=======
+    font-size: 1.8rem;
+>>>>>>> d369e1ba03a10067467d233d0f8c8f6a40763165
     margin-bottom: 2rem;
     line-height: 1.6;
 }
@@ -162,7 +172,11 @@
     display: inline-block;
     font-family: 'Roboto', sans-serif;
     padding: 1rem 2rem;
+<<<<<<< HEAD
     font-size: 1.7rem;
+=======
+    font-size: 1.8rem;
+>>>>>>> d369e1ba03a10067467d233d0f8c8f6a40763165
     color: var(--text-color);
     background-color: var(--secondary-color);
     border-radius: 0.5rem;
@@ -206,7 +220,11 @@
     }
 
     .hero-content p {
+<<<<<<< HEAD
         font-size: 1.7rem;
+=======
+        font-size: 1.8rem;
+>>>>>>> d369e1ba03a10067467d233d0f8c8f6a40763165
     }
 
     .hero-image-area img {
@@ -214,7 +232,11 @@
     }
     .cta-button {
         font-family: 'Roboto', sans-serif;
+<<<<<<< HEAD
         font-size: 1.7rem;
+=======
+        font-size: 1.8rem;
+>>>>>>> d369e1ba03a10067467d233d0f8c8f6a40763165
         color: var(--text-color);
         background-color: var(--secondary-color);
         border-radius: 0.5rem;
@@ -236,7 +258,11 @@
     justify-content: center;
     align-items: center;
     padding: 8rem 1rem;
+<<<<<<< HEAD
     background-image: url(../icons/img-bg4.svg); /* Fundo claro para contraste */
+=======
+    background-image: url(../image/bg-home2.svg); /* Fundo claro para contraste */
+>>>>>>> d369e1ba03a10067467d233d0f8c8f6a40763165
     background-size: cover;
     background-position: center center;
 }
@@ -266,14 +292,22 @@
     text-align: left;
 }
   
+<<<<<<< HEAD
 .promo-content h1 {
+=======
+.promo-content h2 {
+>>>>>>> d369e1ba03a10067467d233d0f8c8f6a40763165
     font-size: clamp(3rem, 4.3vw, 4rem);
     margin-bottom: 1rem;
     color: var(--text-dark);
 }
   
 .promo-content p {
+<<<<<<< HEAD
     font-size: 1.7rem;
+=======
+    font-size: 1.8rem;
+>>>>>>> d369e1ba03a10067467d233d0f8c8f6a40763165
     margin-bottom: 2rem;
     color: var(--text-dark);
     line-height: 1.6;
@@ -303,7 +337,11 @@
 /* Seção 3: Call to Action */
 .cta {
     position: relative;
+<<<<<<< HEAD
     background-image: url('../img/cta-bg.jpeg'); /* Caminho para a imagem de fundo será adicionado aqui */
+=======
+    background-image: url('../image/cta-bg.jpeg'); /* Caminho para a imagem de fundo será adicionado aqui */
+>>>>>>> d369e1ba03a10067467d233d0f8c8f6a40763165
     background-size: cover;
     background-position: center;
     color: white;
@@ -330,23 +368,45 @@
     z-index: 2; /* Garante que o conteúdo fique acima do escurecimento */
 }
   
+<<<<<<< HEAD
 .cta h1 {
+=======
+.cta h2 {
+>>>>>>> d369e1ba03a10067467d233d0f8c8f6a40763165
     font-size: clamp(3rem, 4.3vw, 4rem);
     margin-bottom: 1rem;
 }
   
 .cta p {
+<<<<<<< HEAD
     font-size: 1.7rem;
     margin-bottom: 2rem;
 } 
+=======
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+} 
+
+/* Responsividade da Seção 3 */
+@media (max-width: 900px) {
+
+}
+>>>>>>> d369e1ba03a10067467d233d0f8c8f6a40763165
 
 
 
 
 
+<<<<<<< HEAD
 /* Seção 4: Cards e Aplicações */
 .section-cards {
     background-image: url(../icons/img-bg4.svg); /* Fundo claro para contraste */
+=======
+
+/* Seção 4: Cards e Aplicações */
+.section-cards {
+    background-image: url(../image/bg-home2.svg); /* Fundo claro para contraste */
+>>>>>>> d369e1ba03a10067467d233d0f8c8f6a40763165
     background-size: cover;
     background-position: center center;
     color: #fff;
@@ -355,8 +415,14 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+<<<<<<< HEAD
 }
 .section-h1 {
+=======
+    min-height: 90vh;
+}
+.section-h2 {
+>>>>>>> d369e1ba03a10067467d233d0f8c8f6a40763165
     font-size: clamp(3rem, 4.3vw, 4rem);
     margin-bottom: 2.6rem;
     color: var(--text-dark);
@@ -419,7 +485,11 @@
 }
 
 .card p {
+<<<<<<< HEAD
     font-size: 1.7rem;
+=======
+    font-size: 1.8rem;
+>>>>>>> d369e1ba03a10067467d233d0f8c8f6a40763165
     line-height: 1.5;
 }
 
@@ -433,6 +503,7 @@
     .cards-grid {
         grid-template-columns: 1fr;
     }
+<<<<<<< HEAD
 }
 
 body h5{
@@ -445,4 +516,6 @@ body p, li, a{
 
 .card-body footer{
     font-size: 1.4rem
+=======
+>>>>>>> d369e1ba03a10067467d233d0f8c8f6a40763165
 }
