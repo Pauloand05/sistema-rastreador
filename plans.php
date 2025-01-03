@@ -10,8 +10,8 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/global/nav-footer.css">
-    <link rel="stylesheet" href="assets/css/style-plans.css">
+    <link rel="stylesheet" href="css/global/nav-footer.css">
+    <link rel="stylesheet" href="css/style-plans.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
 </head>
 
@@ -20,22 +20,22 @@
     <header class="navbar">
         <div class="container nav-container">
             <div class="logo">
-                <img src="assets/image/logo-af.png" alt="Logo da Empresa">
+                <img src="image/logo-af.png" alt="Logo da Empresa">
             </div>
             <button class="menu-toggle" aria-label="Abrir menu">
                 ☰
             </button>
             <nav class="nav-links active">
                 <button class="menu-close" aria-label="Fechar menu">✕</button>
-                <a href="/pages-test/home.html">Início</a>
-                <a href="/pages-test/about-us.html">Sobre Nós</a>
-                <a href="/pages-test/plans.html">Planos</a>
-                <a href="/pages-test/doubts.html">Dúvidas</a>
+                <a href="home.php">Início</a>
+                <a href="about-us.php">Sobre Nós</a>
+                <a href="plans.php">Planos</a>
+                <a href="doubts.php">Dúvidas</a>
                 <a href="#footer">Contato</a>
             </nav>
         </div>
     </header>
-    <script src="assets/js/navbar.js"></script>
+    <script src="js/navbar.js"></script>
 
     <section class="title-section">
         <h1>Planos de Rastreamento</h1>
@@ -45,21 +45,21 @@
         <div class="carousel-container">
             <div class="carousel-slide">
                 <div class="carousel-item">
-                    <img src="assets/image/poster3.jpg" alt="Poster 1" class="poster">
+                    <img src="image/poster3.jpg" alt="Poster 1" class="poster">
                     <div class="carousel-text">
                         <h3>Comodiade e tranquilidade</h3>
                         <p>O se veículo é rastreado 24h em tempo real.</p>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="assets/image/poster1.jpg" alt="Poster 2" class="poster">
+                    <img src="image/poster1.jpg" alt="Poster 2" class="poster">
                     <div class="carousel-text">
                         <h3>Mantenha seu veículo seguro</h3>
                         <p>Temos a melhor rede de rastreamento do estado do maranhão.</p>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="assets/image/poster2.jpeg" alt="Poster 3" class="poster">
+                    <img src="image/poster2.jpeg" alt="Poster 3" class="poster">
                     <div class="carousel-text">
                         <h3>Assistência e segurança</h3>
                         <p>Sinta-se protegido a cada kilometro.</p>
@@ -75,9 +75,9 @@
             </div>
         </div>
     </section>
-    <script src="assets/js/carousel.js"></script>
+    <script src="js/carousel.js"></script>
 
-    <section class="plans-section" id="#plans">
+    <section class="plans-section" id="plans">
         <div class="plans-container">
             <div class="plan-card">
                 <div class="card-content">
@@ -181,11 +181,11 @@
                 <div class="column">
                     <h2>Links de Navegação</h2>
                     <ul class="list-unstyled">
-                        <li><a class="social-icon" href="/pages-test/home.html">Inicio</a></li>
-                        <li><a class="social-icon" href="/pages-test/doubts.html">Dúvidas</a></li>
-                        <li><a class="social-icon" href="/pages-test/about-us.html">Sobre nós</a></li>
-                        <li><a class="social-icon" href="/pages-test/plans.html">Planos</a></li>
-                        <li><a class="social-icon" href="area-do-cliente.php">Área do cliente</a></li>
+                        <li><a class="social-icon" href="home.php">Inicio</a></li>
+                        <li><a class="social-icon" href="doubts.php">Dúvidas</a></li>
+                        <li><a class="social-icon" href="about-us.php">Sobre nós</a></li>
+                        <li><a class="social-icon" href="plans.php">Planos</a></li>
+                        <li><a class="social-icon" href="#">Área do cliente</a></li>
                     </ul>
                 </div>
 
@@ -207,10 +207,10 @@
                 </div>
             </div>
             <div class="footer-icons-content">
-                <img src="assets/image/icons/footer-icons/icon-1.svg" alt="" class="footer-icon">
-                <img src="assets/image/icons/footer-icons/icon-4.svg" alt="" class="footer-icon">
-                <img src="assets/image/icons/footer-icons/icon-5.svg" alt="" class="footer-icon">
-                <img src="assets/image/icons/footer-icons/icon-3.svg" alt="" class="footer-icon">
+                <img src="image/icons/footer-icons/icon-1.svg" alt="" class="footer-icon">
+                <img src="image/icons/footer-icons/icon-4.svg" alt="" class="footer-icon">
+                <img src="image/icons/footer-icons/icon-5.svg" alt="" class="footer-icon">
+                <img src="image/icons/footer-icons/icon-3.svg" alt="" class="footer-icon">
             </div>
         </div>
     </footer>

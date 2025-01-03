@@ -10,5 +10,4 @@ menuToggle.addEventListener('click', () => {
 // Fechar o menu ao clicar no botão "X"
 menuClose.addEventListener('click', () => {
     navLinks.classList.remove('active');
-    
-});
+}); 

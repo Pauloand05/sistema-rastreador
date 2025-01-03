@@ -10,8 +10,8 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/global/nav-footer.css">
-    <link rel="stylesheet" href="assets/css/style-doubts.css">
+    <link rel="stylesheet" href="css/global/nav-footer.css">
+    <link rel="stylesheet" href="css/style-doubts.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
 </head>
 
@@ -20,22 +20,22 @@
     <header class="navbar">
         <div class="container nav-container">
             <div class="logo">
-                <img src="assets/image/logo-af.png" alt="Logo da Empresa">
+                <img src="image/logo-af.png" alt="Logo da Empresa">
             </div>
             <button class="menu-toggle" aria-label="Abrir menu">
                 ☰
             </button>
             <nav class="nav-links active">
                 <button class="menu-close" aria-label="Fechar menu">✕</button>
-                <a href="/pages-test/home.html">Início</a>
-                <a href="/pages-test/about-us.html">Sobre Nós</a>
-                <a href="/pages-test/plans.html">Planos</a>
-                <a href="/pages-test/doubts.html">Dúvidas</a>
+                <a href="home.php">Início</a>
+                <a href="about-us.php">Sobre Nós</a>
+                <a href="plans.php">Planos</a>
+                <a href="doubts.php">Dúvidas</a>
                 <a href="#footer">Contato</a>
             </nav>
         </div>
     </header>
-    <script src="assets/js/navbar.js"></script>
+    <script src="js/navbar.js"></script>
 
     <!-- Seção principal com imagem e texto -->
     <section class="main-section">
@@ -116,7 +116,7 @@
             </div>
         </div>
 
-        <script src="assets/js/doubts.js"></script>
+        <script src="js/doubts.js"></script>
     </section>
 
     <footer class="footer" id="footer">
@@ -136,11 +136,11 @@
                 <div class="column">
                     <h2>Links de Navegação</h2>
                     <ul class="list-unstyled">
-                        <li><a class="social-icon" href="/pages-test/home.html">Inicio</a></li>
-                        <li><a class="social-icon" href="/pages-test/doubts.html">Dúvidas</a></li>
-                        <li><a class="social-icon" href="/pages-test/about-us.html">Sobre nós</a></li>
-                        <li><a class="social-icon" href="/pages-test/plans.html">Planos</a></li>
-                        <li><a class="social-icon" href="area-do-cliente.php">Área do cliente</a></li>
+                        <li><a class="social-icon" href="home.php">Inicio</a></li>
+                        <li><a class="social-icon" href="doubts.php">Dúvidas</a></li>
+                        <li><a class="social-icon" href="about-us.php">Sobre nós</a></li>
+                        <li><a class="social-icon" href="plans.php">Planos</a></li>
+                        <li><a class="social-icon" href="#">Área do cliente</a></li>
                     </ul>
                 </div>
 
@@ -162,10 +162,10 @@
                 </div>
             </div>
             <div class="footer-icons-content">
-                <img src="assets/image/icons/footer-icons/icon-1.svg" alt="" class="footer-icon">
-                <img src="assets/image/icons/footer-icons/icon-4.svg" alt="" class="footer-icon">
-                <img src="assets/image/icons/footer-icons/icon-5.svg" alt="" class="footer-icon">
-                <img src="assets/image/icons/footer-icons/icon-3.svg" alt="" class="footer-icon">
+                <img src="image/icons/footer-icons/icon-1.svg" alt="" class="footer-icon">
+                <img src="image/icons/footer-icons/icon-4.svg" alt="" class="footer-icon">
+                <img src="image/icons/footer-icons/icon-5.svg" alt="" class="footer-icon">
+                <img src="image/icons/footer-icons/icon-3.svg" alt="" class="footer-icon">
             </div>
         </div>
     </footer>
