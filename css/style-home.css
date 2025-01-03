@@ -95,18 +95,6 @@
     transition: transform 0.3s ease-in-out;
 }
 
-/* Animação suave para o hover nos cards */
-.card:hover {
-    transform: translateY(-1rem);
-    box-shadow: 0 1rem 2rem linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0));
-    transition: all 0.3s ease;
-}
-
-.carousel-item img {
-    width: 100%;   /* A largura será 100% do contêiner */
-    height: auto;  /* Altura será ajustada automaticamente para manter a proporção */
-    object-fit: cover; /* Faz a imagem cobrir a área do carrossel */
-}
 
 .icon img {
     width: 100%;  /* Garante que a largura da imagem será 100% da coluna */
@@ -351,11 +339,6 @@
     font-size: 1.7rem;
     margin-bottom: 2rem;
 } 
-
-/* Responsividade da Seção 3 */
-@media (max-width: 900px) {
-
-}
 
 
 
