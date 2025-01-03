@@ -10,13 +10,8 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
-<<<<<<<< HEAD:sobre-nos.php
-    <link rel="stylesheet" href="css/nav-footer.css">
-    <link rel="stylesheet" href="css/style-sobre-nos.css">
-========
     <link rel="stylesheet" href="css/global/nav-footer.css">
-    <link rel="stylesheet" href="css/style-about-us.css">
->>>>>>>> d369e1ba03a10067467d233d0f8c8f6a40763165:about-us.php
+    <link rel="stylesheet" href="css/style-sobre-nos.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
 </head>
 
@@ -25,11 +20,7 @@
     <header class="navbar">
         <div class="container nav-container">
             <div class="logo">
-<<<<<<<< HEAD:sobre-nos.php
-                <img src="img/logo-af.png" alt="Logo da Empresa">
-========
                 <img src="image/logo-af.png" alt="Logo da Empresa">
->>>>>>>> d369e1ba03a10067467d233d0f8c8f6a40763165:about-us.php
             </div>
             <button class="menu-toggle" aria-label="Abrir menu">
                 ☰
@@ -37,15 +28,9 @@
             <nav class="nav-links active">
                 <button class="menu-close" aria-label="Fechar menu">✕</button>
                 <a href="home.php">Início</a>
-<<<<<<<< HEAD:sobre-nos.php
                 <a href="sobre-nos.php">Sobre Nós</a>
                 <a href="planos.php">Planos</a>
                 <a href="duvidas.php">Dúvidas</a>
-========
-                <a href="about-us.php">Sobre Nós</a>
-                <a href="plans.php">Planos</a>
-                <a href="doubts.php">Dúvidas</a>
->>>>>>>> d369e1ba03a10067467d233d0f8c8f6a40763165:about-us.php
                 <a href="#footer">Contato</a>
             </nav>
         </div>
@@ -62,11 +47,7 @@
                 </p>
             </div>
             <div class="imagem">
-<<<<<<<< HEAD:sobre-nos.php
-                <img src="icons/sobre-nos2.svg" alt="Imagem de rastreamento veicular">
-========
-                <img src="image/img-about-us.svg" alt="Imagem de rastreamento veicular">
->>>>>>>> d369e1ba03a10067467d233d0f8c8f6a40763165:about-us.php
+                <img src="image/img-sobre-nos.svg" alt="Imagem de rastreamento veicular">
             </div>
         </div>
     </section>
@@ -116,43 +97,6 @@
         </div>
     </section>
 
-<<<<<<<< HEAD:sobre-nos.php
-    <!-- Rodapé -->
-    <footer class="footer">
-    <div class="container">
-        <div class="row">
-            <!-- Informações de localização -->
-            <div class="col-md-3">
-                <h5>Localização</h5>
-                <p>Estrada de Ribamar, Loja 04, Vila Kiola<br>São José de Ribamar, MA, 65110-000</p>
-            </div>
-
-            <!-- Informações de contato -->
-            <div class="col-md-3">
-                <h5>Contato</h5>
-                <p>Email: contato@empresa.com.br</p>
-                <p>Telefone: (11) 1234-5678</p>
-            </div>
-
-            <!-- Links úteis -->
-            <div class="col-md-3">
-                <h5>Links úteis</h5>
-                <ul class="list-unstyled">
-                    <li><a href="home.php">Inicio</a></li>
-                    <li><a href="duvidas.php">Dúvidas</a></li>
-                    <li><a href="sobre-nos.php">Sobre nós</a></li>
-                    <li><a href="planos.php">Planos</a></li>
-                    <li><a href="area-do-cliente.php">Área do cliente</a></li>
-                </ul>
-            </div>
-
-            <!-- Redes sociais -->
-            <div class="col-md-3">
-                <h5>Redes sociais</h5>
-                <a href="#" class="social-icon"><i class="fab fa-facebook"></i> Facebook</a><br>
-                <a href="https://www.instagram.com/af.rastreadores?igsh=anl0bHVrNnR5dW1t" class="social-icon"><i class="fab fa-instagram"></i> Instagram</a><br>
-                <a href="https://wa.me/5598991258772?" class="social-icon"><i class="fab fa-whatsapp"></i> whatsapp</a><br>
-========
 
     <footer class="footer" id="footer">
         <div class="footer-container container">
@@ -172,9 +116,9 @@
                     <h2>Links de Navegação</h2>
                     <ul class="list-unstyled">
                         <li><a class="social-icon" href="home.php">Inicio</a></li>
-                        <li><a class="social-icon" href="doubts.php">Dúvidas</a></li>
-                        <li><a class="social-icon" href="about-us.php">Sobre nós</a></li>
-                        <li><a class="social-icon" href="plans.php">Planos</a></li>
+                        <li><a class="social-icon" href="duvidas.php">Dúvidas</a></li>
+                        <li><a class="social-icon" href="sobre-nos.php">Sobre nós</a></li>
+                        <li><a class="social-icon" href="planos.php">Planos</a></li>
                         <li><a class="social-icon" href="#">Área do cliente</a></li>
                     </ul>
                 </div>
@@ -201,43 +145,7 @@
                 <img src="image/icons/footer-icons/icon-4.svg" alt="" class="footer-icon">
                 <img src="image/icons/footer-icons/icon-5.svg" alt="" class="footer-icon">
                 <img src="image/icons/footer-icons/icon-3.svg" alt="" class="footer-icon">
->>>>>>>> d369e1ba03a10067467d233d0f8c8f6a40763165:about-us.php
             </div>
         </div>
-    </div>
-
-        <!-- Ícone abaixo da localização -->
-
-        <!-- Ícones abaixo da localização -->
-        <div class="icon mt-5">
-            <div class="row justify-content-center">
-                <div class="col-4 col-sm-2 mb-3">
-                    <!-- Ícone-1 -->
-                    <img src="icons/icon-1.svg" alt="icon-1" class="img-fluid">
-                </div>
-
-                <div class="col-4 col-sm-2 mb-3">
-                    <!-- Ícone-2 -->
-                    <img src="icons/icon-4.svg" alt="icon-2" class="img-fluid">
-                </div>
-
-                <div class="col-4 col-sm-2 mb-3">
-                    <!-- Ícone-3 -->
-                    <img src="icons/icon-5.svg" alt="icon-3" class="img-fluid">
-                </div>
-
-                <div class="col-4 col-sm-2 mb-3">
-                    <!-- Ícone-4 -->
-                    <img src="icons/icon-3.svg" alt="icon-4" class="img-fluid">
-                </div>
-
-                <div class="col-4 col-sm-2 mb-3">
-                    <!-- Ícone-5 -->
-                    <img src="icons/icon-6.svg" alt="icon-5" class="img-fluid">
-                </div>
-            </div>
-        </div>
-
     </footer>
-
 </body>

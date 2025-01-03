@@ -1,11 +1,7 @@
 
 /* Seção 1: Introdução. Parte inicial da Página */
 .sobre-nos {
-<<<<<<<< HEAD:css/style-sobre-nos.css
-    background: url(../icons/img-bg3.svg);
-========
     background: url(../image/bg-about-us1.svg);
->>>>>>>> d369e1ba03a10067467d233d0f8c8f6a40763165:css/style-about-us.css
     background-size: cover;
     background-position: center center/cover;
     padding: 4rem 2rem;
@@ -87,11 +83,7 @@
 .principios-af {
     color: var(--text-dark);
     padding-bottom: 5rem;
-<<<<<<<< HEAD:css/style-sobre-nos.css
-    background: url(../icons/img-bg5.svg);
-========
     background: url(../image/bg-about-us2.svg);
->>>>>>>> d369e1ba03a10067467d233d0f8c8f6a40763165:css/style-about-us.css
     background-size: cover;
     background-position: center center/cover;
 }

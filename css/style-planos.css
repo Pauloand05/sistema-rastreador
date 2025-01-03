@@ -1,406 +1,337 @@
-/* Estilos para a página */
-body {
-    font-family: "Roboto", sans-serif;
-    background-color: white;
+:root {
+    --primary-color: #007bff; 
+    --secondary-color: #f0a500; 
+    --background-dark: #16162d;
+    --text-color: #ffffff; 
+    --light-gray: #f8f8f8;
+    --background-light: #eee;
+    --background-black: #202020;
+    --text-dark: #333;
+    --button-hover: #c97208;
+}
+
+/* Seção 1: Título da pagina */
+.title-section {
+    padding: 11rem 2rem 3rem 2rem;
+    text-align: center;
+    background-image: url(../image/bg-plans.svg);
+    background-size: cover;
+}
+
+.title-section h1 {
+    font-size: clamp(3rem, 4.3vw, 4rem);
+    color: var(--text-color);
+}
+
+.title-section p {  /* Parágrafo */
+    color: var(--text-color);
+    font-size: 1.8rem;
+    line-height: 1.6;
+    padding: 1rem;
+    padding-bottom: 6rem;
 }
 
 
-/* Título e preço dos planos */
-.card-title {
-    font-size: 2.5rem;
-    font-weight: bold;
-}
-
-.card-price {
-    font-size: 3rem;
-    color: #28a745;
-    margin: 1rem 0;
-}
-
-/* Botão de contratação */
-.btn-primary {
-    background-color: #007bff;
-    border-color: #007bff;
-    height: 4rem;
+/* Seção 2: Carrossel de Posters */
+.carousel-section {
     display: flex;
-    align-items: center;
     justify-content: center;
-    margin-bottom: 1rem;
-    font-size: 1.7rem;
-    width: 100%;
-}
-
-.btn-secondary {
-    background: #28a745;
-    font-size: 1.7rem;
-    width: 100%;
-}
-
-/* Cards com os planos */
-.card {
-    background-image: url(../img/img-bg1.svg);
-    border: none;
-    border-radius: 0.8rem;
-    background-color: #16162d;
-    color: white;
-    display: flex;
+    align-items: center;
     flex-direction: column;
-    height: 100%;
+    background-image: url(../image/bg-home2.svg);
+    background-size: cover;
+    background-position: center center;
 }
 
-.card-body {
+.carousel-container {
+    position: relative;
+    overflow: hidden;
+    max-width: 130rem;
+    margin: 5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+}
+
+.carousel-slide {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+    min-width: 100%;
+    position: relative;
+    text-align: center;
+}
+
+.poster {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.carousel-text {
+    position: absolute;
+    bottom: 4%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: transparent;
+    color: var(--text-color);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    text-align: center;
+    width: 100%;
+}
+
+.carousel-text h3 {
+    margin: 0;
+    font-size: clamp(2rem, 3vw, 3rem);
+}
+
+.carousel-text p {
+    font-size: 1.8rem;
+}
+
+.prev-btn, .next-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    color: var(--text-color);
+    font-size: 2rem;
+    border: none;
+    padding: 100% 7.5%;
+    cursor: pointer;
+    z-index: 1;
+    transition: 0.2s;
+}
+
+.prev-btn {
+    left: 0;
+}
+
+.next-btn {
+    right: 0;
+}
+
+/* Indicadores */
+.carousel-indicators {
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 0.5rem;
+}
+
+.indicator {
+    width: 1rem;
+    height: 1rem;
+    background-color: #ffffff80;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.indicator.active {
+    background-color: var(--text-color);
+    transform: scale(1.2);
+}
+
+@media (max-width: 800px) {
+    .carousel-text {
+        display: none;
+    }
+}
+
+@media (max-width: 1400px) {
+    .title-section {
+        padding: 0;
+        padding-top: 10rem;
+    }
+    .title-section p {
+        padding-bottom: 5rem;
+    }
+    .carousel-container {
+        margin: 0;
+        border-radius: 0;
+    }
+}
+
+
+
+
+/* Seção 3: Planos e avaliações */
+.plans-section {
     padding: 2rem;
-    flex-grow: 1;
+    padding-bottom: 5rem;
+    display: flex;
+    justify-content: center;
+}
+  
+.plans-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    width: 100%;
+    max-width: 130rem;
+    margin-top: 2rem;
+}
+  
+.plan-card {
+    background-color: var(--background-dark);
+    border-radius: 8px;
+    padding: 2rem;
+    color: var(--text-color);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-}
-
-/* Estilos Gerais */
-.footer {
-    background-color: #333;
-    color: #fff;
-    padding: 2rem 0;
-}
-
-.footer h5 {
-    margin-bottom: 1.5rem;
-    font-size: 2.25rem;
-    font-weight: bold;
-}
-
-.footer ul {
-    padding: 0;
-    list-style-type: none;
-}
-
-.footer ul li {
-    margin: 0.5rem 0;
-}
-
-.footer ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 2rem;
-    transition: color 0.3s;
-}
-
-.footer ul li a:hover {
-    color: #ff7f50;
-}
-
-.social-icon {
-    color: #fff;
-    text-decoration: none;
-    font-size: 2.25rem;
-    margin-right: 1rem;
-}
-
-.social-icon:hover {
-    color: #ff7f50;
-}
-
-/* Responsividade */
-@media (max-width: 768px) {
-    .footer .row {
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .footer .col-md-3 {
-        margin-bottom: 2rem;
-        text-align: center;
-    }
-
-    .footer .col-md-3 h5 {
-        font-size: 2.5rem;
-    }
-
-    .footer ul {
-        padding-left: 0;
-    }
-
-    .footer ul li {
-        margin-bottom: 1rem;
-    }
-}
-
-@media (max-width: 480px) {
-    .footer .col-md-3 {
-        padding-left: 1rem;
-        padding-right: 1rem;
-    }
-
-    .footer .social-icon {
-        display: block;
-        margin-bottom: 1rem;
-    }
-}
-
-/* Efeito de escala para ícones e botões */
-.icon img:hover, .btn:hover {
-    transform: scale(1.1);
     transition: transform 0.3s ease-in-out;
 }
 
-/* Animação suave para o hover nos cards */
-.card:hover {
-    transform: translateY(-1rem);
-    box-shadow: 0 1rem 2rem linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0));
-    transition: all 0.3s ease;
+.plan-card:hover {
+    transform: translateY(1rem);
 }
-
-.carousel-item img {
-    width: 100%;   /* A largura será 100% do contêiner */
-    height: auto;  /* Altura será ajustada automaticamente para manter a proporção */
-    object-fit: cover; /* Faz a imagem cobrir a área do carrossel */
+  
+.plan-card h3 {
+    font-size: clamp(2rem, 3vw, 2.5rem);
+    margin-bottom: 1rem;
 }
-
-.icon img {
-    width: 100%;  /* Garante que a largura da imagem será 100% da coluna */
-    max-width: 9rem; /* Limita o tamanho máximo para o ícone */
-    height: auto;  /* Mantém a proporção da imagem */
+  
+.plan-card .price {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #08994b;
+    margin-bottom: 1rem;
 }
-
-.blockquote-footer{
-    color: #00ff3c;
+  
+.plan-card .description {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
 }
-
-@media (max-width: 768px) {
-    .card {
-        margin: 1rem; /* Adiciona margem ao redor de cada card */
-    }
-    .row {
-        justify-content: center; /* Alinha os cards no centro */
-    }
-}
-
-/* Reset Básico */
-* {
-    margin: 0;
+  
+.plan-card ul {
+    list-style: none;
     padding: 0;
-    box-sizing: border-box;
-}
-
-:root {
-    --primary-color: #007bff; /* Azul */
-    --secondary-color: #f0a500; /* Laranja */
-    --text-color: #ffffff; /* Branco */
-    --background-dark: #16162d; /* Azul Escuro */
-    --background-light: #eee;
-    --text-dark: #333; /* Cinza Escuro */
-    --light-gray: #f8f8f8;
-    --background-black: #202020;
-}
-
-html {
-    font-size: 62.5%; /* 1rem = 10px */
-    scroll-behavior: smooth;
-}
-
-body {
-    font-family: 'Roboto', Arial, sans-serif;
-    line-height: 1.6;
-}
-h1, h2, h3, a {
-    font-family: 'Poppins', Arial, sans-serif;
-    text-decoration: none;
-}
-
-
-/* Navegação */
-
-
-/* Cabeçalho */
-header {
-    background-image: url(../img/img-bg1.svg);
-    background-color:linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0));
-    color: white;
-    position: relative;
-}
-
-
-.cabecalho {
-    display: flex; /* Ativa o Flexbox */
-    flex-direction: column; /* Alinha os elementos verticalmente */
-    align-items: center; /* Centraliza horizontalmente */
-    justify-content: center; /* Centraliza verticalmente */
-    text-align: center; /* Centraliza o texto */
-    margin: 0 auto;
-}
-
-.cabecalho h1 {
-    font-size: 3rem; /* Aumenta o tamanho da fonte do título */
-    margin-bottom: 1rem; /* Espaçamento inferior */
-}
-
-.cabecalho p {
-    font-size: 1.8rem; /* Aumenta o tamanho da fonte do parágrafo */
-    line-height: 1.5; /* Melhor espaçamento entre linhas */
-    max-width: 70%; /* Limita a largura para facilitar leitura */
-    margin: 0 auto; /* Centraliza horizontalmente */
-}
-
-
-.navbar{
-    background-size: cover;
-    background-position: center center;
-    position: relative;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 10;
-}
-
-
-.nav-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 2rem;
-}
-
-.navbar .logo img {
-    height: 8rem;
-    width: auto;
-}
-
-.nav-links {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: static;
-    transform: none;
-    opacity: 1;
-    pointer-events: auto;
-    transition: none;
     margin-bottom: 2rem;
 }
-
-.nav-links a {
-    position: relative;
-    color: #fff;
-    font-size: 1.7rem;
-    margin-left: 3rem;
-    transition: color 0.3s ease;
+  
+.plan-card ul li {
+    margin-bottom: 0.5rem;
+    font-size: 1.8rem;
 }
 
-.nav-links a::after {
-    content: '';
-    position: absolute;
-    bottom: -1rem;
-    left: 0;
-    width: 0;
-    height: 0.2rem;
+.plan-card .btn-area {
+    display: flex;
+    flex-direction: column;
+}
+.plan-card .btn {
+    padding: 0.8rem 1.5rem;
+    font-size: 1.8rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 1rem auto;
+    margin: 0.5rem;
+}
+  
+.plan-card .btn-primary {
     background-color: var(--secondary-color);
-    transition: width 0.3s ease;
+    color: var(--text-color);
+}
+  
+.plan-card .btn-primary:hover {
+    background-color: var(--button-hover);
+}
+  
+.plan-card .btn-secondary {
+    background-color: #08994b;
+    color: var(--text-color);
+}
+  
+.plan-card .btn-secondary:hover {
+    background-color: #093a26;
+}
+  
+  /* Responsividade */
+@media (max-width: 1150px) {
+    .plans-container {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
 }
 
-.nav-links a:hover {
-    color: var(--secondary-color) /* Altera a cor do texto ao passar o mouse */
+@media (max-width: 900px) {
+    .plans-container {
+        grid-template-columns: 1fr;
+    }
 }
 
-.nav-links a:hover::after {
-    width: 100%; /* Linha se expande totalmente no hover */
-}
 
-.container {
+
+
+/* Seção 4: Comentários e avaliaçõe dos clientes */
+.testimonials-section {
+    padding: 2rem;
+    padding-bottom: 5rem;
+    background-image: url(../image/bg-home2.svg);
+    background-size: cover;
+    background-position: center center;
+    text-align: center;
+}
+  
+.testimonials-section h2 {
+    font-size: clamp(2rem, 3vw, 2.2rem);
+    margin-bottom: 2rem;
+    color: #000;
+}
+  
+.testimonials-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    width: 100%;
     max-width: 130rem;
     margin: 0 auto;
 }
-
-.social-icon {
+  
+.testimonial-card {
+    background-color: var(--background-dark);
+    border-radius: 8px;
+    padding: 2rem;
     color: var(--text-color);
-    text-decoration: none;
-    font-size: 2.25rem;
-    margin-right: 1rem;
-    transition: color 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    text-align: left;
+    transition: transform 0.2s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-.social-icon:hover {
-    color: var(--secondary-color);
+.testimonial-card:hover {
+    transform: translateY(0.5rem);
 }
 
-.menu-toggle {
-    display: none; /* Esconde o botão em telas grandes */
-    background: none;
-    border: none;
-    color: #fff;
-    font-size: 3.5rem;
-    cursor: pointer;
+.testimonial-card p {
+    margin: 0.5rem 0;
+    font-size: 1.8rem;
+}
+  
+.testimonial-card .author {
+    color: #08994b;
+    font-style: italic;
 }
 
-.menu-close {
-    display: none;
-}
-
-@media (max-width: 650px) {
-    .menu-toggle {
-        display: block; /* Exibe o botão hamburger */
-        width: 5rem;
-        height: 5rem;
-        transition: color 0.3s ease;
-    }
-    
-    .menu-close {
-        display: block;
-        position: absolute;
-        top: 1rem;
-        left: 1rem;
-        background: none;
-        border: none;
-        font-size: 3rem;
-        color: #fff;
-        cursor: pointer;
-        z-index: 20;
-        margin: 1rem;
-        transition: color 0.3s ease;
-    }
-    .menu-toggle:hover, .menu-close:hover{
-        color: var(--secondary-color);
-    }
-    
-    .nav-links {
-        position: fixed;
-        left: 0;
-        top: 0;
-        bottom: 0;
-        background: var(--background-dark); /* Leve transparência */
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        width: 20rem;
-        height: 100vh;
-        opacity: 0; /* Invisível inicialmente */
-        transform: translateX(-100%); /* Fora da tela inicialmente */
-        pointer-events: none; /* Evita cliques quando oculto */
-        transition: transform 0.3s ease, opacity 0.3s ease; /* Animações suaves */
-    }   
-    .nav-links a {
-        margin: 1rem auto;
-    }
-
-    .nav-links.active {
-        left: 0;
-        opacity: 1;
-        pointer-events: auto;
-        transform: translateX(0);
-        transition: transform 0.3s ease, opacity 0.3s ease; /* Animações suaves */
+/* Responsividade */
+@media (max-width: 1150px) {
+    .testimonials-container {
+        grid-template-columns: 1fr 1fr 1fr;
     }
 }
 
-body h5{
-    font-size: 2.5rem;
+@media (max-width: 900px) {
+    .testimonials-container {
+        grid-template-columns: 1fr;
+    }
 }
-
-body p, li, a{
-    font-size: 1.7rem;
-}
-
-.card-body footer{
-    font-size: 1.4rem
-}
+ 

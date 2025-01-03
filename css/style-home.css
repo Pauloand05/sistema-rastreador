@@ -1,134 +1,7 @@
 
-<<<<<<< HEAD
-/* Estilos Gerais */
-.footer {
-    background-color: #333;
-    color: #fff;
-    padding: 2rem 0;
-}
-
-.footer h5 {
-    margin-bottom: 1.5rem;
-    font-size: 2.25rem;
-    font-weight: bold;
-}
-
-.footer ul {
-    padding: 0;
-    list-style-type: none;
-}
-
-.footer ul li {
-    margin: 0.5rem 0;
-}
-
-.footer ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 2rem;
-    transition: color 0.3s;
-}
-
-.footer ul li a:hover {
-    color: #ff7f50;
-}
-
-.social-icon {
-    color: #fff;
-    text-decoration: none;
-    font-size: 2.25rem;
-    margin-right: 1rem;
-}
-
-.social-icon:hover {
-    color: #ff7f50;
-}
-
-/* Responsividade */
-@media (max-width: 768px) {
-    .footer .row {
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .footer .col-md-3 {
-        margin-bottom: 2rem;
-        text-align: center;
-    }
-
-    .footer .col-md-3 h5 {
-        font-size: 2.5rem;
-    }
-
-    .footer ul {
-        padding-left: 0;
-    }
-
-    .footer ul li {
-        margin-bottom: 1rem;
-    }
-    .card {
-        margin: 1rem; /* Adiciona margem ao redor de cada card */
-    }
-    .row {
-        justify-content: center; /* Alinha os cards no centro */
-    }
-}
-
-@media (max-width: 480px) {
-    .footer .col-md-3 {
-        padding-left: 1rem;
-        padding-right: 1rem;
-    }
-
-    .footer .social-icon {
-        display: block;
-        margin-bottom: 1rem;
-    }
-}
-
-/* Efeito de escala para ícones e botões */
-.icon img:hover, .btn:hover {
-    transform: scale(1.1);
-    transition: transform 0.3s ease-in-out;
-}
-
-
-.icon img {
-    width: 100%;  /* Garante que a largura da imagem será 100% da coluna */
-    max-width: 9rem; /* Limita o tamanho máximo para o ícone */
-    height: auto;  /* Mantém a proporção da imagem */
-}
-
-.blockquote-footer{
-    color: #00ff3c;
-}
-
-
-
-/* Reset Básico */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Configuração padrão de seções */
-.section{
-    min-height: 90vh;
-    background-color: var(--background-light);
-}
-/* Fundo svg principal */
-.background-image {
-    background-image: url(../icons/img-bg1.svg);
-=======
 /* Fundo svg principal */
 .background-image {
     background-image: url(../image/bg-home1.svg);
->>>>>>> d369e1ba03a10067467d233d0f8c8f6a40763165
     background-size: cover;
     background-position: center center;
 }
@@ -159,11 +32,7 @@
 
 .hero-content p {  /* Parágrafo */
     color: var(--text-color);
-<<<<<<< HEAD
-    font-size: 1.7rem;
-=======
     font-size: 1.8rem;
->>>>>>> d369e1ba03a10067467d233d0f8c8f6a40763165
     margin-bottom: 2rem;
     line-height: 1.6;
 }
@@ -172,11 +41,7 @@
     display: inline-block;
     font-family: 'Roboto', sans-serif;
     padding: 1rem 2rem;
-<<<<<<< HEAD
-    font-size: 1.7rem;
-=======
     font-size: 1.8rem;
->>>>>>> d369e1ba03a10067467d233d0f8c8f6a40763165
     color: var(--text-color);
     background-color: var(--secondary-color);
     border-radius: 0.5rem;
@@ -220,11 +85,7 @@
     }
 
     .hero-content p {
-<<<<<<< HEAD
-        font-size: 1.7rem;
-=======
         font-size: 1.8rem;
->>>>>>> d369e1ba03a10067467d233d0f8c8f6a40763165
     }
 
     .hero-image-area img {
@@ -232,11 +93,7 @@
     }
     .cta-button {
         font-family: 'Roboto', sans-serif;
-<<<<<<< HEAD
-        font-size: 1.7rem;
-=======
         font-size: 1.8rem;
->>>>>>> d369e1ba03a10067467d233d0f8c8f6a40763165
         color: var(--text-color);
         background-color: var(--secondary-color);
         border-radius: 0.5rem;
@@ -258,11 +115,7 @@
     justify-content: center;
     align-items: center;
     padding: 8rem 1rem;
-<<<<<<< HEAD
-    background-image: url(../icons/img-bg4.svg); /* Fundo claro para contraste */
-=======
     background-image: url(../image/bg-home2.svg); /* Fundo claro para contraste */
->>>>>>> d369e1ba03a10067467d233d0f8c8f6a40763165
     background-size: cover;
     background-position: center center;
 }
@@ -292,22 +145,14 @@
     text-align: left;
 }
   
-<<<<<<< HEAD
-.promo-content h1 {
-=======
 .promo-content h2 {
->>>>>>> d369e1ba03a10067467d233d0f8c8f6a40763165
     font-size: clamp(3rem, 4.3vw, 4rem);
     margin-bottom: 1rem;
     color: var(--text-dark);
 }
   
 .promo-content p {
-<<<<<<< HEAD
-    font-size: 1.7rem;
-=======
     font-size: 1.8rem;
->>>>>>> d369e1ba03a10067467d233d0f8c8f6a40763165
     margin-bottom: 2rem;
     color: var(--text-dark);
     line-height: 1.6;
@@ -337,11 +182,7 @@
 /* Seção 3: Call to Action */
 .cta {
     position: relative;
-<<<<<<< HEAD
-    background-image: url('../img/cta-bg.jpeg'); /* Caminho para a imagem de fundo será adicionado aqui */
-=======
     background-image: url('../image/cta-bg.jpeg'); /* Caminho para a imagem de fundo será adicionado aqui */
->>>>>>> d369e1ba03a10067467d233d0f8c8f6a40763165
     background-size: cover;
     background-position: center;
     color: white;
@@ -368,21 +209,12 @@
     z-index: 2; /* Garante que o conteúdo fique acima do escurecimento */
 }
   
-<<<<<<< HEAD
-.cta h1 {
-=======
 .cta h2 {
->>>>>>> d369e1ba03a10067467d233d0f8c8f6a40763165
     font-size: clamp(3rem, 4.3vw, 4rem);
     margin-bottom: 1rem;
 }
   
 .cta p {
-<<<<<<< HEAD
-    font-size: 1.7rem;
-    margin-bottom: 2rem;
-} 
-=======
     font-size: 1.8rem;
     margin-bottom: 2rem;
 } 
@@ -391,22 +223,15 @@
 @media (max-width: 900px) {
 
 }
->>>>>>> d369e1ba03a10067467d233d0f8c8f6a40763165
 
 
 
 
 
-<<<<<<< HEAD
-/* Seção 4: Cards e Aplicações */
-.section-cards {
-    background-image: url(../icons/img-bg4.svg); /* Fundo claro para contraste */
-=======
 
 /* Seção 4: Cards e Aplicações */
 .section-cards {
     background-image: url(../image/bg-home2.svg); /* Fundo claro para contraste */
->>>>>>> d369e1ba03a10067467d233d0f8c8f6a40763165
     background-size: cover;
     background-position: center center;
     color: #fff;
@@ -415,14 +240,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-<<<<<<< HEAD
-}
-.section-h1 {
-=======
     min-height: 90vh;
 }
 .section-h2 {
->>>>>>> d369e1ba03a10067467d233d0f8c8f6a40763165
     font-size: clamp(3rem, 4.3vw, 4rem);
     margin-bottom: 2.6rem;
     color: var(--text-dark);
@@ -485,11 +305,7 @@
 }
 
 .card p {
-<<<<<<< HEAD
-    font-size: 1.7rem;
-=======
     font-size: 1.8rem;
->>>>>>> d369e1ba03a10067467d233d0f8c8f6a40763165
     line-height: 1.5;
 }
 
@@ -503,19 +319,4 @@
     .cards-grid {
         grid-template-columns: 1fr;
     }
-<<<<<<< HEAD
-}
-
-body h5{
-    font-size: 2.5rem;
-}
-
-body p, li, a{
-    font-size: 1.7rem;
-}
-
-.card-body footer{
-    font-size: 1.4rem
-=======
->>>>>>> d369e1ba03a10067467d233d0f8c8f6a40763165
 }

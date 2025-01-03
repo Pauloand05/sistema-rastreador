@@ -1,116 +1,7 @@
-<<<<<<<< HEAD:css/style-duvidas.css
-html {
-    height: auto;
-}
-
-/* Estilos Gerais */
-.footer {
-    background-color: #333;
-    color: #fff;
-    padding: 2rem 0;
-}
-
-.footer h5 {
-    margin-bottom: 1.5rem;
-    font-size: 2.25rem;
-    font-weight: bold;
-}
-
-.footer ul {
-    padding: 0;
-    list-style-type: none;
-}
-
-.footer ul li {
-    margin: 0.5rem 0;
-}
-
-.footer ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 2rem;
-    transition: color 0.3s;
-}
-
-.footer ul li a:hover {
-    color: #ff7f50;
-}
-
-.social-icon {
-    color: #fff;
-    text-decoration: none;
-    font-size: 2.25rem;
-    margin-right: 1rem;
-}
-
-.social-icon:hover {
-    color: #ff7f50;
-}
-
-/* Responsividade */
-@media (max-width: 768px) {
-    .footer .row {
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .footer .col-md-3 {
-        margin-bottom: 2rem;
-        text-align: center;
-    }
-
-    .footer .col-md-3 h5 {
-        font-size: 2.5rem;
-    }
-
-    .footer ul {
-        padding-left: 0;
-    }
-
-    .footer ul li {
-        margin-bottom: 1rem;
-    }
-}
-
-@media (max-width: 480px) {
-    .footer .col-md-3 {
-        padding-left: 1rem;
-        padding-right: 1rem;
-    }
-
-    .footer .social-icon {
-        display: block;
-        margin-bottom: 1rem;
-    }
-}
-
-body {
-    background: var(--background-light);
-}
-
-:root {
-    --primary-color: #007bff; /* Azul */
-    --secondary-color: #f0a500; /* Laranja */
-    --text-color: #ffffff; /* Branco */
-    --background-dark: #16162d; /* Azul Escuro */
-    --background-light: #eee;
-    --text-dark: #333; /* Cinza Escuro */
-    --light-gray: #f8f8f8;
-    --background-black: #202020;
-}
 
 .main-section {
     /* background: linear-gradient(to bottom, var(--background-dark) 40rem, var(--background-light) 40rem); */
-    background-image: url(../icons/img-bg2.svg);
-========
-
-.main-section {
-    /* background: linear-gradient(to bottom, var(--background-dark) 40rem, var(--background-light) 40rem); */
-    background-image: url(../image/bg-doubts.svg);
->>>>>>>> d369e1ba03a10067467d233d0f8c8f6a40763165:css/style-doubts.css
+    background-image: url(../image/bg-duvidas.svg);
     background-size: cover;
     background-position: center center;
     display: flex;
@@ -129,17 +20,6 @@ body {
     border-radius: 1rem;
 }
 
-<<<<<<<< HEAD:css/style-duvidas.css
-.background-image {
-    background-image: url(../icons/img-bg1.svg);
-    background-size: cover;
-    background-position: center center;
-    height: 40rem;
-    width: 100%;
-}
-
-========
->>>>>>>> d369e1ba03a10067467d233d0f8c8f6a40763165:css/style-doubts.css
 .contact-form, .faq-section {
     border-radius: 1rem;
     padding: 4rem;
