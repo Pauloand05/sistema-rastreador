@@ -13,6 +13,9 @@
     <link rel="stylesheet" href="css/global/nav-footer.css">
     <link rel="stylesheet" href="css/style-planos.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="32x32" href="image/logo-af-32x32.png">
+    <link rel="icon" type="image/png" sizes="48x48" href="image/logo-af-48x48.png">
+    <link rel="icon" type="image/png" sizes="64x64" href="image/logo-af-64x64.png">
 </head>
 
 <body>
