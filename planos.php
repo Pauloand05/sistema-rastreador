@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Empresa de Rastreamento</title>
+    <title>AF RASTREADORES</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -42,7 +42,7 @@
 
     <section class="title-section">
         <h1>Planos de Rastreamento</h1>
-        <p>Escolha o plano que melhor se adapta as suas necessidades de segurança.</p>
+        <p>Escolha o plano que melhor se adapta a segurança do seu veículo.</p>
     </section>
     <section class="carousel-section">
         <div class="carousel-container">
@@ -84,7 +84,7 @@
         <div class="plans-container">
             <div class="plan-card">
                 <div class="card-content">
-                    <h3>Plano Básico</h3>
+                    <h3>Plano para moto</h3>
                     <p class="price">R$ 29,99/mês</p>
                     <p class="description">
                         Rastreamento básico para veículos. Ideal para quem busca segurança a baixo custo.
@@ -96,15 +96,13 @@
                     </ul>
                 </div>
                 <div class="btn-area">
-                    <a class="btn btn-primary">Contratar</a>
-                    <a href="https://wa.me/5598991258772?text=Oi, gostaria de saber mais sobre o Plano Básico!"
-                        class="btn btn-secondary">Fale Conosco!</a>
+                    <a  href="contratar.php" class="btn btn-primary">Contratar</a>
                 </div>
             </div>
 
             <div class="plan-card">
                 <div class="card-content">
-                    <h3>Plano Intermediário</h3>
+                    <h3>Plano para carro</h3>
                     <p class="price">R$ 59,99/mês</p>
                     <p class="description">
                         Rastreamento com mais recursos para quem precisa de um controle mais completo do veículo.
@@ -117,15 +115,13 @@
                     </ul>
                 </div>
                 <div class="btn-area">
-                    <a class="btn btn-primary">Contratar</a>
-                    <a href="https://wa.me/5598991258772?text=Oi, gostaria de saber mais sobre o Plano Intermediário!"
-                        class="btn btn-secondary">Fale Conosco!</a>
+                    <a  href="contratar.php" class="btn btn-primary">Contratar</a>
                 </div>
             </div>
 
             <div class="plan-card">
                 <div class="card-content">
-                    <h3>Plano Premium</h3>
+                    <h3>Plano para caminhões</h3>
                     <p class="price">R$ 99,99/mês</p>
                     <p class="description">
                         Plano completo para quem precisa de recursos avançados e controle total do rastreamento.
@@ -139,9 +135,7 @@
                     </ul>
                 </div>
                 <div class="btn-area">
-                    <a class="btn btn-primary">Contratar</a>
-                    <a href="https://wa.me/5598991258772?text=Oi, gostaria de saber mais sobre o Plano Premium!"
-                        class="btn btn-secondary">Fale Conosco!</a>
+                    <a  href="contratar.php" class="btn btn-primary">Contratar</a>
                 </div>
             </div>
         </div>
