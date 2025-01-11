@@ -48,7 +48,7 @@
                 <p>Com a <span class="name">AF Rastreadores</span>, você acompanha e protege o seu veículo de onde
                     quiser. Oferecemos tecnologia de ponta para garantir a Segurança que você merece
                 </p>
-                <a href="planos.php#planos" class="cta-button">Conheça Nossos Planos</a>
+                <a href="planos.php#plans" class="cta-button">Conheça Nossos Planos</a>
             </div>
             <div class="hero-image-area">
                 <img src="image/car.png" alt="Carro Branco" class="img-hero">
@@ -68,7 +68,7 @@
                     Garantimos a proteção dos seus bens e entes queridos 24 horas por dia, com total controle na palma
                     da sua mão.
                 </p>
-                <a href="planos.php#planos" class="cta-button">Saiba Mais</a>
+                <a href="planos.php#plans" class="cta-button">Saiba Mais</a>
             </div>
         </div>
     </section>
@@ -78,7 +78,7 @@
             <h2>Controle segurança a um clique!</h2>
             <p>Garanta o rastreamento, monitoramento e proteção 24 horas por dia. Comece agora a transformar a gestão
                 dos seus veículos e bens.</p>
-            <a href="planos.php#planos" class="cta-button">Fale Conosco</a>
+            <a href="planos.php#plans" class="cta-button">Fale Conosco</a>
         </div>
     </section>
 

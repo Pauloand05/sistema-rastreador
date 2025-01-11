@@ -245,15 +245,6 @@
     background-color: var(--button-hover);
 }
   
-.plan-card .btn-secondary {
-    background-color: #08994b;
-    color: var(--text-color);
-}
-  
-.plan-card .btn-secondary:hover {
-    background-color: #093a26;
-}
-  
   /* Responsividade */
 @media (max-width: 1150px) {
     .plans-container {

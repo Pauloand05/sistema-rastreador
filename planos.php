@@ -32,7 +32,7 @@
                 <button class="menu-close" aria-label="Fechar menu">✕</button>
                 <a href="home.php">Início</a>
                 <a href="sobre-nos.php">Sobre Nós</a>
-                <a href="plans.php">Planos</a>
+                <a href="planos.php">Planos</a>
                 <a href="duvidas.php">Dúvidas</a>
                 <a href="#footer">Contato</a>
             </nav>
@@ -181,7 +181,7 @@
                         <li><a class="social-icon" href="home.php">Inicio</a></li>
                         <li><a class="social-icon" href="duvidas.php">Dúvidas</a></li>
                         <li><a class="social-icon" href="sobre-nos.php">Sobre nós</a></li>
-                        <li><a class="social-icon" href="plans.php">Planos</a></li>
+                        <li><a class="social-icon" href="planos.php">Planos</a></li>
                         <li><a class="social-icon" href="#">Área do cliente</a></li>
                     </ul>
                 </div>

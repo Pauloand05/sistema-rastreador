@@ -14,7 +14,7 @@
     grid-template-columns: 1fr 1.4fr;
     align-items: center;
     gap: 2rem;
-    height: 90vh;
+    min-height: 90vh;
     padding: 2rem;
     background: transparent;
 }
