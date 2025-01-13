@@ -8,9 +8,16 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
+    <!-- Carregando jQuery primeiro -->
+    <script src="js/jquery.min.js"></script>
+    <!-- JQuery (caso esteja usando JQuery Mask) -->
+    <script src="js/jquery.mask.min.js"></script>
     <link rel="stylesheet" href="css/global/nav-footer.css">
     <link rel="stylesheet" href="css/style-contratar.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="32x32" href="image/logo-af-32x32.png">
+    <link rel="icon" type="image/png" sizes="48x48" href="image/logo-af-48x48.png">
+    <link rel="icon" type="image/png" sizes="64x64" href="image/logo-af-64x64.png">
 </head>
 <body>
 <!-- Navegação -->
@@ -45,7 +52,7 @@
                 <input type="email" id="email" name="email" required placeholder="Digite seu email">
                 
                 <label for="telefone">Telefone:</label>
-                <input type="tel" id="telefone" name="telefone" required placeholder="Digite seu telefone">
+                <input type="text" id="telefone" name="telefone" required placeholder="Digite seu telefone">
                 
                 <label for="plano">Plano de Interesse:</label>
                 <select id="plano" name="plano" required>
@@ -115,5 +122,13 @@
             </div>
         </div>
     </footer>
+
+    <!-- Script de Telefone -->
+    <script>
+        $(document).ready(function() {
+            // Máscara para o telefone
+            $('#telefone').mask('(00) 00000-0000');
+        });
+    </script>
 </body>
 </html>

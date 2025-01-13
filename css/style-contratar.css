@@ -22,11 +22,11 @@ body {
     min-height: 105vh;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(to right, var(--background-dark) 50%, var(--secondary-color) 50%);
+    background: linear-gradient(45deg, #16162d, #1a3a5f);
 }
 
 .form-container {
-    margin: 2rem;
+    margin: 7rem 2rem 2rem; /* Aplica 5rem apenas no topo, 2rem nas laterais e 2rem na parte inferior */
     padding: 2.5rem;
     background-color: var(--background-light);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
@@ -35,6 +35,7 @@ body {
     max-width: 70rem;
     color: var(--text-dark);
 }
+
 
 .form-container h2 {
     margin-bottom: 2rem;
