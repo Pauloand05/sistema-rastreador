@@ -78,7 +78,7 @@
             <h2>Controle segurança a um clique!</h2>
             <p>Garanta o rastreamento, monitoramento e proteção 24 horas por dia. Comece agora a transformar a gestão
                 dos seus veículos e bens.</p>
-            <a href="planos.php#plans" class="cta-button">Fale Conosco</a>
+            <a href="https://wa.me/5598992244831?text=Olá,%20gostaria%20de%20saber%20mais%20sobre%20o%20rastreamento%20veicular!!" class="cta-button" target="_blank">Fale Conosco</a>
         </div>
     </section>
 
