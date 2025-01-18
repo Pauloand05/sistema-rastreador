@@ -108,18 +108,18 @@
 
                 <div class="column">
                     <h2>Contato</h2>
-                    <p>Email: contato@empresa.com.br</p>
-                    <p>Telefone: (11) 1234-5678</p>
+                    <p>Email: af.rastreadores@gmail.com</p>
+                    <p>Telefone: (98) 99224-4831</p>
                 </div>
 
                 <div class="column">
                     <h2>Links de Navegação</h2>
                     <ul class="list-unstyled">
                         <li><a class="social-icon" href="home.php">Inicio</a></li>
-                        <li><a class="social-icon" href="duvidas.php">Dúvidas</a></li>
                         <li><a class="social-icon" href="sobre-nos.php">Sobre nós</a></li>
                         <li><a class="social-icon" href="planos.php">Planos</a></li>
-                        <li><a class="social-icon" href="#">Área do cliente</a></li>
+                        <li><a class="social-icon" href="duvidas.php">Dúvidas</a></li>
+                        <li><a class="social-icon" href="#footer">Contato</a></li>
                     </ul>
                 </div>
 
@@ -134,7 +134,7 @@
                         <i class="fab fa-instagram"></i>
                         <span>Instagram</span>
                     </a>
-                    <a href="https://wa.me/5598991258772?" class="social-icon">
+                    <a href="https://wa.me/5598992244831?" class="social-icon">
                         <i class="fab fa-whatsapp"></i>
                         <span>Whatsapp</span>
                     </a>
