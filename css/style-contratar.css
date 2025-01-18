@@ -1,0 +1,106 @@
+:root {
+    --primary-color: #007bff; 
+    --secondary-color: #f0a500; 
+    --background-dark: #16162d;
+    --text-color: #ffffff; 
+    --light-gray: #f8f8f8;
+    --background-light: #eee;
+    --background-black: #202020;
+    --text-dark: #333;
+    --button-hover: #c97208;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--background-light);
+    color: var(--text-dark);
+}
+
+.contrato-section {
+    display: flex;
+    min-height: 105vh;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(45deg, #16162d, #1a3a5f);
+}
+
+.form-container {
+    margin: 7rem 2rem 2rem; /* Aplica 5rem apenas no topo, 2rem nas laterais e 2rem na parte inferior */
+    padding: 2.5rem;
+    background-color: var(--background-light);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    width: 100%;
+    max-width: 70rem;
+    color: var(--text-dark);
+}
+
+
+.form-container h2 {
+    margin-bottom: 2rem;
+    font-size: clamp(2.5rem, 4.3vw, 3.5rem);
+    color: var(--text-dark);
+    text-align: center;
+    font-weight: 600;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    font-size: 1.6rem;
+}
+
+input, select {
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    font-size: 1.6rem;
+    font-family: 'Roboto', Arial, sans-serif;
+    border-radius: 4px;
+    outline: none;
+    border-radius: 5px;
+    background-color: var(--light-gray);
+}
+
+button.submit-btn {
+    margin-top: 2rem;
+    padding: 0.8rem;
+    border: none;
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    font-size: 1.6rem;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button.submit-btn:hover {
+    background-color: var(--button-hover);
+}
+
+.hidden {
+    display: none;
+}
+
+#mensagemSucesso {
+    margin-top: 1rem;
+    font-size: 1.6rem;
+    color: #08994b;
+}
+
+a.back-btn {
+    display: inline-block;
+    margin-top: 1rem;
+    text-decoration: none;
+    color: var(--background-dark);
+    font-weight: bold;
+    font-size: 1.3rem;
+}

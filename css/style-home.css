@@ -1,72 +1,322 @@
-.container-fluid{
-    /* background-color: #343a40; */
-    /* background-color: #e1e1e1; */
-    background-color: #212529;
-    /* background-color: #f1f1f1; */
-    /* background-color: #f8f8f8; */
-    /* background-color: #2e6a47; */
+
+/* Fundo svg principal */
+.background-image {
+    background-image: url(../image/bg-home1.svg);
+    background-size: cover;
+    background-position: center center;
 }
 
-#navbarNav a{
-    color: white;
-    margin-right: 15px;  /* Adiciona um espaçamento de 15px entre os itens */
-    transition: color 0.3s;      /* Adiciona transição suave para a cor */
+
+
+/* Seção 1: Carro e Texto */
+.hero-section {
+    display: grid;
+    grid-template-columns: 1fr 1.4fr;
+    align-items: center;
+    gap: 2rem;
+    min-height: 90vh;
+    padding: 2rem;
+    background: transparent;
 }
 
-#navbarNav a:hover {
-    color: #f8f8f8;              /* Cor do texto quando o mouse passar sobre os itens */
+.hero-content {  /* Conteúdo Texto */
+    text-align: left;
+    padding: 2rem
 }
 
-.navbar-nav {
-    display: flex;               /* Usando Flexbox */
-    justify-content: space-evenly; /* Espaçamento igual entre os itens */
-    width: 100%;                  /* Garantir que ocupe toda a largura */
+.hero-content h1 {  /* Texto principal */
+    font-size: clamp(1.6rem, 4.3vw, 5.3rem);
+    margin-bottom: 1.5rem;
+    color: var(--text-color);
 }
 
-.nav-item {
-    margin: 0 10px;              /* Opcional: para adicionar um pequeno espaçamento lateral entre os itens */
+.hero-content p {  /* Parágrafo */
+    color: var(--text-color);
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+    line-height: 1.6;
 }
 
-.dropdown-menu{
-    background-color: #212529;
+.cta-button {  /* Botão de Planos */
+    display: inline-block;
+    font-family: 'Roboto', sans-serif;
+    padding: 1rem 2rem;
+    font-size: 1.8rem;
+    color: var(--text-color);
+    background-color: var(--secondary-color);
+    border-radius: 0.5rem;
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-.logo-nav {width: 60px; height: 60px;}
-
-/* Estilo para o botão hamburger com imagem personalizada */
-.navbar-toggler-icon {
-    background: transparent; /* Remove o fundo padrão */
-    border: none; /* Remove a borda padrão */
+.cta-button:hover {
+    background-color: var(--button-hover);
 }
 
-.navbar-toggler-icon img {
-    width: 25px;  /* Ajuste o tamanho da imagem */
-    height: auto; /* Mantém a proporção da imagem */
+.hero-image-area {  /* Conteúdo Imagem*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-/* Estilo do ícone hamburger */
-.navbar-toggler-icon {
-    background-color: transparent;  /* Remove qualquer fundo do botão */
-    border: none;                   /* Remove a borda do botão */
+.hero-image-area img { /* Imagem do Carro */
+    width: 100%;
+    border-radius: 2rem;
 }
 
-/* Mudando as linhas do ícone hamburger para branco */
-.navbar-toggler-icon span {
-    color: chartreuse       /* Torna as 3 linhas do ícone brancas */
-}
-
-/* Estilos do botão hamburger */
-.navbar-toggler {
-    border: none;                   /* Remove a borda do botão */
-}
-
-@media (max-width: 992px) {
-    .navbar-nav {
-        display: block;              /* Modifica a navegação para bloco em telas pequenas */
-        text-align: center;          /* Centraliza os itens no menu */
+/* Responsividade da Seção 1 */
+@media (max-width: 900px) {
+    .hero-section {
+        grid-template-columns: 1fr;
+        gap: 0;
+        padding-top: 8.5rem;
     }
 
-    .nav-item {
-        margin-bottom: 10px;         /* Adiciona espaçamento inferior entre os itens no mobile */
+    .hero-content {
+        text-align: center;
+        display: flex; 
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hero-content h1 {
+        font-size: 3rem;
+    }
+
+    .hero-content p {
+        font-size: 1.8rem;
+    }
+
+    .hero-image-area img {
+        max-width: 60rem;
+    }
+    .cta-button {
+        font-family: 'Roboto', sans-serif;
+        font-size: 1.8rem;
+        color: var(--text-color);
+        background-color: var(--secondary-color);
+        border-radius: 0.5rem;
+        transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+    
+    .cta-button:hover {
+        background-color: var(--button-hover);
+    }
+}
+
+
+
+
+
+/* Seção 2: Tranquilidade para família */
+.security-promo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8rem 1rem;
+    background-image: url(../image/bg-home2.svg); /* Fundo claro para contraste */
+    background-size: cover;
+    background-position: center center;
+}
+  
+.promo-container {
+    display: grid;
+    grid-template-columns: 1.3fr 1fr;
+    max-width: 130rem; /* Largura máxima */
+    width: 100%;
+    align-items: center;
+    gap: 4rem;
+    min-height: 60vh;
+}
+  
+.promo-image {
+    flex: 1;
+    min-width: 20rem;
+}
+  
+.promo-image img {
+    width: 100%;
+    height: auto;
+}
+  
+.promo-content {
+    flex: 1;
+    text-align: left;
+}
+  
+.promo-content h2 {
+    font-size: clamp(3rem, 4.3vw, 4rem);
+    margin-bottom: 1rem;
+    color: var(--text-dark);
+}
+  
+.promo-content p {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+    color: var(--text-dark);
+    line-height: 1.6;
+}
+
+
+/* Responsividade da Seção 2 */
+@media (max-width: 850px) {
+    .promo-container {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    .promo-image {
+        max-width: 70rem;
+        margin: 0 auto;
+    }
+    .promo-content {
+        padding: 1rem;
+        text-align: center;
+    }
+}
+
+
+
+
+
+/* Seção 3: Call to Action */
+.cta {
+    position: relative;
+    background-image: url('../image/cta-bg.jpeg'); /* Caminho para a imagem de fundo será adicionado aqui */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 6rem 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+}
+  
+.cta::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3); /* Escurece a imagem de fundo */
+    z-index: 1;
+}
+  
+.cta-content {
+    position: relative;
+    z-index: 2; /* Garante que o conteúdo fique acima do escurecimento */
+}
+  
+.cta h2 {
+    font-size: clamp(3rem, 4.3vw, 4rem);
+    margin-bottom: 1rem;
+}
+  
+.cta p {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+} 
+
+/* Responsividade da Seção 3 */
+@media (max-width: 900px) {
+
+}
+
+
+
+
+
+
+/* Seção 4: Cards e Aplicações */
+.section-cards {
+    background-image: url(../image/bg-home2.svg); /* Fundo claro para contraste */
+    background-size: cover;
+    background-position: center center;
+    color: #fff;
+    text-align: center;
+    padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 90vh;
+}
+.section-h2 {
+    font-size: clamp(3rem, 4.3vw, 4rem);
+    margin-bottom: 2.6rem;
+    color: var(--text-dark);
+}
+
+.separator {
+    position: relative;
+    transform: translateY(-50px);
+    display: block; /* Torna o separador um elemento de bloco */
+    width: 2.5px; /* Largura da linha */
+    height: 7em; /* Altura da linha */
+    background-color: var(--secondary-color);
+    visibility: visible; /* Garante que o separador seja visível */
+}
+
+.cards-container {
+    max-width: 120rem;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0;
+}
+
+.cards-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1.5rem
+}
+
+.card {
+    background-color: #fff;
+    color: var(--text-dark);
+    border-radius: 1rem;
+    padding: 2.3rem;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: auto;
+    min-height: 24rem;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 11px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+    width: 5rem; /* Ajuste conforme necessário */
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+.card h3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.1rem;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.card p {
+    font-size: 1.8rem;
+    line-height: 1.5;
+}
+
+/* Responsividade da Seção 4 */
+@media (max-width: 1000px) {
+    .cards-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media (max-width: 650px) {
+    .cards-grid {
+        grid-template-columns: 1fr;
     }
 }

@@ -1,0 +1,328 @@
+:root {
+    --primary-color: #007bff; 
+    --secondary-color: #f0a500; 
+    --background-dark: #16162d;
+    --text-color: #ffffff; 
+    --light-gray: #f8f8f8;
+    --background-light: #eee;
+    --background-black: #202020;
+    --text-dark: #333;
+    --button-hover: #c97208;
+}
+
+/* Seção 1: Título da pagina */
+.title-section {
+    padding: 11rem 2rem 3rem 2rem;
+    text-align: center;
+    background-image: url(../image/bg-plans.svg);
+    background-size: cover;
+}
+
+.title-section h1 {
+    font-size: clamp(3rem, 4.3vw, 4rem);
+    color: var(--text-color);
+}
+
+.title-section p {  /* Parágrafo */
+    color: var(--text-color);
+    font-size: 1.8rem;
+    line-height: 1.6;
+    padding: 1rem;
+    padding-bottom: 6rem;
+}
+
+
+/* Seção 2: Carrossel de Posters */
+.carousel-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url(../image/bg-home2.svg);
+    background-size: cover;
+    background-position: center center;
+}
+
+.carousel-container {
+    position: relative;
+    overflow: hidden;
+    max-width: 130rem;
+    margin: 5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+}
+
+.carousel-slide {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+    min-width: 100%;
+    position: relative;
+    text-align: center;
+}
+
+.poster {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.carousel-text {
+    position: absolute;
+    bottom: 4%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: transparent;
+    color: var(--text-color);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    text-align: center;
+    width: 100%;
+}
+
+.carousel-text h3 {
+    margin: 0;
+    font-size: clamp(2rem, 3vw, 3rem);
+}
+
+.carousel-text p {
+    font-size: 1.8rem;
+}
+
+.prev-btn, .next-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    color: var(--text-color);
+    font-size: 2rem;
+    border: none;
+    padding: 100% 7.5%;
+    cursor: pointer;
+    z-index: 1;
+    transition: 0.2s;
+}
+
+.prev-btn {
+    left: 0;
+}
+
+.next-btn {
+    right: 0;
+}
+
+/* Indicadores */
+.carousel-indicators {
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 0.5rem;
+}
+
+.indicator {
+    width: 1rem;
+    height: 1rem;
+    background-color: #ffffff80;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.indicator.active {
+    background-color: var(--text-color);
+    transform: scale(1.2);
+}
+
+@media (max-width: 800px) {
+    .carousel-text {
+        display: none;
+    }
+}
+
+@media (max-width: 1400px) {
+    .title-section {
+        padding: 0;
+        padding-top: 10rem;
+    }
+    .title-section p {
+        padding-bottom: 5rem;
+    }
+    .carousel-container {
+        margin: 0;
+        border-radius: 0;
+    }
+}
+
+
+
+
+/* Seção 3: Planos e avaliações */
+.plans-section {
+    padding: 2rem;
+    padding-bottom: 5rem;
+    display: flex;
+    justify-content: center;
+}
+  
+.plans-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    width: 100%;
+    max-width: 130rem;
+    margin-top: 2rem;
+}
+  
+.plan-card {
+    background-color: var(--background-dark);
+    border-radius: 8px;
+    padding: 2rem;
+    color: var(--text-color);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.3s ease-in-out;
+}
+
+.plan-card:hover {
+    transform: translateY(1rem);
+}
+  
+.plan-card h3 {
+    font-size: clamp(2rem, 3vw, 2.5rem);
+    margin-bottom: 1rem;
+}
+  
+.plan-card .price {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #08994b;
+    margin-bottom: 1rem;
+}
+  
+.plan-card .description {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+}
+  
+.plan-card ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 2rem;
+}
+  
+.plan-card ul li {
+    margin-bottom: 0.5rem;
+    font-size: 1.8rem;
+}
+
+.plan-card .btn-area {
+    display: flex;
+    flex-direction: column;
+}
+.plan-card .btn {
+    padding: 0.8rem 1.5rem;
+    font-size: 1.8rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 1rem auto;
+    margin: 0.5rem;
+}
+  
+.plan-card .btn-primary {
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+}
+  
+.plan-card .btn-primary:hover {
+    background-color: var(--button-hover);
+}
+  
+  /* Responsividade */
+@media (max-width: 1150px) {
+    .plans-container {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media (max-width: 900px) {
+    .plans-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+
+/* Seção 4: Comentários e avaliaçõe dos clientes */
+.testimonials-section {
+    padding: 2rem;
+    padding-bottom: 5rem;
+    background-image: url(../image/bg-home2.svg);
+    background-size: cover;
+    background-position: center center;
+    text-align: center;
+}
+  
+.testimonials-section h2 {
+    font-size: clamp(2rem, 3vw, 2.2rem);
+    margin-bottom: 2rem;
+    color: #000;
+}
+  
+.testimonials-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    width: 100%;
+    max-width: 130rem;
+    margin: 0 auto;
+}
+  
+.testimonial-card {
+    background-color: var(--background-dark);
+    border-radius: 8px;
+    padding: 2rem;
+    color: var(--text-color);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    text-align: left;
+    transition: transform 0.2s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.testimonial-card:hover {
+    transform: translateY(0.5rem);
+}
+
+.testimonial-card p {
+    margin: 0.5rem 0;
+    font-size: 1.8rem;
+}
+  
+.testimonial-card .author {
+    color: #08994b;
+    font-style: italic;
+}
+
+/* Responsividade */
+@media (max-width: 1150px) {
+    .testimonials-container {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media (max-width: 900px) {
+    .testimonials-container {
+        grid-template-columns: 1fr;
+    }
+}
+ 

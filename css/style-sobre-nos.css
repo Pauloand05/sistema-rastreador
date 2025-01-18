@@ -1,0 +1,156 @@
+
+/* Seção 1: Introdução. Parte inicial da Página */
+.sobre-nos {
+    background: url(../image/bg-about-us1.svg);
+    background-size: cover;
+    background-position: center center/cover;
+    padding: 4rem 2rem;
+    height: 67.5rem;
+}
+  
+.sobre-nos .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    max-width: 130rem;
+    margin: 0 auto;
+    padding-top: 8.4rem;
+}
+  
+.sobre-nos .texto {
+    flex: 1;
+    text-align: left;
+    padding: 4rem 2rem;
+}
+
+.sobre-nos .titulo {
+    font-size: clamp(3rem, 4.3vw, 4rem);
+    margin-bottom: 1.5rem;
+    color: var(--text-color);
+    margin-bottom: 1rem;
+}
+  
+.sobre-nos .descricao {
+    font-size: 1.8rem;
+    line-height: 1.8;
+    color: var(--text-color);
+    margin-right: 6rem;
+}
+  
+.sobre-nos .imagem {
+    flex: 1;
+    max-width: 50rem;
+}
+  
+.sobre-nos .imagem img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+@media (max-width: 900px) {
+    .sobre-nos {
+        height: auto;
+    }
+    .sobre-nos .container {
+        flex-direction: column;
+        padding: 3rem 0;
+        gap: 0;
+        align-items: center;
+    }
+    .sobre-nos .texto p{
+        margin: 0;
+        text-align: right;
+    }
+    .sobre-nos .imagem {
+        flex: 1;
+        max-width: 45%;
+    }
+    .sobre-nos .imagem img {
+        min-width: 30rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .sobre-nos .container {
+        align-items: start;
+    }
+}
+
+
+
+/* Seção 2: Valores em cards */
+.principios-af {
+    color: var(--text-dark);
+    padding-bottom: 5rem;
+    background: url(../image/bg-about-us2.svg);
+    background-size: cover;
+    background-position: center center/cover;
+}
+
+.principios-af h2 {
+    font-size: clamp(3rem, 4.3vw, 4rem);
+    text-align: center;
+    padding-top: 3rem;
+}
+
+.value-section {
+    padding: 3rem 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+.value-title {
+    background-color: var(--secondary-color);
+    width: 80rem;
+    color: var(--text-color);
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.1rem;
+    padding: 1rem 5rem;
+    border-radius: 0 5rem 5rem 5rem;
+    text-align: center;
+}
+.value-title h3 span {
+    padding: 0.5rem;
+}
+
+.value-text {
+    font-size: 1.8rem;
+    margin-right: 30%;
+}
+.value-text p {
+    padding: 1rem;
+}
+.value-text ul {
+    padding: 1rem;
+}
+.value-text ul li {
+    list-style: none;
+}
+
+
+.value-section.right {
+    align-items: end;
+}
+.value-section.right .value-title {
+    border-radius: 5rem 0 5rem 5rem;
+}
+.value-section.right .value-text {
+    margin-left: 30%;
+    margin-right: 0;
+    text-align: right;
+}
+
+@media (max-width: 900px) {
+    .value-title {
+        width: 100%;
+    }
+    .value-text {
+        margin-right: 5%;
+    }
+    .value-section.right .value-text {
+        margin-left: 5%;
+    }
+}
