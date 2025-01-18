@@ -59,9 +59,9 @@
             <div class="faq-section">
                 <h2>Dúvidas Frequentes</h2>
                 <div class="faq-item">
-                    <h3><span class="faq-icon">+</span>Como funciona o rastreamento de veículos em São Luís?</h3>
+                    <h3><span class="faq-icon">+</span>Como funciona o rastreamento de veículos?</h3>
                     <p class="faq-answer">Nosso sistema utiliza tecnologia GPS para monitorar seus veículos em tempo
-                        real, cobrindo toda a área urbana de São Luís e principais rodovias estaduais. Você pode acessar
+                        real, cobrindo toda a área. Você pode acessar
                         a localização pelo nosso aplicativo ou portal.</p>
                 </div>
                 <div class="faq-item">
@@ -77,18 +77,6 @@
                     </p>
                 </div>
                 <div class="faq-item">
-                    <h3><span class="faq-icon">+</span>O que acontece se o veículo sair da área de São Luís?</h3>
-                    <p class="faq-answer">Caso o veículo saia da cidade, o sistema continuará rastreando, desde que
-                        esteja dentro da área de cobertura nacional. Oferecemos planos personalizados para quem viaja
-                        com frequência.</p>
-                </div>
-                <div class="faq-item">
-                    <h3><span class="faq-icon">+</span>É possível rastrear motos e bicicletas?</h3>
-                    <p class="faq-answer">Sim, nosso sistema é adaptável para rastrear diferentes tipos de veículos,
-                        incluindo motos e bicicletas. É uma solução ideal para entregadores ou quem precisa monitorar
-                        pequenas frotas.</p>
-                </div>
-                <div class="faq-item">
                     <h3><span class="faq-icon">+</span>Tenho acesso ao histórico de rotas percorridas?</h3>
                     <p class="faq-answer">Sim, você pode acessar o histórico completo das rotas percorridas pelo seu
                         veículo nos últimos 30 dias diretamente pelo nosso portal ou aplicativo.</p>
@@ -100,21 +88,9 @@
                         possível.</p>
                 </div>
                 <div class="faq-item">
-                    <h3><span class="faq-icon">+</span>Qual a diferença entre rastreamento básico e avançado?</h3>
-                    <p class="faq-answer">No plano básico, você tem acesso à localização em tempo real e histórico de
-                        rotas. O plano avançado inclui alertas de velocidade, geofencing (delimitação de áreas), e
-                        relatório de desempenho do veículo.</p>
-                </div>
-                <div class="faq-item">
                     <h3><span class="faq-icon">+</span>Como o sistema garante a privacidade dos meus dados?</h3>
                     <p class="faq-answer">Utilizamos criptografia avançada para proteger todas as informações do
                         cliente. Apenas você e usuários autorizados têm acesso ao sistema.</p>
-                </div>
-                <div class="faq-item">
-                    <h3><span class="faq-icon">+</span>Quais áreas de São Luís possuem maior cobertura de sinal?</h3>
-                    <p class="faq-answer">Áreas centrais como Renascença, Turu, Cohama e Calhau possuem cobertura de
-                        sinal ideal. Mesmo em bairros mais afastados, nossa tecnologia garante o rastreamento sem
-                        interrupções.</p>
                 </div>
             </div>
         </div>
