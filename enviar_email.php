@@ -30,16 +30,16 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $mail->isSMTP();
         $mail->Host = 'smtp.gmail.com';
         $mail->SMTPAuth = true;
-        $mail->Username = 'alyssonsamueldasilva6@gmail.com'; // Seu e-mail do Gmail
-        $mail->Password = 'igic gqkc ctyb xjqy'; // Senha do aplicativo (não a senha normal do Gmail)
+        $mail->Username = ''; // Seu e-mail do Gmail
+        $mail->Password = ''; // Senha do aplicativo (não a senha normal do Gmail)
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
         $mail->Port = 587;
 
         // Configuração do remetente
-        $mail->setFrom('alyssonsamueldasilva6@gmail.com', 'AF Rastreadores');
+        $mail->setFrom('', 'AF Rastreadores');
 
         // Configuração do destinatário (e-mail do patrão)
-        $mail->addAddress('alyssonsamueldasilva6@gmail.com', 'Gerente');
+        $mail->addAddress('', 'Gerente');
 
         // Assunto do e-mail
         $mail->Subject = 'Novo Formulário de Contratação';
