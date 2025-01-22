@@ -103,8 +103,12 @@
     .cta-button:hover {
         background-color: var(--button-hover);
     }
-}
 
+    .carousel-container {
+        max-width: 59rem;
+        margin: 0;
+    }
+}
 
 
 
@@ -240,11 +244,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    min-height: 90vh;
+    min-height: 80vh;
 }
 .section-h2 {
     font-size: clamp(3rem, 4.3vw, 4rem);
-    margin-bottom: 2.6rem;
+    margin: 2.6rem 0;
     color: var(--text-dark);
 }
 

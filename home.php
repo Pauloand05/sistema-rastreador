@@ -51,7 +51,37 @@
                 <a href="planos.php#plans" class="cta-button">Conheça Nossos Planos</a>
             </div>
             <div class="hero-image-area">
-                <img src="image/car.png" alt="Carro Branco" class="img-hero">
+                <div class="carousel-section">
+                    <div class="carousel-container">
+                        <div class="carousel-slide">
+                            <div class="carousel-item">
+                                <img src="image/home-carousel/foto0.jpg" alt="Foto 1" class="poster">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="image/home-carousel/foto1.jpg" alt="Foto 2" class="poster">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="image/home-carousel/foto2.jpg" alt="Foto 3" class="poster">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="image/home-carousel/foto3.jpg" alt="Foto 4" class="poster">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="image/home-carousel/foto4.jpg" alt="Foto 5" class="poster">
+                            </div>
+                        </div>
+                        <button class="prev-btn">&lt;</button>
+                        <button class="next-btn">&gt;</button>
+                        <div class="carousel-indicators">
+                            <span class="indicator" data-index="0"></span>
+                            <span class="indicator" data-index="1"></span>
+                            <span class="indicator" data-index="2"></span>
+                            <span class="indicator" data-index="3"></span>
+                            <span class="indicator" data-index="4"></span>
+                        </div>
+                    </div>
+                </div>
+                <script src="js/carousel.js"></script>
             </div>
         </div>
     </section>
@@ -78,7 +108,8 @@
             <h2>Controle segurança a um clique!</h2>
             <p>Garanta o rastreamento, monitoramento e proteção 24 horas por dia. Comece agora a transformar a gestão
                 dos seus veículos e bens.</p>
-            <a href="https://wa.me/5598992244831?text=Olá,%20gostaria%20de%20saber%20mais%20sobre%20o%20rastreamento%20veicular!!" class="cta-button" target="_blank">Fale Conosco</a>
+            <a href="https://wa.me/5598992244831?text=Olá,%20gostaria%20de%20saber%20mais%20sobre%20o%20rastreamento%20veicular!!"
+                class="cta-button" target="_blank">Fale Conosco</a>
         </div>
     </section>
 

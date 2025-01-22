@@ -50,7 +50,7 @@
                 </p>
             </div>
             <div class="imagem">
-                <img src="image/img-sobre-nos.svg" alt="Imagem de rastreamento veicular">
+                <img src="image/car.png" alt="Imagem de rastreamento veicular">
             </div>
         </div>
     </section>

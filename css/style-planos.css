@@ -33,109 +33,7 @@
 
 
 /* Seção 2: Carrossel de Posters */
-.carousel-section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background-image: url(../image/bg-home2.svg);
-    background-size: cover;
-    background-position: center center;
-}
-
-.carousel-container {
-    position: relative;
-    overflow: hidden;
-    max-width: 130rem;
-    margin: 5rem;
-    border-radius: 0.5rem;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
-}
-
-.carousel-slide {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-}
-
-.carousel-item {
-    min-width: 100%;
-    position: relative;
-    text-align: center;
-}
-
-.poster {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
-.carousel-text {
-    position: absolute;
-    bottom: 4%;
-    left: 50%;
-    transform: translateX(-50%);
-    background: transparent;
-    color: var(--text-color);
-    padding: 1rem;
-    border-radius: 0.5rem;
-    text-align: center;
-    width: 100%;
-}
-
-.carousel-text h3 {
-    margin: 0;
-    font-size: clamp(2rem, 3vw, 3rem);
-}
-
-.carousel-text p {
-    font-size: 1.8rem;
-}
-
-.prev-btn, .next-btn {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: transparent;
-    color: var(--text-color);
-    font-size: 2rem;
-    border: none;
-    padding: 100% 7.5%;
-    cursor: pointer;
-    z-index: 1;
-    transition: 0.2s;
-}
-
-.prev-btn {
-    left: 0;
-}
-
-.next-btn {
-    right: 0;
-}
-
-/* Indicadores */
-.carousel-indicators {
-    position: absolute;
-    bottom: 1rem;
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    gap: 0.5rem;
-}
-
-.indicator {
-    width: 1rem;
-    height: 1rem;
-    background-color: #ffffff80;
-    border-radius: 50%;
-    cursor: pointer;
-    transition: transform 0.3s ease, background-color 0.3s ease;
-}
-
-.indicator.active {
-    background-color: var(--text-color);
-    transform: scale(1.2);
-}
+/* Essa seção foi reutilizada em css/global/nav-footer.css */
 
 @media (max-width: 800px) {
     .carousel-text {
@@ -156,7 +54,6 @@
         border-radius: 0;
     }
 }
-
 
 
 
