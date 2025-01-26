@@ -23,26 +23,43 @@ textarea {
 
 .rating {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
+    
     gap: 5px;
 }
 
 .rating input {
     display: none;
+    
 }
 
 .rating label {
     font-size: 30px;
     cursor: pointer;
     color: #ddd;
+    
 }
 
-.rating input:checked ~ label {
-    color: #ffcc00;
+.rating input:checked~label {
+    color: #ddd;
+    
 }
 
-.rating input:checked + label {
+.rating input:checked+label,
+.rating input:checked+label~label {
     color: #ffcc00;
+   
+}
+
+
+.rating {
+    flex-direction: row-reverse;
+    
+}
+
+.rating label {
+    order: -1;
+    
 }
 
 button[type="submit"] {

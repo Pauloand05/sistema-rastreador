@@ -162,32 +162,36 @@
     </section>
     <link rel="stylesheet" href="feedback.css">
     <script src="js/feedback.js"></script>
-    <section class="feedback-section">
-        <h2>Deixe seu feedback</h2>
+    <div class="feedback-section">
+        <h2>Deixe seu Feedback</h2>
         <form id="feedback-form">
             <div class="feedback-container">
-                <label for="feedback">Comentário:</label>
-                <textarea id="feedback" name="feedback" rows="4" placeholder="Compartilhe sua opinião sobre nosso serviço..." required></textarea>
-
-                <label for="rating">Avaliação:</label>
+                <textarea id="feedback" placeholder="Escreva seu comentário aqui..." required></textarea>
                 <div class="rating">
-                    <input type="radio" id="star5" name="rating" value="5"><label for="star5">&#9733;</label>
-                    <input type="radio" id="star4" name="rating" value="4"><label for="star4">&#9733;</label>
-                    <input type="radio" id="star3" name="rating" value="3"><label for="star3">&#9733;</label>
-                    <input type="radio" id="star2" name="rating" value="2"><label for="star2">&#9733;</label>
-                    <input type="radio" id="star1" name="rating" value="1"><label for="star1">&#9733;</label>
-                </div>
-            </div>
-            <button type="submit" class="btn btn-primary">Enviar Feedback</button>
-        </form>
+                    <input type="radio" id="star1" name="rating" value="1" />
+                    <label for="star1">★</label>
 
-        <!-- Exibição da avaliação -->
-        <div id="feedback-display" class="feedback-display" style="display:none;">
-            <h3>Sua avaliação:</h3>
-            <p id="display-feedback"></p>
-            <p>Avaliação: <span id="display-rating"></span></p>
+                    <input type="radio" id="star2" name="rating" value="2" />
+                    <label for="star2">★</label>
+
+                    <input type="radio" id="star3" name="rating" value="3" />
+                    <label for="star3">★</label>
+
+                    <input type="radio" id="star4" name="rating" value="4" />
+                    <label for="star4">★</label>
+
+                    <input type="radio" id="star5" name="rating" value="5" />
+                    <label for="star5">★</label>
+                </div>
+
+                <button type="submit">Enviar Feedback</button>
+            </div>
+        </form>
+        <div id="feedback-display" style="display: none;">
+            <p><strong>Seu Feedback:</strong> <span id="display-feedback"></span></p>
+            <p><strong>Sua Avaliação:</strong> <span id="display-rating"></span></p>
         </div>
-    </section>
+    </div>
 
 
     <footer class="footer" id="footer">
