@@ -120,15 +120,15 @@
                 <div class="card">
                     <img src="image/icons/map-icon.svg" alt="Ícone de Rastreamento e Monitoramento">
                     <h3>Rastreamento e Monitoramento</h3>
-                    <p>Monitore e rastreie seu veículo 24 horas por dia através da plataforma web ou aplicativos Android
+                    <p>Monitore e rastreie seu veículo através da plataforma web ou aplicativos Android
                         e iOS.</p>
                 </div>
 
                 <!-- Segurança Eletrônica 24 horas -->
                 <div class="card">
                     <img src="image/icons/clock-shield.svg" alt="Ícone de Segurança Eletrônica">
-                    <h3>Segurança Eletrônica 24 horas</h3>
-                    <p>Monitore seu imóvel 24 horas através de nossos aplicativos para Android e iOS.</p>
+                    <h3>Atendimento e Serviço em prontidão para atender suas demandas e espectativas</h3>
+                    <p></p>
                 </div>
 
                 <!-- Telemetria Veicular -->
@@ -149,15 +149,15 @@
                 <!-- Rastreamento Agrícola -->
                 <div class="card">
                     <img src="image/icons/tractor.svg" alt="Ícone de Rastreamento Agrícola">
-                    <h3>Rastreamento Agrícola</h3>
-                    <p>Importe e exporte talhões em KML/KMZ e tenha a gestão das suas máquinas em nossa plataforma.</p>
+                    <h3>Urbano e Rural</h3>
+                    <p>O sistema de ponta permite você sempre localizar seu veículo, tanto em ambiente urbano, quanto rural.</p>
                 </div>
 
                 <!-- De qualquer lugar do mundo -->
                 <div class="card">
                     <img src="image/icons/world-check.svg" alt="Ícone de Acesso de Qualquer Lugar">
                     <h3>De qualquer lugar do mundo</h3>
-                    <p>Nossos serviços são disponibilizados 100% na nuvem e podem ser acessados de qualquer lugar.</p>
+                    <p>Nossos serviços são disponibilizados 100% online e podem ser acessados de qualquer lugar.</p>
                 </div>
             </div>
         </div>
