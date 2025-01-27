@@ -127,8 +127,8 @@
                 <!-- Segurança Eletrônica 24 horas -->
                 <div class="card">
                     <img src="image/icons/clock-shield.svg" alt="Ícone de Segurança Eletrônica">
-                    <h3>Atendimento e Serviço em prontidão para atender suas demandas e espectativas</h3>
-                    <p></p>
+                    <h3>Prontidão e Excelência no Atendimento</h3>
+                    <p>Atendimento e Serviço em prontidão para atender suas demandas e espectativas</p>
                 </div>
 
                 <!-- Telemetria Veicular -->

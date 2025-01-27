@@ -85,14 +85,16 @@
             <div class="plan-card">
                 <div class="card-content">
                     <h3>Plano para moto</h3>
-                    <p class="price">R$ 29,99/mês</p>
+                    <p class="price">R$ 52,90/mês</p>
                     <p class="description">
-                        Rastreamento básico para veículos. Ideal para quem busca segurança a baixo custo.
+                        Garanta mais segurança para sua moto com um rastreamento eficiente e acessível.
                     </p>
                     <ul>
-                        <li>Localização em tempo real</li>
-                        <li>Alertas via SMS</li>
-                        <li>Relatório semanal</li>
+                        <li>rastreamento 24 horas</li>
+                        <li>Alertas de ignição</li>
+                        <li>Bloqueio em caso de roubo</li>
+                        <li>Aplicativo próprio</li>
+                        <li>Equipe de apoio 24 horas</li>
                     </ul>
                 </div>
                 <div class="btn-area">
@@ -103,15 +105,16 @@
             <div class="plan-card">
                 <div class="card-content">
                     <h3>Plano para carro</h3>
-                    <p class="price">R$ 59,99/mês</p>
+                    <p class="price">R$ 55,00/mês</p>
                     <p class="description">
-                        Rastreamento com mais recursos para quem precisa de um controle mais completo do veículo.
+                        Tenha controle total do seu carro com um sistema de rastreamento avançado, projetado para oferecer segurança e praticidade no dia a dia.
                     </p>
                     <ul>
-                        <li>Localização em tempo real</li>
-                        <li>Alertas via SMS e e-mail</li>
-                        <li>Relatório diário</li>
-                        <li>Histórico de rotas</li>
+                        <li>rastreamento 24 horas</li>
+                        <li>Alertas de ignição</li>
+                        <li>Bloqueio em caso de roubo</li>
+                        <li>Aplicativo próprio</li>
+                        <li>Equipe de apoio 24 horas</li>
                     </ul>
                 </div>
                 <div class="btn-area">
@@ -122,16 +125,16 @@
             <div class="plan-card">
                 <div class="card-content">
                     <h3>Plano para caminhões</h3>
-                    <p class="price">R$ 99,99/mês</p>
+                    <p class="price">R$ 60,00/mês</p>
                     <p class="description">
-                        Plano completo para quem precisa de recursos avançados e controle total do rastreamento.
+                        A solução ideal para quem busca recursos avançados e controle total do rastreamento, garantindo segurança e eficiência no transporte de cargas.
                     </p>
                     <ul>
-                        <li>Localização em tempo real</li>
-                        <li>Alertas via SMS, e-mail e aplicativo</li>
-                        <li>Relatório em tempo real</li>
-                        <li>Histórico completo de rotas</li>
-                        <li>Monitoramento 24/7</li>
+                        <li>Rastreamento 24 horas</li>
+                        <li>Bloqueio</li>
+                        <li>Aplicativo próprio</li>
+                        <li>Relatorio de rotas e kilometragem</li>
+                        <li>Relatorio de posição</li>
                     </ul>
                 </div>
                 <div class="btn-area">
@@ -159,6 +162,10 @@
                 <p class="author">— Carlos Souza, Cliente</p>
             </div>
         </div>
+    </section>
+
+    <section>
+        <h1>Veículos Recuperados</h1>
     </section>
 
     <footer class="footer" id="footer">
