@@ -160,39 +160,6 @@
             </div>
         </div>
     </section>
-    <link rel="stylesheet" href="feedback.css">
-    <script src="js/feedback.js"></script>
-    <div class="feedback-section">
-        <h2>Deixe seu Feedback</h2>
-        <form id="feedback-form">
-            <div class="feedback-container">
-                <textarea id="feedback" placeholder="Escreva seu comentário aqui..." required></textarea>
-                <div class="rating">
-                    <input type="radio" id="star1" name="rating" value="1" />
-                    <label for="star1">★</label>
-
-                    <input type="radio" id="star2" name="rating" value="2" />
-                    <label for="star2">★</label>
-
-                    <input type="radio" id="star3" name="rating" value="3" />
-                    <label for="star3">★</label>
-
-                    <input type="radio" id="star4" name="rating" value="4" />
-                    <label for="star4">★</label>
-
-                    <input type="radio" id="star5" name="rating" value="5" />
-                    <label for="star5">★</label>
-                </div>
-
-                <button type="submit">Enviar Feedback</button>
-            </div>
-        </form>
-        <div id="feedback-display" style="display: none;">
-            <p><strong>Seu Feedback:</strong> <span id="display-feedback"></span></p>
-            <p><strong>Sua Avaliação:</strong> <span id="display-rating"></span></p>
-        </div>
-    </div>
-
 
     <footer class="footer" id="footer">
         <div class="footer-container container">
