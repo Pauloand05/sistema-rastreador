@@ -90,6 +90,7 @@
                     success: function(response) {
                         if (response === 'success') {
                             $('#mensagemSucesso').removeClass('hidden');
+                            $('.submit-btn').attr('disabled', false).text('Enviar');
                         } else {
                             $('#mensagemErro').removeClass('hidden');
                             // Reativa o botão caso o envio falhe
