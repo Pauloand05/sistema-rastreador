@@ -42,7 +42,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $mail->addAddress('pauloandre050619@gmail.com', 'Gerente');
 
         // Assunto do e-mail
-        $mail->Subject = 'Novo Clente na Àrea!';
+        $mail->Subject = 'Novo Cliente na Area!';
 
         // Corpo do e-mail
         $body = "
