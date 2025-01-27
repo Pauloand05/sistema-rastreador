@@ -226,4 +226,87 @@
 section h1{
     text-align: center;
 }
- 
+
+
+
+
+/* Seção 5: Recuperados em cards */
+.recovered {
+    padding: 2rem;
+    background-color: var(--background-dark);
+    text-align: center;
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.recovered h2 {
+    font-size: clamp(3rem, 4.3vw, 4rem);
+    margin: 2.6rem 0;
+    color: var(--text-color);
+}
+
+.recovered-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 colunas */
+    gap: 2rem; /* Ajustado para 2rem */
+    width: 100%;
+    max-width: 130rem;
+}
+
+.r-cards {
+    border-radius: 1rem;
+    overflow: hidden; /* Esconde conteúdo que sai do card */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    aspect-ratio: 11rem / 16rem; /* Define proporção fixa para os cards */
+    transition: transform 0.3s ease, filter 0.3s ease;
+    position: relative; /* Necessário para o efeito de embaçamento */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.r-cards video,
+.r-cards img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Corta o conteúdo para preencher o card */
+}
+
+/* Efeitos ao passar o mouse */
+.recovered-cards:hover .r-cards {
+    filter: blur(3px); /* Embaça todos os cards */
+    /* transform: scale(0.95); Reduz todos os cards levemente */
+}
+
+.recovered-cards .r-cards:hover {
+    filter: none; /* Remove o embaçamento do card ativo */
+    transform: scale(var(--card-hover-scale)); /* Aumenta o card ativo */
+    z-index: 1; /* Garante que o card ativo fique por cima */
+    transform: scale(1.05); /* Aumenta o card ativo */
+}
+
+@media (max-width: 1000px) {
+    .recovered-cards {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    .r-cards {
+        aspect-ratio: 3 / 4; /* Define proporção fixa para os cards */
+        transition: transform 0.3s ease, filter 0.3s ease;
+        position: relative; /* Necessário para o efeito de embaçamento */
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    }
+    .recovered-cards {
+        padding: 0 4rem 2rem 4rem;
+    }
+}
+
+@media (max-width: 650px) {
+    .recovered-cards {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+    }
+}

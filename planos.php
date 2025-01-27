@@ -164,8 +164,28 @@
         </div>
     </section>
 
-    <section>
-        <h1>Veículos Recuperados</h1>
+    <section class="recovered">
+        <h2> Acompanhe alguns veículos já recuperados</h2>
+        <div class="recovered-cards">
+            <div class="r-cards">
+                <video controls>
+                    <source src="recovered/video1.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="r-cards">
+                <img src="recovered/photo1.jpg" alt="Recovered Photo 1">
+            </div>
+            <div class="r-cards">
+                <img src="recovered/photo2.jpg" alt="Recovered Photo 2">
+            </div>
+            <div class="r-cards">
+                <video controls>
+                    <source src="recovered/video2.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
     </section>
 
     <footer class="footer" id="footer">
