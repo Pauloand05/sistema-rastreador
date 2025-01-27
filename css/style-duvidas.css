@@ -7,26 +7,18 @@
     display: flex;
     justify-content: center;
     align-items: top;
+    padding: 4rem 0;
 }
 .main-container {
     width: 100%; /* Ajuste conforme necessário */
     margin: 20rem 2rem;
-    max-width: 130rem;
+    max-width: 90rem;
     background-color: var(--background-light);
     text-align: center;
     display: grid;
     grid-template-columns: 1fr;
     gap: 2rem;
     border-radius: 1rem;
-}
-
-.contact-form, .faq-section {
-    border-radius: 1rem;
-    padding: 4rem;
-}
-
-.contact-form {
-    background-color: var(--light-gray);
 }
 
 .faq-section {
@@ -40,44 +32,6 @@
     font-size: clamp(2.5rem, 4.3vw, 3.5rem);
     font-weight: 600;
     margin-bottom: 1rem;
-}
-
-.contact-form p {
-    margin-bottom: 2rem;
-    font-size: 1.8rem;
-}
-
-form input, form textarea {
-    width: 100%;
-    padding: 1rem;
-    margin-bottom: 1.5rem;
-    border: 1px solid #ccc;
-    font-size: 1.6rem;
-    border-radius: 4px;
-    outline: none;
-    font-family: 'Roboto', Arial, sans-serif;
-    resize: none; /* Impede a alteração de tamanho do textarea */
-    transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Animação suave para foco */
-}
-
-/* Estilo do outline ao focar */
-form input:focus, form textarea:focus {
-    border-color: var(--text-dark); /* Destaque com a cor principal */
-}
-
-form button {
-    background-color: var(--secondary-color);
-    color: #fff;
-    border: none;
-    padding: 1rem 2rem;
-    font-size: 1.6rem;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-form button:hover {
-    background-color: #c97208;
 }
 
 .faq-section h2 {

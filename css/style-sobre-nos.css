@@ -103,7 +103,7 @@
 }
 
 .value-title {
-    background-color: var(--secondary-color);
+    background-color: var(--background-dark);
     width: 80rem;
     color: var(--text-color);
     font-family: 'Roboto', sans-serif;
