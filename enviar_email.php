@@ -42,7 +42,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $mail->addAddress('alyssonsamueldasilva6@gmail.com', 'Gerente');
 
         // Assunto do e-mail
-        $mail->Subject = 'Novo Formulário de Contratação';
+        $mail->Subject = 'Novo Clente na Àrea!';
 
         // Corpo do e-mail
         $body = "
