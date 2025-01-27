@@ -40,7 +40,7 @@
   
 .sobre-nos .imagem {
     flex: 1;
-    max-width: 50rem;
+    max-width: 110rem;
 }
   
 .sobre-nos .imagem img {
@@ -103,7 +103,7 @@
 }
 
 .value-title {
-    background-color: var(--secondary-color);
+    background-color: var(--background-dark);
     width: 80rem;
     color: var(--text-color);
     font-family: 'Roboto', sans-serif;

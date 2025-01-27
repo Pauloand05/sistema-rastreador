@@ -43,7 +43,7 @@
     <!-- Seção principal com imagem e texto -->
     <section class="main-section">
         <div class="main-container">
-            <div class="contact-form">
+            <!-- <div class="contact-form">
                 <h2>Envie sua dúvida</h2>
                 <p>Preencha os campos obrigatórios abaixo para enviar sua dúvida.</p>
                 <form action="#" method="post">
@@ -53,7 +53,7 @@
                     <textarea placeholder="Descreva sua dúvida" rows="5" required></textarea>
                     <button type="submit">Enviar</button>
                 </form>
-            </div>
+            </div> -->
 
             <!-- Dúvidas frequentes -->
             <div class="faq-section">

@@ -46,12 +46,42 @@
             <div class="hero-content">
                 <h1>Segurança Em Movimento</h1>
                 <p>Com a <span class="name">AF Rastreadores</span>, você acompanha e protege o seu veículo de onde
-                    quiser. Oferecemos tecnologia de ponta para garantir a Segurança que você merece
+                    estiver. Oferecemos tecnologia de ponta para garantir a Segurança que você merece
                 </p>
                 <a href="planos.php#plans" class="cta-button">Conheça Nossos Planos</a>
             </div>
             <div class="hero-image-area">
-                <img src="image/car.png" alt="Carro Branco" class="img-hero">
+                <div class="carousel-section">
+                    <div class="carousel-container">
+                        <div class="carousel-slide">
+                            <div class="carousel-item">
+                                <img src="image/home-carousel/foto0.jpg" alt="Foto 1" class="poster">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="image/home-carousel/foto1.jpg" alt="Foto 2" class="poster">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="image/home-carousel/foto2.jpg" alt="Foto 3" class="poster">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="image/home-carousel/foto3.jpg" alt="Foto 4" class="poster">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="image/home-carousel/foto4.jpg" alt="Foto 5" class="poster">
+                            </div>
+                        </div>
+                        <button class="prev-btn">&lt;</button>
+                        <button class="next-btn">&gt;</button>
+                        <div class="carousel-indicators">
+                            <span class="indicator" data-index="0"></span>
+                            <span class="indicator" data-index="1"></span>
+                            <span class="indicator" data-index="2"></span>
+                            <span class="indicator" data-index="3"></span>
+                            <span class="indicator" data-index="4"></span>
+                        </div>
+                    </div>
+                </div>
+                <script src="js/carousel.js"></script>
             </div>
         </div>
     </section>
@@ -59,14 +89,14 @@
     <section class="security-promo">
         <div class="promo-container">
             <div class="promo-image">
-                <img src="image/family.jpg" alt="Segurança para sua família ou negócio" />
+                <img src="image/rastreamento.jpg" alt="Segurança para sua família ou negócio" />
             </div>
             <div class="promo-content">
-                <h2>Proteção sob medida para sua família e negócio</h2>
+                <h2>Proteção sob medida para seu veículo ou frota</h2>
                 <p>
-                    Monitore sua residência ou empresa em tempo real com nossas soluções de segurança.
-                    Garantimos a proteção dos seus bens e entes queridos 24 horas por dia, com total controle na palma
-                    da sua mão.
+                    Monitore e qualquer lugar a frota da sua empresa em tempo real com nossas soluções de segurança.
+                    Garantimos a proteção 24 horas por dia, com total controle na palma da sua mão.
+                    Veja mais sobre nossos planos e escolha a melhor opção para você.
                 </p>
                 <a href="planos.php#plans" class="cta-button">Saiba Mais</a>
             </div>
@@ -77,8 +107,9 @@
         <div class="cta-content">
             <h2>Controle segurança a um clique!</h2>
             <p>Garanta o rastreamento, monitoramento e proteção 24 horas por dia. Comece agora a transformar a gestão
-                dos seus veículos e bens.</p>
-            <a href="https://wa.me/5598992244831?text=Olá,%20gostaria%20de%20saber%20mais%20sobre%20o%20rastreamento%20veicular!!" class="cta-button" target="_blank">Fale Conosco</a>
+                dos seus veículos</p>
+            <a href="https://wa.me/5598992244831?text=Olá,%20gostaria%20de%20saber%20mais%20sobre%20o%20rastreamento%20veicular!!"
+                class="cta-button" target="_blank">Fale Conosco</a>
         </div>
     </section>
 
@@ -89,15 +120,15 @@
                 <div class="card">
                     <img src="image/icons/map-icon.svg" alt="Ícone de Rastreamento e Monitoramento">
                     <h3>Rastreamento e Monitoramento</h3>
-                    <p>Monitore e rastreie seu veículo 24 horas por dia através da plataforma web ou aplicativos Android
+                    <p>Monitore e rastreie seu veículo através da plataforma web ou aplicativos Android
                         e iOS.</p>
                 </div>
 
                 <!-- Segurança Eletrônica 24 horas -->
                 <div class="card">
                     <img src="image/icons/clock-shield.svg" alt="Ícone de Segurança Eletrônica">
-                    <h3>Segurança Eletrônica 24 horas</h3>
-                    <p>Monitore seu imóvel 24 horas através de nossos aplicativos para Android e iOS.</p>
+                    <h3>Prontidão e Excelência no Atendimento</h3>
+                    <p>Atendimento e Serviço em prontidão para atender suas demandas e espectativas</p>
                 </div>
 
                 <!-- Telemetria Veicular -->
@@ -118,15 +149,15 @@
                 <!-- Rastreamento Agrícola -->
                 <div class="card">
                     <img src="image/icons/tractor.svg" alt="Ícone de Rastreamento Agrícola">
-                    <h3>Rastreamento Agrícola</h3>
-                    <p>Importe e exporte talhões em KML/KMZ e tenha a gestão das suas máquinas em nossa plataforma.</p>
+                    <h3>Urbano e Rural</h3>
+                    <p>O sistema de ponta permite você sempre localizar seu veículo, tanto em ambiente urbano, quanto rural.</p>
                 </div>
 
                 <!-- De qualquer lugar do mundo -->
                 <div class="card">
                     <img src="image/icons/world-check.svg" alt="Ícone de Acesso de Qualquer Lugar">
                     <h3>De qualquer lugar do mundo</h3>
-                    <p>Nossos serviços são disponibilizados 100% na nuvem e podem ser acessados de qualquer lugar.</p>
+                    <p>Nossos serviços são disponibilizados 100% online e podem ser acessados de qualquer lugar.</p>
                 </div>
             </div>
         </div>

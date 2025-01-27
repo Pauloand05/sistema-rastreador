@@ -45,12 +45,12 @@
                 <h2 class="titulo">Conheça a <span class="name">AF Rastreadores</span></h2>
                 <p class="descricao">
                     Somos especialistas em rastreamento veicular, oferecendo soluções inovadoras que combinam tecnologia
-                    de ponta e um atendimento dedicado para garantir a sua tranquilidade e segurança. Com anos de
-                    experiência, entendemos a importância de proteger o que é importante para você.
+                    de ponta e um atendimento dedicado para garantir a sua tranquilidade e segurança para o seu veículo. Com anos de
+                    experiência, entendemos a importância de proteger seu bem importante para você.
                 </p>
             </div>
             <div class="imagem">
-                <img src="image/img-sobre-nos.svg" alt="Imagem de rastreamento veicular">
+                <img src="image/car.png" alt="Imagem de rastreamento veicular">
             </div>
         </div>
     </section>
